@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getPosts, formatDate } from '../../lib/data';
+const posts = await getPosts();
+---
+<Base title="Blog" description="Notícias, lançamentos e eventos da Daan Imagem, Philips e Carestream.">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="/">Início</a> / Blog</nav>
+      <h1>Blog</h1>
+      <p class="lead">Lançamentos, eventos e conteúdo sobre diagnóstico por imagem.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container grid grid-3">
+      {posts.map((p) => (
+        <a class="card" href={`/blog/${p.slug}/`}>
+          {p.coverImage && <div class="card-media cover"><img src={p.coverImage} alt="" loading="lazy" /></div>}
+          <div class="card-body">
+            <span class="muted" style="font-size:.85rem">{formatDate(p.date)}</span>
+            <h3>{p.title}</h3>
+            {p.excerpt && <p>{p.excerpt.replace(/\s*(\[…\]|\.\.\.|…)\s*$/, '')}…</p>}
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

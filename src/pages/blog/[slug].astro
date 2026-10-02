@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { getPosts, formatDate, type Post } from '../../lib/data';
+export async function getStaticPaths() {
+  return (await getPosts()).map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: Post };
+---
+<Base title={p.title} description={p.excerpt?.slice(0, 160)} image={p.coverImage}>
+  <article class="section">
+    <div class="container post">
+      <nav class="breadcrumb"><a href="/">Início</a> / <a href="/blog/">Blog</a></nav>
+      <p class="muted">{formatDate(p.date)}</p>
+      <h1>{p.title}</h1>
+      {p.coverImage && <img class="cover" src={p.coverImage} alt="" />}
+      <div class="prose" set:html={p.bodyHtml} />
+    </div>
+  </article>
+  <CtaBand />
+</Base>
+<style>
+  .post { max-width: 820px; }
+  .cover { border-radius: 20px; margin: 24px 0 32px; width: 100%; }
+</style>

@@ -1,0 +1,161 @@
+{
+  "home": {
+    "heroTitle": "Soluções inteligentes e precisas em diagnósticos de imagem para clínicas e hospitais.",
+    "heroSubtitle": "Representante autorizado Philips e Carestream no Paraná, com consultoria na escolha do equipamento e suporte completo no pós-venda.",
+    "aboutText": "Nós somos uma referência no mercado de diagnóstico por imagem no Paraná, reconhecida pelo profissionalismo e excelência em suas relações comerciais. Com uma equipe técnica especializada, oferecemos suporte completo, desde a escolha de equipamentos e softwares até a melhor solução de negociação para nossos clientes.",
+    "aboutImage": "https://daanimagem.com.br/wp-content/uploads/2024/06/img-sec-sobre-daan.webp",
+    "differentialsText": "A Daan Serviços é uma representante oficial da Philips e da Carestream e conta com um time técnico experiente, capaz de oferecer o melhor e mais completo serviço de instalação e suporte técnico para nossos clientes.",
+    "highlights": [
+      "Profissionais altamente qualificados",
+      "Atendimento em todo estado do Paraná",
+      "Preços e prazos competitivos"
+    ],
+    "highlightIcons": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/icone-equipamentos.svg",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/icone-profissionais.svg",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/icone-empresa.svg"
+    ],
+    "posVendaText": "Temos o compromisso com a manutenção das condições ideais de operação dos equipamentos que comercializamos. Garantimos a nossos clientes qualidade e eficiência na solução de problemas técnicos. O melhor acompanhamento pós-venda e contamos com suporte técnico qualificado e ágil.",
+    "posVendaImage": "https://daanimagem.com.br/wp-content/uploads/2024/06/img-sec-atendimento.webp",
+    "featuredEquipment": {
+      "Ultrassom": [
+        "Compacto 5000",
+        "EPIQ Elite",
+        "Lumify"
+      ],
+      "Ressonância": [
+        "Ingenia Ambition",
+        "Ingenia Elition",
+        "MR 5300"
+      ],
+      "Tomografia": [
+        "Access CT",
+        "CT 5300",
+        "Incisive CT"
+      ],
+      "Hemodinâmica": [
+        "Azurion 3",
+        "Azurion 5",
+        "Azurion 7"
+      ],
+      "Arco-cirúrgico": [
+        "Zenition 10",
+        "Zenition 50",
+        "Zenition 70"
+      ],
+      "Radiografia": [
+        "Raio-X Horizon",
+        "Detectores Focus",
+        "Impressora Laser DryView"
+      ]
+    },
+    "heroImages": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/07/philips-carestream-logos.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/07/img-capa-1-philips.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/07/img-capa-2-philips.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/07/img-capa-1-carestream.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/07/img-capa-2-carestream.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/img-header.webp"
+    ],
+    "notes": "Hero is a slider with (at least) 2 slides; slide 1 title ends with a period, slide 2 identical title without the period. 'Representante Autorizada' appears next to the Philips/Carestream logos image (philips-carestream-logos.webp). Exact slide-to-image mapping not verified. aboutImage/differentialsText/featuredEquipment/posVenda* are extra fields beyond the requested schema. Extracted via WebFetch (model-mediated), not raw HTML."
+  },
+  "sobre": {
+    "title": "Sobre Nós",
+    "body": "## Daan Imagem\n\nIdealizada e criada pelo Diretor Geral do Grupo, Darci Santos, a marca Única Imagem começou sua história há mais de 20 anos, respaldada em sua experiência e conhecimento para contribuir com a evolução do mercado de medicina diagnóstica por imagem no Paraná. Sua visão e dedicação para a implantação do negócio trouxeram para o estado o que há de mais moderno e inovador, o que permitiu a construção de uma trajetória marcada pelo compromisso com a qualidade na entrega de seus produtos e serviços.\n\nHoje, somos DAAN IMAGEM, uma empresa que cresceu junto com o mercado e se tornou referência entre médicos, clínicas e hospitais do Paraná. Nosso sucesso é resultado de um profissionalismo inabalável, fundamentado em códigos de conduta e compliance que refletem nossos valores e estão alinhados com nossos parceiros, clientes e fornecedores.\n\nNossa equipe técnica especializada é a espinha dorsal da DAAN IMAGEM. Qualificada para oferecer suporte completo, ajudamos nossos clientes a escolher os equipamentos mais adequados, selecionar softwares específicos para cada especialidade e definir os transdutores mais apropriados. Além disso, buscamos sempre as melhores soluções de negociação para garantir que nossos clientes façam os melhores investimentos com o maior retorno.\n\nAo longo desses anos, investimos continuamente em aprimoramento e capacitação. Treinamentos periódicos garantem que nossa equipe esteja sempre à frente, preparada para enfrentar os desafios do mercado com competência e inovação.\n\nRecentemente, passamos por um rebranding, criando uma nova identidade para refletir nosso momento atual. DAAN IMAGEM é uma marca mais completa, vibrante e cheia de significados, que simboliza nossa busca constante por fortalecer nossa presença no mercado. Nosso foco permanece em estabelecer relações de confiança, transparência e respeito com todos os nossos stakeholders.\n\nDAAN IMAGEM não é apenas uma empresa; é um compromisso com a excelência na medicina diagnóstica por imagem. Continuamos nossa jornada, sempre em busca do melhor para nossos clientes e parceiros, com a mesma paixão e dedicação que nos trouxeram até aqui.\n\n## Nossa Missão\n\nOferecer soluções inovadoras, tecnológicas e com qualidade em equipamentos médicos e insumos para diagnóstico por imagem, melhorando o desempenho, e proporcionando ao nosso cliente um atendimento de excelência para a sociedade.\n\nProcuramos os parceiros alinhados com os nossos valores para garantir a qualidade dos serviços, e prestar o melhor suporte técnico possível, pois prezamos pela satisfação do nosso cliente.\n\n## Nossa Visão\n\nBuscar continuamente a inovação tecnológica em equipamentos e insumos para oferecer sempre as melhores opções para nossos clientes.\n\nDesenvolver ferramentas para melhorar a qualidade de nossos serviços, e buscar constantemente novos parceiros para atender integralmente a necessidade do cliente, almejando total satisfação.\n\n## Nossos Valores\n\n- **Ética:** Respeito é nosso valor indispensável para o desenvolvimento da equipe e parceiros, buscando sempre a satisfação total dos nossos clientes. Almejamos a eficiência e colaboração como a nossa equipe e parceiros mantendo o bom relacionamento entre todos.\n- **Inovação:** Mantemos nossa equipe sempre atualizada e treinada referente às mudanças dos nossos produtos e serviços trazendo sempre a melhoria contínua dos nossos procedimentos.\n- **Criatividade:** Ouvir ideias que otimizam nosso desempenho nas atividades rotineiras juntamente com nossos colaboradores, estando sempre a disposição de novos processos e atividades agregando conhecimento e desenvolvimento.\n\n## Política da Qualidade\n\nConsiderando o contexto da organização, a legalidade e os requisitos e expectativas das partes interessadas a DAAN IMAGEM define e promove seus objetivos estratégicos e operacionais.\n\nMelhora continuamente a organização e o seu Sistema de Gestão da Qualidade, focada em seus clientes, fornecedores e na sustentabilidade dos seus negócios.",
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/img-sec-sobre-daan.webp"
+    ],
+    "notes": "img-rodape-logo.webp also appears on page (footer logo), excluded from images."
+  },
+  "posVenda": {
+    "title": "Pós Venda",
+    "body": "## Atendimento pós-venda\n\nPara garantir uma instalação de qualidade, treinamento e demonstração dos equipamentos, além de manutenção e vistorias, contamos com a Daan Serviços, uma empresa que faz parte do grupo capaz de oferecer o melhor e mais completo suporte técnico para os nossos clientes.",
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/img-sec-atendimento.webp"
+    ],
+    "notes": "Page is very short; this is the entire content.rendered per REST API (WP page id 1571)."
+  },
+  "contato": {
+    "title": "Contato",
+    "body": "## Entre em contato conosco:\n\n### Ligar Agora\n\n(41) 9 9905-0013\n\n### Chamar no WhatsApp\n\n(41) 3045-8990\n\n### Enviar um e-mail\n\ncomercial1@daanimagem.com.br\n\n## Atendimento pós-venda\n\nTemos o compromisso com a manutenção das condições ideais de operação dos equipamentos que comercializamos. Garantimos a nossos clientes qualidade e eficiência na solução de problemas técnicos. O melhor acompanhamento pós-venda e contamos com suporte técnico qualificado e ágil.",
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/PHONE.svg",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/WHATSAPP.svg",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/EMAIL.svg",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/img-sec-atendimento.webp"
+    ],
+    "formFields": [
+      {
+        "name": "form_fields[name]",
+        "type": "text",
+        "label": "Nome",
+        "placeholder": "Seu nome",
+        "required": true
+      },
+      {
+        "name": "form_fields[email]",
+        "type": "email",
+        "label": "E-mail",
+        "placeholder": "Seu e-mail",
+        "required": true
+      },
+      {
+        "name": "form_fields[field_85761a1]",
+        "type": "tel",
+        "label": "Telefone",
+        "placeholder": "Seu Telefone",
+        "required": false
+      },
+      {
+        "name": "form_fields[field_7718868]",
+        "type": "text",
+        "label": "Assunto",
+        "placeholder": "Assunto",
+        "required": false
+      },
+      {
+        "name": "form_fields[message]",
+        "type": "textarea",
+        "label": "Mensagem",
+        "placeholder": "Sua Mensagem",
+        "required": true
+      }
+    ],
+    "submitLabel": "Enviar mensagem",
+    "links": {
+      "tel": "tel:+5541999050013",
+      "mailto": "mailto:comercial@daanimagem.com.br",
+      "whatsapp": "https://api.whatsapp.com/send?phone=554130458990&text=Olá,%20estava%20em%20seu%20site%20e%20preciso%20de%20atendimento.%20Meu%20nome%20é%20"
+    },
+    "notes": "Elementor form. Displayed email text is comercial1@ but the mailto href is comercial@. 'Ligar Agora' shows the mobile; 'Chamar no WhatsApp' shows the landline (WhatsApp number is the landline 554130458990)."
+  },
+  "site": {
+    "phone": "(41) 3045-8990",
+    "mobile": "(41) 9 9905-0013",
+    "whatsapp": "554130458990",
+    "whatsappLink": "https://api.whatsapp.com/send?phone=554130458990&text=Olá,%20estava%20em%20seu%20site%20e%20preciso%20de%20atendimento.%20Meu%20nome%20é%20",
+    "email": "comercial@daanimagem.com.br",
+    "emailVariants": {
+      "comercial@daanimagem.com.br": "footer (all pages), sobre-nos page, mailto href on /contato/",
+      "comercial1@daanimagem.com.br": "header (reported on home), visible text on /contato/ 'Enviar um e-mail', also present on /pos-venda/"
+    },
+    "address": "R. Benjamin Constant, 67 - Sala 1401 - Centro, Curitiba/PR - CEP: 80060-020",
+    "hours": "Seg a Sex: 8h00 às 18h00",
+    "instagram": "https://www.instagram.com/daanimagem/",
+    "linkedin": "https://www.linkedin.com/company/daan-imagem/",
+    "logo": "https://daanimagem.com.br/wp-content/uploads/2024/06/logotipo-daan-imagem.webp",
+    "logoFooter": "https://daanimagem.com.br/wp-content/uploads/2024/06/img-rodape-logo.webp",
+    "gtm": "GTM-TGGN3V5",
+    "partners": [
+      {
+        "name": "Philips",
+        "logo": "https://daanimagem.com.br/wp-content/uploads/2024/06/philips-img.webp"
+      },
+      {
+        "name": "Carestream",
+        "logo": "https://daanimagem.com.br/wp-content/uploads/2024/06/carestream-img.webp"
+      }
+    ],
+    "notes": "WhatsApp links use both web.whatsapp.com and api.whatsapp.com with phone=554130458990 (the landline). GTM confirmed in page. Partner logos inferred from filenames philips-img.webp / carestream-img.webp; a combined philips-carestream-logos.webp is in the hero. Posts also mention Bayer (Daan Serviços award), not listed as a partner on site."
+  }
+}

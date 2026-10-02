@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { getSpecialties, getProducts, getCategories, type Specialty } from '../../lib/data';
+export async function getStaticPaths() {
+  return (await getSpecialties()).map((s) => ({ params: { slug: s.slug }, props: { s } }));
+}
+const { s } = Astro.props as { s: Specialty };
+const products = (await getProducts()).filter((p) => s.productSlugs.includes(p.slug));
+const catName = Object.fromEntries((await getCategories()).map((c) => [c.slug, c.name]));
+const paragraphs = s.intro.split(/\n\n+/).filter(Boolean);
+---
+<Base title={s.name} description={paragraphs[0]?.slice(0, 160)} image={s.image}>
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="/">Início</a> / <a href="/especialidades/">Especialidades</a> / {s.name}</nav>
+      <h1>{s.name}</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container intro">
+      <div class="prose">{paragraphs.map((p) => <p>{p}</p>)}</div>
+      {s.image && <img src={s.image} alt="" class="intro-img" />}
+    </div>
+  </section>
+  <section class="section section-soft">
+    <div class="container">
+      <h2>Equipamentos para {s.name.toLowerCase()}</h2>
+      {products.length > 0 ? (
+        <div class="grid grid-3" style="margin-top:24px">{products.map((p) => <ProductCard product={p} categoryName={catName[p.category]} />)}</div>
+      ) : (
+        <p class="muted">Conheça todo o portfólio em <a href="/equipamentos/">Equipamentos</a> ou fale com nosso time.</p>
+      )}
+    </div>
+  </section>
+  <CtaBand message={`Olá! Gostaria de conhecer equipamentos para ${s.name}.`} />
+</Base>
+<style>
+  .intro { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: start; }
+  .intro-img { border-radius: 20px; }
+  @media (max-width: 860px) { .intro { grid-template-columns: 1fr; } }
+</style>

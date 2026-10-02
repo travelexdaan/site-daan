@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import { getRichPage, getSite, whatsappLink } from '../lib/data';
+const page = await getRichPage('posVenda', 'Pós-venda');
+const site = await getSite();
+const services = [
+  { t: 'Instalação e aplicação', d: 'Acompanhamento na instalação e treinamento de aplicação para a equipe clínica.' },
+  { t: 'Assistência técnica', d: 'Suporte para manutenção corretiva e preventiva dos equipamentos.' },
+  { t: 'Transdutores e acessórios', d: 'Reposição de transdutores, peças, filmes e acessórios.' },
+  { t: 'Atualizações', d: 'Upgrades de software e de configuração para o seu equipamento.' },
+];
+---
+<Base title="Pós-venda" description="Assistência técnica, aplicação e suporte pós-venda Daan Imagem para equipamentos Philips e Carestream." image={page.images[0]}>
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="/">Início</a> / Pós-venda</nav>
+      <h1>{page.title}</h1>
+      <p class="lead">Seu equipamento funcionando com o suporte de quem conhece.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="prose" set:html={page.bodyHtml} />
+      <div class="grid grid-4" style="margin-top:32px">
+        {services.map((s) => <div class="card"><div class="card-body"><h3>{s.t}</h3><p>{s.d}</p></div></div>)}
+      </div>
+    </div>
+  </section>
+  <section class="section section-soft" id="chamado">
+    <div class="container two">
+      <div>
+        <p class="eyebrow">Suporte</p>
+        <h2>Abrir um chamado</h2>
+        <p class="muted">Preencha o formulário ou fale direto pelo WhatsApp.</p>
+        <a class="btn btn-whats" href={whatsappLink(site, 'Olá! Preciso de suporte pós-venda.')} target="_blank" rel="noopener">WhatsApp do suporte</a>
+      </div>
+      <QuoteForm subject="assistencia" />
+    </div>
+  </section>
+</Base>
+<style>
+  .two { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 48px; }
+  @media (max-width: 860px) { .two { grid-template-columns: 1fr; } }
+</style>

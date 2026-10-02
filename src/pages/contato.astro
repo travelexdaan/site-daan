@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import { getSite, whatsappLink } from '../lib/data';
+const site = await getSite();
+const map = `https://www.google.com/maps?q=${encodeURIComponent(site.address)}&output=embed`;
+---
+<Base title="Contato" description="Fale com a Daan Imagem: telefone, WhatsApp, e-mail e endereço em Curitiba/PR.">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="/">Início</a> / Contato</nav>
+      <h1>Contato</h1>
+      <p class="lead">Atendemos clínicas e hospitais em todo o Paraná.</p>
+    </div>
+  </section>
+  <section class="section" id="cotacao">
+    <div class="container two">
+      <div class="channels">
+        <h2>Fale com a gente</h2>
+        <a class="channel" href={whatsappLink(site, 'Olá! Vim pelo site.')} target="_blank" rel="noopener"><strong>WhatsApp</strong><span>{site.phone}</span></a>
+        <a class="channel" href={`tel:+55${site.phone.replace(/\D/g, '')}`}><strong>Telefone</strong><span>{site.phone}</span></a>
+        <a class="channel" href={`tel:+55${site.mobile.replace(/\D/g, '')}`}><strong>Celular</strong><span>{site.mobile}</span></a>
+        <a class="channel" href={`mailto:${site.email}`}><strong>E-mail</strong><span>{site.email}</span></a>
+        <div class="channel"><strong>Endereço</strong><span>{site.address}</span><span class="muted">{site.hours}</span></div>
+      </div>
+      <div>
+        <h2>Solicitar cotação</h2>
+        <QuoteForm />
+      </div>
+    </div>
+  </section>
+  <iframe title="Mapa" src={map} width="100%" height="380" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</Base>
+<style>
+  .two { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; }
+  .channels { display: grid; gap: 12px; align-content: start; }
+  .channel { display: grid; gap: 2px; padding: 16px 20px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; color: var(--ink); }
+  a.channel:hover { border-color: var(--teal); }
+  .channel strong { color: var(--navy); }
+  @media (max-width: 860px) { .two { grid-template-columns: 1fr; } }
+</style>

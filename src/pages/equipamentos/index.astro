@@ -1,0 +1,99 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { getProducts, getCategoryTree, getSpecialties } from '../../lib/data';
+
+const products = await getProducts();
+const tree = await getCategoryTree();
+const specialties = await getSpecialties();
+const brands = [...new Set(products.map((p) => p.brand).filter(Boolean))].sort();
+const catName = Object.fromEntries(tree.map((c) => [c.slug, c.name]));
+const ordered = tree.flatMap((c) => products.filter((p) => p.category === c.slug));
+---
+<Base title="Equipamentos" description="Catálogo de equipamentos de diagnóstico por imagem Philips e Carestream: ultrassom, ressonância, tomografia, hemodinâmica, arco cirúrgico e radiografia.">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="/">Início</a> / Equipamentos</nav>
+      <h1>Equipamentos</h1>
+      <p class="lead">Todo o portfólio Philips e Carestream que a Daan Imagem oferece para clínicas e hospitais.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="filters">
+        <div class="chips" data-filter="category">
+          <button class="chip" aria-pressed="true" data-value="">Todas as linhas</button>
+          {tree.map((c) => <button class="chip" aria-pressed="false" data-value={c.slug}>{c.name}</button>)}
+        </div>
+        <div class="selects">
+          <label>Marca
+            <select data-filter="brand">
+              <option value="">Todas</option>
+              {brands.map((b) => <option value={b}>{b}</option>)}
+            </select>
+          </label>
+          <label>Especialidade
+            <select data-filter="specialty">
+              <option value="">Todas</option>
+              {specialties.map((s) => <option value={s.slug}>{s.name}</option>)}
+            </select>
+          </label>
+        </div>
+      </div>
+      <p class="muted count" aria-live="polite"><span id="count">{ordered.length}</span> equipamentos</p>
+      <div class="grid grid-3" id="products">
+        {ordered.map((p) => <ProductCard product={p} categoryName={catName[p.category]} />)}
+      </div>
+      <p class="muted empty" hidden>Nenhum equipamento encontrado com esses filtros.</p>
+    </div>
+  </section>
+  <CtaBand title="Não encontrou o que procura?" text="Trabalhamos com toda a linha Philips e Carestream. Fale com a gente." />
+</Base>
+
+<script>
+  const state = { category: '', brand: '', specialty: '' };
+  const params = new URLSearchParams(location.search);
+  state.category = params.get('linha') ?? '';
+  state.brand = params.get('marca') ?? '';
+  state.specialty = params.get('especialidade') ?? '';
+
+  const cards = [...document.querySelectorAll<HTMLElement>('#products .card')];
+  const chips = [...document.querySelectorAll<HTMLButtonElement>('[data-filter="category"] .chip')];
+  const brand = document.querySelector<HTMLSelectElement>('[data-filter="brand"]')!;
+  const specialty = document.querySelector<HTMLSelectElement>('[data-filter="specialty"]')!;
+
+  function apply() {
+    let n = 0;
+    for (const c of cards) {
+      const ok =
+        (!state.category || c.dataset.category === state.category) &&
+        (!state.brand || c.dataset.brand === state.brand) &&
+        (!state.specialty || (c.dataset.specialties ?? '').split(' ').includes(state.specialty));
+      c.hidden = !ok;
+      if (ok) n++;
+    }
+    chips.forEach((ch) => ch.setAttribute('aria-pressed', String(ch.dataset.value === state.category)));
+    brand.value = state.brand;
+    specialty.value = state.specialty;
+    document.getElementById('count')!.textContent = String(n);
+    document.querySelector<HTMLElement>('.empty')!.hidden = n > 0;
+    const q = new URLSearchParams();
+    if (state.category) q.set('linha', state.category);
+    if (state.brand) q.set('marca', state.brand);
+    if (state.specialty) q.set('especialidade', state.specialty);
+    history.replaceState(null, '', q.size ? `?${q}` : location.pathname);
+  }
+  chips.forEach((ch) => ch.addEventListener('click', () => { state.category = ch.dataset.value ?? ''; apply(); }));
+  brand.addEventListener('change', () => { state.brand = brand.value; apply(); });
+  specialty.addEventListener('change', () => { state.specialty = specialty.value; apply(); });
+  apply();
+</script>
+
+<style>
+  .filters { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+  .selects { display: flex; gap: 12px; flex-wrap: wrap; }
+  .selects label { display: grid; gap: 4px; font-size: .82rem; font-weight: 600; color: var(--muted); }
+  .selects select { font: inherit; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; min-width: 180px; }
+  .count { margin-bottom: 20px; }
+</style>

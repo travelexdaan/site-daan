@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { getRichPage, getHome } from '../lib/data';
+const page = await getRichPage('sobre', 'Sobre a Daan Imagem');
+const home = await getHome();
+---
+<Base title="Sobre nós" description="Conheça a Daan Imagem, referência em diagnóstico por imagem no Paraná." image={page.images[0]}>
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="/">Início</a> / Sobre nós</nav>
+      <h1>{page.title}</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container two">
+      <div class="prose" set:html={page.bodyHtml || `<p>${home.aboutText}</p>`} />
+      <aside>
+        {page.images[0] && <img src={page.images[0]} alt="" class="side-img" />}
+        <ul class="facts">{home.highlights.map((h) => <li>{h}</li>)}</ul>
+      </aside>
+    </div>
+  </section>
+  <CtaBand />
+</Base>
+<style>
+  .two { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: start; }
+  .side-img { border-radius: 20px; margin-bottom: 20px; }
+  .facts { list-style: none; padding: 0; display: grid; gap: 10px; }
+  .facts li { background: var(--bg-soft); padding: 14px 18px; border-radius: 12px; font-weight: 600; color: var(--navy); }
+  @media (max-width: 860px) { .two { grid-template-columns: 1fr; } }
+</style>

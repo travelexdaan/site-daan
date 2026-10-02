@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { getProducts, getCategories } from '../../lib/data';
+export async function getStaticPaths() {
+  const brands = [...new Set((await getProducts()).map((p) => p.brand).filter(Boolean))];
+  return brands.map((b) => ({ params: { slug: b.toLowerCase() }, props: { brand: b } }));
+}
+const { brand } = Astro.props as { brand: string };
+const products = (await getProducts()).filter((p) => p.brand === brand);
+const catName = Object.fromEntries((await getCategories()).map((c) => [c.slug, c.name]));
+---
+<Base title={brand} description={`Equipamentos ${brand} com a Daan Imagem, representante autorizado no Paraná.`}>
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="/">Início</a> / Marcas / {brand}</nav>
+      <h1>{brand}</h1>
+      <p class="lead">A Daan Imagem é representante autorizado {brand} no Paraná.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container grid grid-3">{products.map((p) => <ProductCard product={p} categoryName={catName[p.category]} />)}</div>
+  </section>
+  <CtaBand />
+</Base>

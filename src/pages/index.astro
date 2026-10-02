@@ -1,0 +1,149 @@
+---
+import Base from '../layouts/Base.astro';
+import ProductCard from '../components/ProductCard.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { getHome, getSite, getProducts, getCategoryTree, getSpecialties, getPosts, whatsappLink, formatDate } from '../lib/data';
+
+const home = await getHome();
+const site = await getSite();
+const products = await getProducts();
+const tree = await getCategoryTree();
+const specialties = await getSpecialties();
+const posts = (await getPosts()).slice(0, 3);
+const catName = Object.fromEntries(tree.map((c) => [c.slug, c.name]));
+// Destaques: o primeiro equipamento com foto de cada categoria.
+const featured = tree
+  .map((c) => products.find((p) => p.category === c.slug && p.images[0]) ?? products.find((p) => p.category === c.slug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+const heroImage = home.heroImages[0] ?? featured[0]?.images[0];
+---
+<Base title="Daan Imagem" image={heroImage}>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Diagnóstico por imagem · Paraná</p>
+        <h1>{home.heroTitle}</h1>
+        <p class="lead">{home.heroSubtitle}</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/equipamentos/">Ver equipamentos</a>
+          <a class="btn btn-whats" href={whatsappLink(site, 'Olá! Vim pelo site e gostaria de falar com a equipe comercial.')} target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+        <div class="partners">
+          <span class="muted">Representante autorizado</span>
+          {site.partners.map((p) => (p.logo ? <img src={p.logo} alt={p.name} height="28" /> : <strong>{p.name}</strong>))}
+        </div>
+      </div>
+      {heroImage && <div class="hero-media"><img src={heroImage} alt="" /></div>}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Linhas de equipamentos</p>
+      <h2>Soluções para cada modalidade</h2>
+      <div class="grid grid-3 cats">
+        {tree.map((c) => {
+          const count = products.filter((p) => p.category === c.slug).length;
+          return (
+            <a class="cat" href={`/equipamentos/${c.slug}/`}>
+              <h3>{c.name}</h3>
+              <span class="muted">{count} {count === 1 ? 'equipamento' : 'equipamentos'}</span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  {featured.length > 0 && (
+    <section class="section section-soft">
+      <div class="container">
+        <div class="head-row">
+          <div>
+            <p class="eyebrow">Destaques</p>
+            <h2>Equipamentos em destaque</h2>
+          </div>
+          <a class="btn btn-ghost" href="/equipamentos/">Ver todos</a>
+        </div>
+        <div class="grid grid-3">
+          {featured.map((p) => <ProductCard product={p} categoryName={catName[p.category]} />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="container grid grid-2 about">
+      <div>
+        <p class="eyebrow">Sobre a Daan</p>
+        <h2>Referência em diagnóstico por imagem no Paraná</h2>
+        <p class="lead">{home.aboutText}</p>
+        <a class="btn btn-ghost" href="/sobre-nos/">Conheça a empresa</a>
+      </div>
+      <ul class="highlights">
+        {home.highlights.map((h) => <li>{h}</li>)}
+        <li>Pós-venda com suporte técnico e aplicação</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <p class="eyebrow">Especialidades</p>
+      <h2>Equipamentos por especialidade médica</h2>
+      <div class="chips" style="margin-top:20px">
+        {specialties.map((s) => <a class="chip" href={`/especialidades/${s.slug}/`}>{s.name}</a>)}
+      </div>
+    </div>
+  </section>
+
+  {posts.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <div class="head-row">
+          <div>
+            <p class="eyebrow">Blog</p>
+            <h2>Novidades</h2>
+          </div>
+          <a class="btn btn-ghost" href="/blog/">Ver blog</a>
+        </div>
+        <div class="grid grid-3">
+          {posts.map((p) => (
+            <a class="card" href={`/blog/${p.slug}/`}>
+              {p.coverImage && <div class="card-media cover"><img src={p.coverImage} alt="" loading="lazy" /></div>}
+              <div class="card-body">
+                <span class="muted" style="font-size:.85rem">{formatDate(p.date)}</span>
+                <h3>{p.title}</h3>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <CtaBand />
+</Base>
+
+<style>
+  .hero { background: linear-gradient(180deg, var(--bg-soft), #fff); padding: 72px 0 56px; }
+  .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+  .hero h1 { margin-bottom: 16px; }
+  .hero .lead { margin-bottom: 28px; }
+  .hero-media { background: #fff; border-radius: 24px; box-shadow: var(--shadow); padding: 24px; }
+  .hero-media img { width: 100%; max-height: 420px; object-fit: contain; }
+  .partners { display: flex; align-items: center; gap: 18px; margin-top: 32px; font-size: .9rem; flex-wrap: wrap; }
+  .partners strong { color: var(--navy); font-size: 1.1rem; }
+  .cats { margin-top: 28px; }
+  .cat { position: relative; display: block; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: inherit; background: #fff; transition: border-color .2s, box-shadow .2s; }
+  .cat:hover { border-color: var(--teal); box-shadow: var(--shadow); }
+  .cat h3 { font-size: 1.3rem; }
+  .cat .arrow { position: absolute; right: 24px; top: 26px; color: var(--teal); font-size: 1.4rem; }
+  .head-row { display: flex; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
+  .about { align-items: center; }
+  .highlights { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  .highlights li { background: var(--bg-soft); border-radius: 12px; padding: 18px 20px 18px 52px; position: relative; font-weight: 600; color: var(--navy); }
+  .highlights li::before { content: '✓'; position: absolute; left: 18px; top: 16px; width: 24px; height: 24px; border-radius: 50%; background: var(--teal); color: #fff; display: grid; place-items: center; font-size: .8rem; }
+  @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } }
+</style>

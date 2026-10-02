@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "ultrassom",
+    "name": "Ultrassom",
+    "parent": null,
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/"
+  },
+  {
+    "slug": "ressonancia",
+    "name": "Ressonância",
+    "parent": null,
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ressonancia/"
+  },
+  {
+    "slug": "tomografia",
+    "name": "Tomografia",
+    "parent": null,
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/tomografia/"
+  },
+  {
+    "slug": "hemodinamica",
+    "name": "Hemodinâmica",
+    "parent": null,
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/hemodinamica/"
+  },
+  {
+    "slug": "arco-cirurgico",
+    "name": "Arco Cirúrgico",
+    "parent": null,
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/arco-cirurgico/"
+  },
+  {
+    "slug": "radiografia",
+    "name": "Radiografia",
+    "parent": null,
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/"
+  },
+  {
+    "slug": "estacionarios",
+    "name": "Estacionários",
+    "parent": "ultrassom",
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/estacionarios/"
+  },
+  {
+    "slug": "portateis",
+    "name": "Portáteis",
+    "parent": "ultrassom",
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/portateis/"
+  },
+  {
+    "slug": "transdutores",
+    "name": "Transdutores",
+    "parent": "ultrassom",
+    "intro": "Os transdutores de ultrassom da Philips oferecem soluções inteligentes e inovadoras para melhorar o atendimento ao paciente e os resultados. Além de intuitivos, são potentes, versáteis e capazes de garantir mais precisão e confiabilidade. Com um grande número de elementos que capturam uma alta faixa de frequência, há um aumento da cobertura, do foco da área a ser examinada. Leves e ergonômicos, o vasto portfólio de transdutores está disponível em várias configurações, permitindo uma melhor penetração com menos artefatos. Acesse o link do WhatsApp e fale com nosso time de especialistas e conheça mais sobre nossos transdutores.",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/transdutores/"
+  },
+  {
+    "slug": "cr",
+    "name": "CR",
+    "parent": "radiografia",
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/cr/"
+  },
+  {
+    "slug": "dr",
+    "name": "DR",
+    "parent": "radiografia",
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/dr/"
+  },
+  {
+    "slug": "detectores",
+    "name": "Detectores",
+    "parent": "radiografia",
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/detectores/"
+  },
+  {
+    "slug": "raio-x",
+    "name": "Raio-X",
+    "parent": "radiografia",
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/raio-x/"
+  },
+  {
+    "slug": "impressao",
+    "name": "Impressão",
+    "parent": "radiografia",
+    "intro": "",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/impressao/"
+  }
+]

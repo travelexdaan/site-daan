@@ -1,0 +1,37 @@
+---
+// Formulário enviado pelo Netlify Forms (as mensagens chegam no painel da Netlify e por e-mail).
+import { getProducts } from '../lib/data';
+interface Props { product?: string; subject?: 'cotacao' | 'assistencia' }
+const { product = '', subject = 'cotacao' } = Astro.props;
+const products = await getProducts();
+const formName = subject === 'assistencia' ? 'assistencia' : 'cotacao';
+---
+<form class="form" name={formName} method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/obrigado/">
+  <input type="hidden" name="form-name" value={formName} />
+  <p hidden><label>Não preencha: <input name="bot-field" /></label></p>
+  <div class="row">
+    <label>Nome<input name="nome" required autocomplete="name" /></label>
+    <label>Instituição / clínica<input name="instituicao" autocomplete="organization" /></label>
+  </div>
+  <div class="row">
+    <label>E-mail<input type="email" name="email" required autocomplete="email" /></label>
+    <label>Telefone / WhatsApp<input type="tel" name="telefone" required autocomplete="tel" /></label>
+  </div>
+  <div class="row">
+    <label>Cidade<input name="cidade" autocomplete="address-level2" /></label>
+    <label>{subject === 'assistencia' ? 'Equipamento' : 'Equipamento de interesse'}
+      <select name="equipamento">
+        <option value="">Selecione (opcional)</option>
+        {products.map((p) => <option selected={p.name === product}>{p.name}</option>)}
+        <option>Outro</option>
+      </select>
+    </label>
+  </div>
+  <label>Mensagem<textarea name="mensagem" rows="4" placeholder={subject === 'assistencia' ? 'Descreva o problema ou o serviço necessário' : 'Conte um pouco sobre sua necessidade'}></textarea></label>
+  <label class="consent"><span><input type="checkbox" name="consentimento" required /> Concordo com o uso dos meus dados para contato, conforme a <a href="/privacidade/">Política de Privacidade</a>.</span></label>
+  <div><button class="btn btn-primary" type="submit">{subject === 'assistencia' ? 'Abrir chamado' : 'Solicitar cotação'}</button></div>
+</form>
+<style>
+  .consent { font-weight: 400 !important; color: var(--muted) !important; }
+  .consent input { margin-right: 6px; }
+</style>

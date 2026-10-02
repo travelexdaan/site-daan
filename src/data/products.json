@@ -1,0 +1,1428 @@
+[
+  {
+    "slug": "affiniti-30",
+    "name": "Affiniti 30",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "estacionarios",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/estacionarios/affiniti-30/",
+    "summary": "Ultrassom voltado ao equilíbrio, com informações de diagnósticos rápidos e precisos, com uma interface de usuário simples e intuitiva aliada a um design ergonômico.",
+    "description": [
+      "Ultrassom voltado ao equilíbrio, com informações de diagnósticos rápidos e precisos, com uma interface de usuário simples e intuitiva aliada a um design ergonômico."
+    ],
+    "highlights": [
+      "A formação precisa de feixes e o Tissue Specific Presets (TSP) melhoram o desempenho e fluxo de trabalho para uma produtividade confiante.",
+      "Desempenho excepcional de processamento de superfícies 3D e informações para diagnosticar anomalias e estruturas fetais.",
+      "Para aumentar o tempo de atividade, apresenta um projeto modular que proporciona confiabilidade aprimorada e reparos rápidos e o monitoramento remoto de serviços da Philips."
+    ],
+    "specs": [
+      {
+        "group": "Imagem geral",
+        "items": [
+          "Espessura da Mídia Íntima (IMT)",
+          "Quantificação 3D de imagens gerais (GI 3DQ)",
+          "Região de interesse (ROI)",
+          "Imagem MicroVascular (MVI)",
+          "Quantificação de Placa Vascular (VPQ)."
+        ]
+      },
+      {
+        "group": "Cardiologia",
+        "items": [
+          "Espessura da Mídia Íntima (IMT)",
+          "Região de interesse (ROI)",
+          "Quantificação de Deformação (SQ)",
+          "Quantificação Cardíaca 2D Automatizada A.I. (a2DQA.I.)",
+          "Quantificação Automatizada de Movimento Cardíaco A.I. (aCMQA.I.)"
+        ]
+      }
+    ],
+    "specialties": [
+      "ortopedia"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_30.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/10_007_Affiniti_VM10.0_eL18-4_MSK_Superfic_Patellar_Tendon1.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/10_011_Affiniti_VM10.0_C5-1_Abd_Gen_Liver_Kidney_HRI1.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/54201420191101_17WKS_20191101143512054_affiniti.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_50_21-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_50_101-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_50_Left-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_50_Right-scaled.webp"
+    ],
+    "notes": "Galeria e especificações técnicas idênticas às do Affiniti 50 e EPIQ Elite no site legado (provável conteúdo reaproveitado)."
+  },
+  {
+    "slug": "affiniti-50",
+    "name": "Affiniti 50",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "estacionarios",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/estacionarios/affiniti-50/",
+    "summary": "Um equipamento que traz inovação para atender às necessidades de uma clínica de ultrassom com alta demanda de exames.",
+    "description": [
+      "Um equipamento que traz inovação para atender às necessidades de uma clínica de ultrassom com alta demanda de exames."
+    ],
+    "highlights": [
+      "Fluxo de trabalho guiado pelo SmartExam: aumenta a consistência, reduz o uso de teclas e diminui o tempo do exame em 30%-50% do planejando e processando automaticamente a aplicação de protocolos.",
+      "Predefinições específicas do tecido (TSPs): Ajustam-se a mais de 7500 parâmetros para otimizar o transdutor para o tipo de exame específico, produzindo imagens excelentes.",
+      "iSCAN em tempo real (AutoSCAN): Otimiza de forma contínua e automática o ganho e o TGC.",
+      "Tecnologia iSSL atende ao padrão de privacidade global e fornece uma conexão segura e protegida à rede de serviços remotos da Philips."
+    ],
+    "specs": [
+      {
+        "group": "Imagem geral",
+        "items": [
+          "Espessura da Mídia Íntima (IMT)",
+          "Quantificação 3D de imagens gerais (GI 3DQ)",
+          "Região de interesse (ROI)",
+          "Imagem MicroVascular (MVI)",
+          "Quantificação de Placa Vascular (VPQ)."
+        ]
+      },
+      {
+        "group": "Cardiologia",
+        "items": [
+          "Espessura da Mídia Íntima (IMT)",
+          "Região de interesse (ROI)",
+          "Quantificação de Deformação (SQ)",
+          "Quantificação Cardíaca 2D Automatizada A.I. (a2DQA.I.)",
+          "Quantificação Automatizada de Movimento Cardíaco A.I. (aCMQA.I.)"
+        ]
+      }
+    ],
+    "specialties": [
+      "ginecologia-obstetricia",
+      "ortopedia",
+      "vascular"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_30.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/10_007_Affiniti_VM10.0_eL18-4_MSK_Superfic_Patellar_Tendon1.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/10_011_Affiniti_VM10.0_C5-1_Abd_Gen_Liver_Kidney_HRI1.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/54201420191101_17WKS_20191101143512054_affiniti.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_50_21-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_50_101-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_50_Left-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_50_Right-scaled.webp"
+    ],
+    "notes": "Galeria idêntica à do Affiniti 30 no site legado (primeira imagem é Affiniti_30.webp); especificações técnicas iguais às de outros modelos."
+  },
+  {
+    "slug": "affiniti-70",
+    "name": "Affiniti 70",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "estacionarios",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/estacionarios/affiniti-70/",
+    "summary": "Uma poderosa combinação de desempenho e fluxo de trabalho para um diagnóstico mais rápido e confiável.",
+    "description": [
+      "Uma poderosa combinação de desempenho e fluxo de trabalho para um diagnóstico mais rápido e confiável. Projetado para facilitar e simplificar o uso, a ergonomia e a mobilidade.",
+      "O sistema de precisão Beamforming oferece excelente resolução espacial e de contraste, alta qualidade de imagem de tecido, com total uniformidade, tudo isso com um design simples, funcional e intuitivo, que requer o mínimo treinamento."
+    ],
+    "highlights": [
+      "O software é facilmente otimizado, mantido e restaurado pelo usuário, sem risco para os dados do paciente.",
+      "Tecnologia iSSL atende ao padrão de privacidade global e fornece uma conexão segura e protegida à rede de serviços remotos da Philips.",
+      "Predefinições específicas do tecido (TSPs): ajustam-se a mais de 7500 parâmetros para otimizar o transdutor para o tipo de exame específico, produzindo imagens excelentes.",
+      "Recursos de automação, como AutoSCAN e Auto Doppler, que diminuem tarefas repetitivas e facilitam o diagnóstico mais preciso e confiável.",
+      "Automação e eficiência: Suporta elastografia por onda de deformação e cisalhamento para ajudar os médicos a avaliar a rigidez do tecido e contribuir para a precisão do diagnóstico.",
+      "Ferramentas AIUS como Quantificação automatizada de movimento cardíaco A.I. (aCMQA.I.) e Quantificação cardíaca 2D automatizada A.I. (a2DQA.I.). Fornece acesso rápido à deformação longitudinal global (GLS) e fração de ejeção (FE) 2D em 10 seg."
+    ],
+    "specs": [
+      {
+        "group": "Imagem geral",
+        "items": [
+          "Espessura da Mídia Íntima (IMT)",
+          "Quantificação 3D de imagens gerais (GI 3DQ)",
+          "Região de interesse (ROI)",
+          "Imagem MicroVascular (MVI)",
+          "Quantificação de Placa Vascular (VPQ)."
+        ]
+      },
+      {
+        "group": "Cardiologia",
+        "items": [
+          "Espessura da Mídia Íntima (IMT)",
+          "Região de interesse (ROI)",
+          "Quantificação de Deformação (SQ)",
+          "Quantificação Cardíaca 2D Automatizada A.I. (a2DQA.I.)",
+          "Quantificação Automatizada de Movimento Cardíaco A.I. (aCMQA.I.)"
+        ]
+      }
+    ],
+    "specialties": [
+      "cardiologia",
+      "ginecologia-obstetricia",
+      "ortopedia",
+      "vascular"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/affiniti-70-destaque.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/6_0015-Star-Affiniti-VM6.0-L12_3-Arterial-UE-Color-Brachial-Artery-NL.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/6_0016-Affiniti-VM6.0-C5-1-OB-Fetal-Heart-CPA-Arch.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/54201420191101_17WKS_20191101143512054_affiniti-1.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_70_Center-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_70_High_Tipped-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_70jpg-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_800_Carotid-00541.tif-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Affiniti_32581020191101_31-WKS_20191101110306477.webp"
+    ]
+  },
+  {
+    "slug": "clearvue-350",
+    "name": "ClearVue 350",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "estacionarios",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/estacionarios/clearvue-350/",
+    "summary": "Com a qualidade de captação de imagem, é dotado de tecnologias que aumentam a confiança no diagnóstico, funções sofisticadas, porém simples e intuitivas.",
+    "description": [
+      "Com a qualidade de captação de imagem, é dotado de tecnologias que aumentam a confiança no diagnóstico, funções sofisticadas, porém simples e intuitivas."
+    ],
+    "highlights": [
+      "Monitor LCD de 19 polegadas que se inclina e gira e facilita a rotina de trabalho",
+      "Tecnologia iSCAN: Imagens otimizadas 2D e Doppler, que podem ser acessadas com um clique na tecla iSCAN. Ela proporciona ajustes automáticos de escala e linha de base que reduzem o tempo de captação.",
+      "Gama de aplicações nas diferentes especialidades: abdominal, pequenas partes, pediátrico, musculoesquelético, urologia e próstata, ginecologia e obstetrícia, vascular e cardíaco.",
+      "Tecnologia XRES: permite realizar pré-ajustes de transdutor para aprimorar a qualidade de imagem. O processamento auto-adaptável de imagem reduz artefatos e aprimora a definição de contorno.",
+      "Active Array integra tecnologias chave de captação de imagem no transdutor para obter formidável qualidade de imagem em um sistema de alto desempenho, leve e confiável."
+    ],
+    "specs": [],
+    "specialties": [
+      "ginecologia-obstetricia"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/clearvue350-destaque.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HC795080-CIL-de_AT-001.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HC795080-CIL-de_AT-003.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HC795080-CIL-de_AT-004.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HC795080-CIL-de_AT-005.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HC795080-CIL-en_AA-007.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HC795080-U1P-de_AT-001-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HC795080-U2P-de_AT-001-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/US_Clearvue350-1917_3D4D-NB-scaled.webp"
+    ]
+  },
+  {
+    "slug": "clearvue-650",
+    "name": "ClearVue 650",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "estacionarios",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/estacionarios/clearvue-650/",
+    "summary": "Versátil com uma variedade de configurações capazes de atender diferentes tipos de exames.",
+    "description": [
+      "Versátil com uma variedade de configurações capazes de atender diferentes tipos de exames. Excelente qualidade de imagem com uma operação intuitiva"
+    ],
+    "highlights": [
+      "Imagem 2D, 3D e 4D facilitada.",
+      "Design modular que garante maior facilidade de manutenção, confiabilidade e sustentabilidade dentro de um carrinho leve para manobrabilidade e maior portabilidade.",
+      "Active Array oferece funções avançadas de 3D e4D, como Auto Face Reveal e Fetal STIC, recursos projetados para serem fáceis de usar e fácil de aprender, de modo que 3D/4D pode caber perfeitamente em seu fluxo de trabalho clínico rotineiro.",
+      "Plataforma que pode abranger uma gama de aplicações de Obstetrícia e Ginecologia para imagem cardíaca, abdominal e geral.",
+      "Excelente captura 3D da face fetal que aprimora a visualização de potenciais anomalias faciais",
+      "SonoCT oferece imagens compostas em tempo real para criar com melhor clareza de curvas e fronteiras irregulares.",
+      "XRES avançado que usa algoritmos para exibir imagens que são praticamente isentos de ruído, sem reduzir os frames rate.",
+      "Automação avançada do sistema: 2D, colorido e Doppler PW, High Q, Doppler Inteligente, Adaptativo e colorido adaptativo)"
+    ],
+    "specs": [],
+    "specialties": [
+      "ginecologia-obstetricia"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/clearvue650-destaque.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue-650-1.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue-650-2.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue-650-3.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue-650-4.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue-650-5.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HC795220-APP-de_AT-001-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HC795220-U2P-de_AT-001-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/US_Clearvue650_ABD_App-974-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/US_Clearvue650_Breast_App-1105-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/US_Clearvue650_Mobility_App-1850-scaled.webp"
+    ]
+  },
+  {
+    "slug": "clearvue-850",
+    "name": "ClearVue 850",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "estacionarios",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/estacionarios/clearvue-850/",
+    "summary": "Um ultrassom que reúne design e tecnologia para ajudar nos atendimentos médicos, capaz de proporcionar uma experiência avançada de processamento em tempo real que garante uma excelente qualidade de imagem.",
+    "description": [
+      "Um ultrassom que reúne design e tecnologia para ajudar nos atendimentos médicos, capaz de proporcionar uma experiência avançada de processamento em tempo real que garante uma excelente qualidade de imagem. Com avanços significativos em software, hardware e aplicativos."
+    ],
+    "highlights": [
+      "Características high-end para aumentar a confiança clínica: possui elastografia por compressão altamente sensível para mama que podem ser usadas para avaliar a rigidez nos tecidos.",
+      "Fluxo sanguíneo em alta resolução: tecnologia FloVue que fornece uma mudança de paradigma completamente novo na forma como o fluxo de sangue é visualizado, não só em grandes vasos, mas também sobre microvasos.",
+      "Ergonomia para aumentar o fluxo: braço do monitor totalmente articulado permite ao usuário posicionar o monitor para o seu conforto.",
+      "Simplicidade: uma única interface de botão para o start de todas as opções de recursos avançados, como a elastografia, FloVue e AutoScan. O atalho para Ginecologia e Obstetrícia lança as medições obstétricas mais comuns com apenas um toque.",
+      "Imagem 2D, 3D e 4D facilitada.",
+      "Intuitivo: Autoscan otimiza dinamicamente a qualidade da imagem durante o escaneamento, para proporcionar uma excelente qualidade de imagem. ROI e Face Auto Reveal oferecem ferramentas inovadoras de edição 3D aliado para aumentar a produtividade."
+    ],
+    "specs": [],
+    "specialties": [
+      "ginecologia-obstetricia"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/clearvue850-destaque.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue-850-1.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue-850-3.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/ClearVue_850_Abdominal_0126-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/ClearVue_850_Abdominal_0129-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/ClearVue_850_Mobility_0046-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue850-1.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue850-2.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue850-3.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue850_Studio_ClearTray-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue850_Studio_Controls-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue850_Studio_HighSkew-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Clearvue850_Studio_Left-scaled.webp"
+    ]
+  },
+  {
+    "slug": "compacto-5000",
+    "name": "Compacto 5000",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "estacionarios",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/estacionarios/compacto-5000/",
+    "summary": "Qualidade de imagem premium em formato compacto, que ajuda a aumentar a confiança clínica para um diagnóstico muito mais preciso, com um sistema altamente móvel, fácil de limpar e de usar.",
+    "description": [
+      "Qualidade de imagem premium em formato compacto, que ajuda a aumentar a confiança clínica para um diagnóstico muito mais preciso, com um sistema altamente móvel, fácil de limpar e de usar. Adaptado para atender às necessidades de muitas especialidades, incluindo Imagens Gerais, Cardiologia, Obstetrícia e Ginecologia e POC."
+    ],
+    "highlights": [
+      "O Sistema do Compacto 5000 oferece consistência entre os sistemas EPIQ e Affiniti, compartilhando o mesmo DNA – interfaces de usuário, recursos, telas sensíveis ao toque e fluxo de trabalho. O fluxo de trabalho padronizado aumenta a eficiência, incluindo mais exames em menos tempo.",
+      "Imagens claras oferecem respostas na primeira varredura que confirmam rapidamente o diagnóstico e diminuem a necessidade de novas varreduras caras e demoradas.",
+      "Alto frame rate com AutoStrain LV da TOMTEC oferece um alto nível de robustez e reprodutibilidade para avaliação da função cardíaca.",
+      "Função iScan para otimização do modo 2D e doppler em um único botão.",
+      "O Collaboration Live permite que médicos falem, enviem mensagens, compartilhem tela e façam chamadas de vídeo com segurança.",
+      "Projetado de Trackpad e interface centrada no usuário com TGC digital, com painel de controle simplificado e arquitetura responsiva e personalizável.",
+      "Inicialização rápida, armazenamento on-board e altura ajustável.",
+      "Bateria de longa duração para até 2,5 horas de exames com baterias estendidas e painel de controle selado para melhor limpeza e desinfecção."
+    ],
+    "specs": [],
+    "specialties": [
+      "cardiologia",
+      "ginecologia-obstetricia",
+      "ortopedia",
+      "point-of-care",
+      "vascular"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/compacto-5000-destaque.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/close-up-compact-5000.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/COMPACTO-5000-6-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/COMPACTO-5000-8-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/COMPACTO-5000-9-copiar-scaled.webp"
+    ]
+  },
+  {
+    "slug": "cx-50",
+    "name": "CX 50",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "estacionarios",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/estacionarios/cx-50/",
+    "summary": "Sistema de ultrassom para diagnóstico por imagem em geral, oferece visualizações em tempo real sem acessar equipamentos de grande porte.",
+    "description": [
+      "Sistema de ultrassom para diagnóstico por imagem em geral, oferece visualizações em tempo real sem acessar equipamentos de grande porte."
+    ],
+    "highlights": [
+      "Monitor de alta resolução para a excelente visualização na maioria dos ambientes portáteis difíceis, e a rápida inicialização do sistema possibilita o início quase imediato dos estudos. O DICOM com e sem fio oferece flexibilidade ao conectar seu PACS.",
+      "Recursos de avaliação e análise com o Q-Apps do QLAB: quantificação geral de imagiologia 3D (GI 3DQ), região de interesse (ROI), avaliação da espessura do complexo médio-intimal (IMT), quantificação da movimentação cardíaca com tecnologia speckle tracking (CMQ), quantificação do esforço (SQ) e diagnóstico por imagem MicroVascular (MVI).",
+      "Possibilita o ajuste de todos os parâmetros de varredura em imagens únicas, clipes e dados bidimensionais e de Doppler armazenados. As imagens podem ser reajustadas durante ou após o exame, melhorando os detalhes do diagnóstico e viabilizando tempos de exame mais curtos.",
+      "Quando o SonoCT e XRES trabalham em paralelo, há o aprimoramento até mesmo dos recursos de diagnóstico mais sutis, facilitando a obtenção de diagnósticos clínicos por imagem de alto nível em estudos portáteis."
+    ],
+    "specs": [],
+    "specialties": [
+      "cardiologia",
+      "ginecologia-obstetricia"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/cx50-destaque-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CX50-1-copiar.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CX50-3-copiar.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CX50_Center-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CX50_M5.0_3068_CX50_CVimage_Philips_Location-205Fr-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CX50_M5.0_US1105-DL8198_Trans-button-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CX50-oncart_L2-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CX50-TopDown.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/US1105-DL8208-CX50_PureWave_w_Screen-scaled.webp"
+    ]
+  },
+  {
+    "slug": "epiq-cvx",
+    "name": "EPIQ CVx",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "estacionarios",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/estacionarios/epiq-cvx/",
+    "summary": "A Philips é reconhecida pela qualidade e tecnologia O EPIQ CVx é uma solução dedicada de ultrassom cardíaco que traz avanços significativos em termos de funcionalidade com maior capacidade de processamento, excelente aquisição de imagens com mais clareza e nitidez e eficiência de exames.",
+    "description": [
+      "A Philips é reconhecida pela qualidade e tecnologia O EPIQ CVx é uma solução dedicada de ultrassom cardíaco que traz avanços significativos em termos de funcionalidade com maior capacidade de processamento, excelente aquisição de imagens com mais clareza e nitidez e eficiência de exames."
+    ],
+    "highlights": [
+      "O TOMTEC AutoSTRAIN usa AI como o reconhecimento e contorno automático de bordas que permite a medição consistente e reproduzível da Strain longitudinal global (GLS) com o toque de um botão. Esta ferramenta é utilizada para uso clínico de rotina em medições do strain do VE, AE e VD auxilia na detecção precoce de alterações da função cardíaca.",
+      "Interface eficiente, que permite a personalização, rotores de linha única e novos controles flyout.",
+      "Monitor OLED proporciona uma visualização nítida e clara da anatomia cardíaca devido à sua maior amplitude dinâmica e taxa de contraste aprimorada.",
+      "AIUS permite a quantificação rápida, consistente e reproduzível do ventrículo esquerdo em 3D.",
+      "Múltiplos volumes de batimentos também podem ser analisados para permitir a quantificação facilitada de pacientes com arritmia.",
+      "Ecocardiografia fotorrealista com fonte de luz ajustável: com a melhor qualidade de imagem 3D do setor, iluminando os detalhes do tecido e criando uma nova percepção de profundidade nunca antes vista.",
+      "O TrueVue ajuda a aprimorar a comunicação com os cuidadores e, portanto, pode ajudar na colocação mais eficiente do dispositivo.",
+      "Respostas rápidas e precisas referentes ao posicionamento e dimensionamento do dispositivo durante os procedimentos em tempo real, alinhamento do cateter dentro da anatomia cardíaca com um único clique.",
+      "Todos os transdutores setoriais Philips apresentam um preset coronariano programado para avaliação mais fácil e rápida da artéria coronária."
+    ],
+    "specs": [],
+    "specialties": [
+      "cardiologia",
+      "vascular"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/eipqcvx-destaque.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/EPIQ-CVx-Img-3-_-Color-MV.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Epiq_High-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Epiq_Right-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MV-TrueVue-with-lightsource-EPIQ-CVx.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/X8-2t-LAA-MultiVue-EPIQ-CVx.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/X8-2t-TrueVue-Glass-EPIQ-CVx.webp"
+    ]
+  },
+  {
+    "slug": "epiq-elite",
+    "name": "EPIQ Elite",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "estacionarios",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/estacionarios/epiq-elite/",
+    "summary": "Um nível excepcional de desempenho clínico, fluxo de trabalho e inteligência avançada para atender aos desafios das práticas mais exigentes.",
+    "description": [
+      "Um nível excepcional de desempenho clínico, fluxo de trabalho e inteligência avançada para atender aos desafios das práticas mais exigentes. A plataforma EPIQ Elite oferece soluções modernas de ultrassom com ferramentas clinicamente adaptadas e customizadas para elevar a confiança diagnóstica a novos níveis."
+    ],
+    "highlights": [
+      "O software é facilmente otimizado, mantido e restaurado pelo usuário, sem risco para os dados do paciente.",
+      "Tecnologia iSSL atende ao padrão de privacidade global e fornece uma conexão segura e protegida à rede de serviços remotos da Philips.",
+      "Predefinições específicas do tecido (TSPs): ajustam-se a mais de 7500 parâmetros para otimizar o transdutor para o tipo de exame específico, produzindo imagens excelentes.",
+      "Recursos de automação, como AutoSCAN e Auto Doppler, que diminuem tarefas repetitivas e facilitam o diagnóstico mais preciso e confiável.",
+      "Automação e eficiência: Suporta elastografia por onda de deformação e cisalhamento para ajudar os médicos a avaliar a rigidez do tecido e contribuir para a precisão do diagnóstico.",
+      "Ferramentas AIUS como Quantificação automatizada de movimento cardíaco A.I. (aCMQA.I.) e Quantificação cardíaca 2D automatizada A.I. (a2DQA.I.). Fornece acesso rápido à deformação longitudinal global (GLS) e fração de ejeção (FE) 2D em 10 seg."
+    ],
+    "specs": [
+      {
+        "group": "Imagem geral",
+        "items": [
+          "Espessura da Mídia Íntima (IMT)",
+          "Quantificação 3D de imagens gerais (GI 3DQ)",
+          "Região de interesse (ROI)",
+          "Imagem MicroVascular (MVI)",
+          "Quantificação de Placa Vascular (VPQ)."
+        ]
+      },
+      {
+        "group": "Cardiologia",
+        "items": [
+          "Espessura da Mídia Íntima (IMT)",
+          "Região de interesse (ROI)",
+          "Quantificação de Deformação (SQ)",
+          "Quantificação Cardíaca 2D Automatizada A.I. (a2DQA.I.)",
+          "Quantificação Automatizada de Movimento Cardíaco A.I. (aCMQA.I.)"
+        ]
+      }
+    ],
+    "specialties": [
+      "ginecologia-obstetricia",
+      "ortopedia"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/eipqcvx-destaque.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/1_0055-EP7-C10-3V-GYN-UTERINE-FIBROID-ELASTO-EPIQ-Elite.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/10_005-EPIQ-VM10.0-C5-1-Abd-Renal-Renal-MFI-FV-EPIQ-Elite.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/10_005-EPIQ-VM10.0-eL18-4-Vasc-Carotid-Vertebral-FV-EPIQ-Elite.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/10_020-EPIQ-VM10.0-mL26-8-Vasc-Gen-Fistula-FV-EPIQ-Elite.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/10.0-EPIQ_mL26-8_VAS2_01061-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/EPIQ-Elite-microflow-gif-copiar.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Epiq-Elite_Right_blue-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Epiq_Center-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Epiq_High-1-scaled.webp"
+    ],
+    "notes": "A imagem de destaque no site legado é a mesma do EPIQ CVx (eipqcvx-destaque.webp); a página de listagem usa epiq-elite-home.webp."
+  },
+  {
+    "slug": "innosight",
+    "name": "Innosight",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "portateis",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/portateis/innosight/",
+    "summary": "Um sistema de ultrassom compacto e altamente portátil com design ergonômico e versatilidade clínica.",
+    "description": [
+      "Um sistema de ultrassom compacto e altamente portátil com design ergonômico e versatilidade clínica. Com 2,5 kg, o tablet InnoSight é leve e ergonomicamente projetado para oferecer mobilidade, com uma autonomia de bateria que dura aproximadamente 1h30."
+    ],
+    "highlights": [
+      "Interface do usuário intuitiva e fluxo de trabalho otimizado e customizável, com teclas programáveis capazes de fornecer uma experiência personalizada.",
+      "Conectividade Wi-Fi e Ethernet para transferência DICOM para PACS de hospital, impressão sem fio e monitor secundário. A conectividade USB garante o backup e a recuperação dos dados do paciente de forma fácil para mídia externa. O Bluetooth permite que os usuários conectem teclados compatíveis para entrada de dados.",
+      "Equipada com iSCAN, XRES e SonoCT para qualidade de imagem aprimorada em todos os aplicativos. Isso ajuda a minimizar as manchas, melhorar o sinal para o índice de ruído e resulta em uma experiência de imagem de alta qualidade.",
+      "Visualização aprimorada da agulha no plano, o que aumenta a assertividade e a confiança durante os procedimentos de intervenção.",
+      "Carrinho opcional"
+    ],
+    "specs": [],
+    "specialties": [
+      "cirurgia-plastica",
+      "point-of-care",
+      "vascular"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/innosight-destaque.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/509696.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/InnoSight_Africa_OB-131-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Innosight_SS_Vasc-1231-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Innosight_TDP-961-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Philips_InnoSight_Ultrasound_Adnexal_Vascularity11.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Philips_InnoSight_Ultrasound_CCA_and_Jugular11.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Philips_InnoSight_Ultrasound_Fetal_Abdomen11.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Philips_InnoSight_Ultrasound_Liver_and_Gall_Bladder11.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Philips_InnoSight_Ultrasound_Liver_Vasculature11.webp"
+    ]
+  },
+  {
+    "slug": "lumify",
+    "name": "Lumify",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "portateis",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/portateis/lumify/",
+    "summary": "Ultrassom portátil da Philips que combina transdutores e um aplicativo de ultrassom para trazer recursos de diagnóstico para smartphone e tablet compatíveis (Android e IOs).",
+    "description": [
+      "Ultrassom portátil da Philips que combina transdutores e um aplicativo de ultrassom para trazer recursos de diagnóstico para smartphone e tablet compatíveis (Android e IOs). As atualizações do sistema podem ser feitas no próprio aplicativo do dispositivo, de forma gratuita, pelo próprio usuário.",
+      "Fornece dados clínicos críticos de forma rápida e fácil em mais cenários de ponto de atendimento: medicina de emergência, cuidados críticos, atendimentos no leito e no consultório.",
+      "O Lumify conta com três opções de transdutores para um diagnóstico imediato, confiável e com ótima qualidade de imagem:"
+    ],
+    "highlights": [],
+    "specs": [
+      {
+        "group": "Transdutores",
+        "items": [
+          "C5-2 – Transdutor Convexo: Matriz curvada de banda larga que oferece pré-ajustes abdominais com pulmão e vesícula e recursos de ginecológicos/obstétricos",
+          "L12-4 – Transdutor Linear: Matriz linear de banda larga compatível com várias aplicações clínicas, incluindo varredura de tecidos moles, musculoesquelética, pulmonar e vascular.",
+          "S4-1 – Transdutor Setorial: Matriz faseada de banda larga com pré-ajustes para exames cardíacos, abdominais com pulmão, ginecológicos e obstétricos e FAST."
+        ]
+      },
+      {
+        "group": "Especificações",
+        "items": [
+          "Recursos avançados de diagnósticos por imagem: Tissue Harmonic Imaging, SonoCT e XRES",
+          "Conectividade simples: permite enviar e compartilhar rapidamente imagens, observações e dados de diagnóstico via e-mail, DICOM para PACS, uma rede compartilhada ou um diretório local",
+          "Interface simplificada: possibilita a realização de s continuamente por 2 a 4 horas, dependendo do seu dispositivo.",
+          "Diagnóstico por imagem pulmonar: A predefinição pulmonar, disponível nos três transdutores, permite uma visualização fácil do deslizamento pulmonar na interface pleural.",
+          "Exames obstétricos / ginecológicos: Predefinição disponível nos transdutores C5-2 e S4-1 capaz de utilizar a captação de imagens harmônicas teciduais para melhorar o delineamento de áreas preenchidas por fluidos e a visualização detalhada do tecido.",
+          "Exames do abdômen: A predefinição abdominal, disponível nos transdutores C5-2 e S4-1, é otimizada para penetração robusta e digitalização abdominal versátil. O fluxo de é projetado para destacar rapidamente o fluxo mais rápido nas artérias abdominais, bem como o fluxo mais lento em órgãos, como o rim. A predefinição abdominal está",
+          "Exames FAST: Esta predefinição, compatível com o transdutor S4-1, é focada no trauma e proporciona forte penetração com melhoria na visualização de fluido livre no abdômen.",
+          "Exames cardíacos: A predefinição cardíaca, disponível no transdutor S4-1, fornece imagens cardíacas de alta qualidade, inclusive para pacientes tecnicamente desafiadores. O Tissue Harmonic Imaging melhora a visualização de câmaras e o fluxo de cores é otimizado para altas taxas de fluxo na visualização rápida."
+        ]
+      }
+    ],
+    "specialties": [
+      "cirurgia-plastica",
+      "ortopedia",
+      "point-of-care"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/lumify-destaque-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Lumify-R4.0_Carotid-PW.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Lumify-R4.0_TMF_AP-long.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Lumify-R4.0_TMF_AP4_2.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Lumify-R4.0_TMF_AP4.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Lumify_C5-2-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Lumify_L12-4-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Lumify_NvidiaL12-4_right-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Lumify_S4-1_0018-scaled.webp"
+    ],
+    "notes": "Alguns itens de especificação estão truncados/com palavras faltando no próprio site legado (ex.: 'realização de s continuamente', 'O fluxo de é projetado', 'A predefinição abdominal está')."
+  },
+  {
+    "slug": "transdutores",
+    "name": "Transdutores",
+    "brand": "Philips",
+    "category": "ultrassom",
+    "subcategory": "transdutores",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/transdutores/",
+    "summary": "Os transdutores de ultrassom da Philips oferecem soluções inteligentes e inovadoras para melhorar o atendimento ao paciente e os resultados.",
+    "description": [
+      "Os transdutores de ultrassom da Philips oferecem soluções inteligentes e inovadoras para melhorar o atendimento ao paciente e os resultados. Além de intuitivos, são potentes, versáteis e capazes de garantir mais precisão e confiabilidade.",
+      "Com um grande número de elementos que capturam uma alta faixa de frequência, há um aumento da cobertura, do foco da área a ser examinada.",
+      "Leves e ergonômicos, o vasto portfólio de transdutores está disponível em várias configurações, permitindo uma melhor penetração com menos artefatos. Acesse o link do WhatsApp e fale com nosso time de especialistas e conheça mais sobre nossos transdutores."
+    ],
+    "highlights": [],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/transdutores.webp"
+    ],
+    "notes": "Página de categoria com conteúdo próprio; não lista transdutores individuais."
+  },
+  {
+    "slug": "ingenia-ambition",
+    "name": "Ingenia Ambition",
+    "brand": "Philips",
+    "category": "ressonancia",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ressonancia/ingenia-ambition/",
+    "summary": "Permite que você experimente operações de Ressonância Magnética mais produtivas e livres de hélio, proporcionando uma excelente qualidade de imagem mesmo para pacientes difíceis.",
+    "description": [
+      "Permite que você experimente operações de Ressonância Magnética mais produtivas e livres de hélio, proporcionando uma excelente qualidade de imagem mesmo para pacientes difíceis. Realiza exames de IRM 50% mais rápido, graças à aceleração Compressed SENSE para todas as anatomias, em análises 2D e 3D."
+    ],
+    "highlights": [
+      "A rapidez na duração geral do exame é obtida pela simplificação do manejo do paciente no túnel por meio de um posicionamento guiado e sem toque.",
+      "Oferece uma experiência audiovisual imersiva para acalmar os pacientes e orientá-los durante os exames de RM.",
+      "O BlueSeal da Philips utiliza uma nova tecnologia de microrresfriamento que requer apenas uma quantidade irrisória de hélio líquido (menos de 0,5% do volume atual) para resfriamento.",
+      "O Compressed SENSE acelera as varreduras 2D e 3D em até 50%, com uma qualidade de imagem praticamente equivalente, que resulta em contenções de respiração de menos de 5s, com qualidade de imagem praticamente equivalente em diagnósticos cardíacos e abdominais.",
+      "Equipado com banda larga digital dStream e do Compressed SENSE que impacta em uma excelente visualização dos tecidos moles e dos ossos, ajudando a capturar estruturas ósseas delicadas, cartilagem e detalhes meniscais.",
+      "Possibilita adquirir imagens isotrópicas 3D submilimétricas (0,7 mm ou menos) em menos de 5 minutos com SNR excelente, atendendo às normas de resolução 3.0T em escâneres 1.5T.",
+      "Fornece protocolos ExamCard de corpo inteiro e de alta qualidade em menos de 30 minutos, baseado nas técnicas de difusão de corpo inteiro Compressed SENSE, mDIXON XD e DWIBS.",
+      "O VitalEye, uma revolução no sensoriamento de pacientes, sem a necessidade do toque. A qualidade do sinal fisiológico é melhor que a da abordagem baseada em cinto e o operador recebe um sinal respiratório contínuo e consistente sem qualquer interação.",
+      "O SmartWorkflow fornece uma solução de fluxo de trabalho de ponta a ponta, favorecendo uma melhor experiência do paciente e da equipe."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/ingecia-ambition.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/02_Ingenia_Ambition_S_3Q_Right-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Abdomen_eTHRIVE.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Brain_3D_VIEW_T2W_FLAIR_PNG1.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Feature_image_9-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Feature_image_10-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_2409_NGWB_6641-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_PD_Ambition-1348-cc.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MRRT_0708_Ingenia_01196-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MRRT_0708_Ingenia_01469-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Product_Detail_Photograph_4-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Spine_T2w-TSE.webp"
+    ]
+  },
+  {
+    "slug": "ingenia-elition",
+    "name": "Ingenia Elition",
+    "brand": "Philips",
+    "category": "ressonancia",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ressonancia/ingenia-elition/",
+    "summary": "O Ingenia 1.5T Evolution tem a capacidade de aumentar seu desempenho com as inovadoras soluções SmartWorkflow, que incluem tecnologia de sensoriamento de pacientes alimentada por IA, orientações dentro da sala e automação de exames.",
+    "description": [
+      "O Ingenia 1.5T Evolution tem a capacidade de aumentar seu desempenho com as inovadoras soluções SmartWorkflow, que incluem tecnologia de sensoriamento de pacientes alimentada por IA, orientações dentro da sala e automação de exames."
+    ],
+    "highlights": [
+      "O Compressed SENSE permite estudos até 50% mais rápidos com praticamente a mesma qualidade de imagem, tanto nas aquisições 2D quanto 3D e para todas as anatomias.",
+      "Orientações e insights automatizados sobre os detalhes do estudo do paciente em curso em tempo real, capaz de trazer resultados de alta qualidade, independentemente do nível de experiência da equipe.",
+      "O VitalEye proporciona uma rápida detecção da respiração do paciente sem nenhuma interação do operador, com sincronismo respiratório do paciente, sem necessidade de toque.",
+      "SmartExam automatiza o planejamento da geometria e a execução de exames de RM completos.",
+      "Fornece até quatro tipos de imagem em uma única varredura, incluindo opções de contraste com/sem supressão de gordura simultaneamente com a mesma duração e resolução das aquisições de rotina, para que você possa substituir suas aquisições TSE de rotina favoritas com facilidade.",
+      "O FreeBreathing 4D permite a realização de exames de RMI do fígado com respiração livre para os pacientes que têm dificuldade em reter a respiração ou acham difícil seguir as instruções de respiração.",
+      "Possibilita o aumento de confiança ao oferecer diagnósticos por imagem de RM de qualidade excepcional para a detecção e caracterização dos tumores, além de monitorar o estadiamento e a terapia em pacientes com câncer de próstata e de mama.",
+      "O software ScanWise Implant oferece uma orientação passo a passo para inserir os valores de segurança conforme especificados pelo fabricante do implante.",
+      "O Ambient Experience proporciona distrações positivas para os pacientes ao incorporar iluminação, projeção e som dinâmicos, contribuindo para um ambiente positivo e envolvente em favor da qualidade do atendimento.",
+      "O SmartWorkflow fornece uma solução de fluxo de trabalho de ponta a ponta, favorecendo uma melhor experiência do paciente e da equipe e resultando em uma produtividade centrada no paciente."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/ingenia-elition-destaque.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/13_Ingenia_Elition_X_3Q_Left-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/13_Ingenia_Elition_X_3Q_Left_zoom-in-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_PD_Elition-0869-cc.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MRRT_0708_Ingenia_00510-def-1-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MRRT_0708_Ingenia_00576-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MRRT_0708_Ingenia_01084-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MRRT_0708_Ingenia_01104-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MRRT_0708_Ingenia_01812-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MRRT_0708_Ingenia_02103_def_JPG1.webp"
+    ],
+    "notes": "O texto da página Ingenia Elition fala em 'Ingenia 1.5T Evolution'."
+  },
+  {
+    "slug": "mr-5300",
+    "name": "MR 5300",
+    "brand": "Philips",
+    "category": "ressonancia",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/ressonancia/mr-5300/",
+    "summary": "Um equipamento de ressonância, com uma qualidade de imagem excepcional, capaz de contribuir significativamente com o aumento da produtividade para atender à crescente demanda de diagnóstico por imagem.",
+    "description": [
+      "Um equipamento de ressonância, com uma qualidade de imagem excepcional, capaz de contribuir significativamente com o aumento da produtividade para atender à crescente demanda de diagnóstico por imagem. O MR 5300 de 1,5 T que transforma a produtividade e é alimentado pelo exclusivo ímã BlueSeal da Philips e incorpora tecnologias orientadas por IA projetadas para automatizar as mais complexas tarefas clínicas e operacionais."
+    ],
+    "highlights": [
+      "Projetado para fornecer fluxo de trabalho automatizado, exames ultrarápidos, diagnósticos por imagem de alta qualidade e desempenho para toda a vida.",
+      "Requer uma pequena quantidade de hélio líquido necessária para seu pleno funcionamento. Desta forma, não há nenhuma perda de hélio, nem recargas, nem custos inesperados.",
+      "Qualidade consistente e resultados padronizados, diagnóstico por imagem certo da primeira vez, com técnicas consistentes de movimento e livre respiração.",
+      "TCO previsível com bobinas para toda a vida, com possibilidade de upgrades vitalícios",
+      "Recurso SmartWorkflow reduz drasticamente o número de etapas necessárias para executar um exame de RM, com configuração do paciente guiada em menos de um minuto e sincronismo",
+      "Equipados com as levíssimas bobinas Breeze, que ajudam a reduzir em até 30% o tempo de troca do paciente.",
+      "Espaços dedicados nas laterais ao longo do colchão garantem que os cabos das bobinas fiquem afastados do paciente, as bobinas Breeze trabalham em conjunto com os colchões ComfortPlus para favorecer uma melhor experiência do paciente.",
+      "O Compressed SENSE é um recurso capaz de acelerar os exames de RM existentes em até 50%, com alta qualidade de imagem e com resolução espacial 60% maior, o que ajuda a ter diagnósticos mais confiantes.",
+      "Planeja automaticamente a geometria das varreduras no ExamCard, de forma rápida e reprodutível, facilitando os exames de cérebro, coluna, joelho, ombro e mama.",
+      "Amplo campo de visão (FOV) e gradientes altamente lineares favorecem um DWIBS coronal de corpo inteiro rápido e de alta qualidade para o diagnóstico de câncer.",
+      "Amplo campo de visão de 55 cm da MR 5300 permite uma cobertura anatômica mais extensa, enquanto a proporção sinal-ruído de qualidade premium oferecida pelo dStream — de até 40% nos exames neurológicos.",
+      "O FreeBreathing 4D e o VitalEye trabalham juntos para fornecer resultados excepcionalmente confiáveis e maior precisão no diagnóstico por imagem."
+    ],
+    "specs": [],
+    "specialties": [
+      "cardiologia"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/mr5300.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/01_3Q_Left-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR-5300_Clinical-Image_T1_3m4s_0.3-0.5-1_Sl06.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR-5300_LightRing_Enabled-NMRF479-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_5300_clinical_image_01.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_5300_clinical_image_03.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_5300_clinical_image_04.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_5300_clinical_image_07.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_5300_clinical_image_09.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_5300_clinical_image_11.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_5300_product_photo_02-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_MR_workspace_single_screen_image_review_6906-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_MR5300_auto_patient_centering_8316-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_PD_Elition-0952-ccOK.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MR_PD_MR5300-1923-v2.jpg",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Shot_04-scaled.webp"
+    ]
+  },
+  {
+    "slug": "access-ct",
+    "name": "Access CT",
+    "brand": "Philips",
+    "category": "tomografia",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/tomografia/access-ct/",
+    "summary": "Oferece qualidade de imagem consistente em uma ampla variedade de necessidades clínicas, o Philips Access CT, está disponível para 6, 16 e 32 cortes e proporciona o valor certo para qualquer orçamento.",
+    "description": [
+      "Oferece qualidade de imagem consistente em uma ampla variedade de necessidades clínicas, o Philips Access CT, está disponível para 6, 16 e 32 cortes e proporciona o valor certo para qualquer orçamento. Ajudará a aumentar as oportunidades de encaminhamento."
+    ],
+    "highlights": [
+      "Fluxo de trabalho inteligente, iFlow, automatiza e simplifica o trabalho no console. O que permite alta qualidade de imagem e melhoram a consistência a cada etapa.",
+      "Maior amplitude clínica capaz de acomodar pacientes de tamanhos diferentes sem comprometer a qualidade da imagem. O modo de escaneamento de 70 kV fornece escaneamentos de baixa dose para pacientes menores.",
+      "Possui recursos com aplicações avançadas disponíveis que permitem um pós-processamento simplificado, que inclui: Perfusão cerebral, Análise de nódulo pulmonar, Planejamento odontológico, Colonoscopia CT, Análise de vasos.",
+      "Possibilita a redução de custo de substituição de tubos, com o iDose4, um algoritmo de reconstrução comprovado.",
+      "Melhora a consistência com o conjunto de recursos de automação iFlow que ajuda a minimizar os custos associados aos novos escaneamentos.",
+      "Permite aumento dos encaminhamentos, custos operacionais mais eficientes, além de suporte confiável."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/ACESS-CT.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/access-to-future-thumbnail.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HCNOCTN480-CIL-de_AT-001.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HCNOCTN480-CIL-de_AT-002.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HCNOCTN480-CIL-de_AT-003.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HCNOCTN480-CIL-de_AT-004_PNG1.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HCNOCTN480-D1P-de_AT-001_PNG1-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HCNOCTN480-D3P-de_AT-001-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HCNOCTN480-DPP-de_AT-001-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/HCNOCTN480-RTP-de_AT-001-copiar.webp"
+    ]
+  },
+  {
+    "slug": "ct-5300",
+    "name": "CT 5300",
+    "brand": "Philips",
+    "category": "tomografia",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/tomografia/ct-5300/",
+    "summary": "Um equipamento com recursos aprimorados capaz de propiciar o controle do dia com maior consistência e desempenho comprovados para um excelente atendimento ao paciente.",
+    "description": [
+      "Um equipamento com recursos aprimorados capaz de propiciar o controle do dia com maior consistência e desempenho comprovados para um excelente atendimento ao paciente."
+    ],
+    "highlights": [
+      "Dose mais baixa com maior qualidade de imagem, que obter simultaneamente uma dose 60-80% mais baixa, uma detectabilidade de baixo contraste 43 a 80% maior e 70 a 83% a menos de ruído, que proporcionam maior confiança por meio de uma visualização aprimorada com refinamento de detalhes.",
+      "Apresenta consistência em todas as varreduras, com o iPatient, uma plataforma avançada que permite controlar o sistema de tomografia e o planejamento dos resultados.",
+      "Promove uma varredura de alta resolução e baixa dose, com maior integração e colaboração, o que acarreta em um melhor atendimento ao paciente e valor econômico em uma família de produtos atualizáveis.",
+      "Permite que a leitura seja feita antecipadamente com o pré-processamento do Portal IntelliSpace, onde é possível acessar, rever, analisar, diagnosticar e apresentar imagens de forma rápida, eficiente e colaborativa, com a tecnologia mais recente e uma única solução de visualização avançada."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT5300.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/5300-Body-PDP-recapture.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/5300_CTA_PDP_PNG1.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT-5300_BlueAE_Bariatric-Couch_Front_Interv_0000-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT-5300_BlueAE_Bariatric-Couch_Left_Interv_0000-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT-5300_WhiteRm_Bariatric-Couch_Perspective_Left_Env_NoCart0000-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT-5300_WhiteRm_Bariatric-Couch_Side_Env0000-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT-5300_WhiteRm_Standard-Couch_Front_Env_NoCart0000-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT_5300_BlueAE_Std_Couch_Front_0000_PNG1-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/OnDemandClinicalSupport_PDP_VI.webp"
+    ]
+  },
+  {
+    "slug": "incisive-ct",
+    "name": "Incisive CT",
+    "brand": "Philips",
+    "category": "tomografia",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/tomografia/incisive-ct/",
+    "summary": "Conecta inovações em diagnóstico por imagem, fluxo de trabalho e gerenciamento de ciclo de vida, ajudando os profissionais da saúde a melhorar a experiência em tomografia para pacientes e corpo clínico e técnico, permitindo a tomada de decisões clínicas inteligentes aumentando a eficiência.",
+    "description": [
+      "Conecta inovações em diagnóstico por imagem, fluxo de trabalho e gerenciamento de ciclo de vida, ajudando os profissionais da saúde a melhorar a experiência em tomografia para pacientes e corpo clínico e técnico, permitindo a tomada de decisões clínicas inteligentes aumentando a eficiência."
+    ],
+    "highlights": [
+      "Recursos com avanços intuitivos do scanner à sala de leitura ajudam a melhorar a experiência do paciente em cada etapa do fluxo de trabalho.",
+      "A inteligência adaptativa traz resultados rápidos, consistentes e de alta qualidade.",
+      "Projetado para a utilidade e a confiabilidade, traz a previsibilidade com monitoramento proativo 24 horas por dia.",
+      "Minimiza o tempo gasto longe do paciente com os novos controles OnPlan do Granty, além do scanner, com ajustes de configuração e pré-digitalização.",
+      "Permite consistência entre operadores e reduz o tempo para os resultados em 19% com inteligência adaptativa em cada etapa do exame.",
+      "O recurso iDose4 melhora a qualidade da imagem por meio da prevenção de artefatos, redução de ruído e aumento da resolução espacial em dose baixa.",
+      "O O-MAR é um artefato que reduz os artefatos causados por grandes implantes ortopédicos. A modalidade da varredura 70kV permite a melhor detectabilidade do contraste baixo e mais confiança na dose baixa.",
+      "O DoseWise Portal coleta, analisa e relata a exposição à radiação do paciente e do pessoal.",
+      "A garantia Tube for Life é uma ferramenta que pode ajudar a reduzir os custos, já que a confiabilidade na qualidade do tubo vMRC é tão alta que o mesmo poderá ser substituído se necessário ao longo da vida útil do sistema, sem custos."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/incisive-ct.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT_1409_AE_0015-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT_1409_AE_0049-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT_1409_AE_0231-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT-Incisive-1_1-Stills_Layered_transparent-with-monitor-06-copiar.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT-Incisive-1_1-Stills_Layered_transparent-with-monitor-11-copiar.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/CT-Incisive-1_1-Stills_Layered_transparent-without-monitor-06-copiar.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IMG_0550_rev01.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IMG_1515_outline01.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Incisive_PDP_Cardiac_138_bpm_Precise_Cardiac_PNG1.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/philips-incisive-ct-front-470-copiar.webp"
+    ]
+  },
+  {
+    "slug": "azurion-3",
+    "name": "Azurion 3",
+    "brand": "Philips",
+    "category": "hemodinamica",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/hemodinamica/azurion-3/",
+    "summary": "Poder de inovar os seus serviços intervencionistas vasculares com a Azurion 3 com detector plano de 15\".",
+    "description": [
+      "Poder de inovar os seus serviços intervencionistas vasculares com a Azurion 3 com detector plano de 15\". As suas equipes intervencionistas se beneficiam da excelente consistência e eficiência na medida em que elas fazem diversos procedimentos neurológicos, endovasculares, oncológicos e cardíacos. Melhore os seus custos de gestão e atendimento."
+    ],
+    "highlights": [
+      "Recursos com avanços intuitivos do scanner à sala de leitura ajudam a melhorar a experiência do paciente em cada etapa do fluxo de trabalho.",
+      "A inteligência adaptativa traz resultados rápidos, consistentes e de alta qualidade.",
+      "Projetado para a utilidade e a confiabilidade, traz a previsibilidade com monitoramento proativo 24 horas por dia.",
+      "Minimiza o tempo gasto longe do paciente com os novos controles OnPlan do Granty, além do scanner, com ajustes de configuração e pré-digitalização.",
+      "Permite consistência entre operadores e reduz o tempo para os resultados em 19% com inteligência adaptativa em cada etapa do exame.",
+      "O recurso iDose4 melhora a qualidade da imagem por meio da prevenção de artefatos, redução de ruído e aumento da resolução espacial em dose baixa.",
+      "O O-MAR é um artifício que reduz os artefatos causados por grandes implantes ortopédicos. A modalidade da varredura 70kV permite a melhor detectabilidade do contraste baixo e mais confiança na dose baixa.",
+      "O DoseWise Portal coleta, analisa e relata a exposição à radiação do paciente e do pessoal.",
+      "A garantia Tube for Life é uma ferramenta que pode ajudar a reduzir os custos, já que a confiabilidade na qualidade do tubo vMRC é tão alta que o mesmo poderá ser substituído se necessário ao longo da vida útil do sistema, sem custos."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Azurion_3_F15_OR_3F-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/04_Azurion-3.0_Teaser_sizeA.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Azurion_3_F15_CR_PCI_2-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_2010_3232_Azurion3series_PTA_16x9-scaled.webp"
+    ],
+    "notes": "No site legado, os destaques (bullets) do Azurion 3 são cópia dos do Incisive CT (tomografia: iDose4, O-MAR, Tube for Life) — provável erro de conteúdo; revisar antes de publicar."
+  },
+  {
+    "slug": "azurion-5",
+    "name": "Azurion 5",
+    "brand": "Philips",
+    "category": "hemodinamica",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/hemodinamica/azurion-5/",
+    "summary": "Projetado para aumentar o nível dos recursos de cardiologia intervencionista com detector plano de 12 polegadas.",
+    "description": [
+      "Projetado para aumentar o nível dos recursos de cardiologia intervencionista com detector plano de 12 polegadas. Essa solução de terapia guiada por imagem de alto desempenho permite que as equipes intervencionistas realizem intervenções cardíacas difíceis."
+    ],
+    "highlights": [
+      "Permite controlar as aplicações através da plataforma de fisiologia e diagnóstico por imagem IntraSight, por meio do módulo central com tela sensível ao toque ao lado da mesa, que facilita a tomada de decisão clínica na sala de exames e ajuda a reduzir a necessidade de quebras da biobarreira.",
+      "Detector plano de 12 polegadas fornece um diagnóstico por imagem de alta resolução em um grande campo de visão (FOV). É possível visualizar a válvula aórtica e uma parte significativa do arco aórtico, ou toda a árvore coronária, em uma única visualização.",
+      "O recurso do ProcedureCards ajuda a simplificar e padronizar a configuração do sistema para diversos casos, desde procedimentos de rotina até procedimentos mistos.",
+      "Os integrantes da equipe podem trabalhar em diversas atividades — em um ou mais locais de trabalho na sala de controle e na sala de exames — sem interromper uns aos outros.",
+      "Sistema compatível com o monitor de pacientes IntelliVue X3, que significa menos transtorno para os pacientes vulneráveis, mais tempo para os funcionários se concentrarem no atendimento ao paciente.",
+      "Maior facilidade de uso e rapidez na realização de procedimentos, com informações expostas de maneira facilitada sobre o fundo preto diferenciado da tela sensível ao toque, na qual os aplicativos ativos aparecem em destaque.",
+      "A tecnologia ClarityIQ fornece diagnósticos por imagem de alta qualidade para uma ampla variedade de procedimentos clínicos, obtendo excelente visibilidade com doses ultrabaixas de raios X para pacientes de todos os tamanhos.",
+      "A opção Módulo de Controle de Qualidade do Usuário (UQCM) permite que seja feita a verificação e auditoria dos fatores relacionados à radiação e à qualidade da imagem do seu sistema Azurion de forma padronizada e independente em apenas 5 minutos."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/azurion5.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Azurion_AVM-on-Flexvision_with_3D_Treatment_Planning_View_enlarged_C.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_1219_4967_Azurion_5C20_IntraSight_integration-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_Azurion_5_c20_16x9_STD_APR2023-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Philips_Azurion5_C20_ExamRoom_RC01_mod_02-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/SA904697_1-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/SA904772_1-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/SA905012_1-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/SA905042_1-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/SA905414_1-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/SA906229_1-scaled.webp"
+    ]
+  },
+  {
+    "slug": "azurion-7",
+    "name": "Azurion 7",
+    "brand": "Philips",
+    "category": "hemodinamica",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/hemodinamica/azurion-7/",
+    "summary": "Aumente o nível de seus recursos de cardiologia intervencionista com a Azurion 5 com detector plano de 12 polegadas.",
+    "description": [
+      "Aumente o nível de seus recursos de cardiologia intervencionista com a Azurion 5 com detector plano de 12 polegadas. Essa solução de terapia guiada por imagem de alto desempenho permite que as equipes intervencionistas realizem intervenções cardíacas difíceis. Controle todas as aplicações relevantes na mesa de forma integrada para uma experiência do usuário consistente, excelente desempenho de laboratório e atendimento ao paciente."
+    ],
+    "highlights": [
+      "Recursos para realizar procedimentos desafiadores com confiança em orientação por imagem ao vivo. Elas incluem StentBoost, XperCT, EmboGuide e as nossas soluções de orientação Navigator.",
+      "Os procedimentos vasculares podem se beneficiar de uma excelente qualidade de imagem, com maior cobertura anatômica para diversos procedimentos. A cadeia de processamento de imagem visualiza detalhes de pequenos vasos com grande clareza.",
+      "Com este sistema os membros da equipe podem trabalhar em todas as atividades em um ou mais locais de trabalho na sala de controle e exames – sem interromper uns aos outros.",
+      "Para simplificar e padronizar a configuração do sistema para todos os casos e usuários o sistema usa os ProcedureCards, que pode ser totalmente customizado, onde o sistema seleciona automaticamente o(s) ProcedureCard(s) pertinente(s), com base no código RIS/HIS/CIS do procedimento.",
+      "Dados pré-processuais, diagnósticos por imagem multimodalidade do PACS e outras fontes, bem como aplicações intervencionistas, podem ser exibidos no FlexVision Pro.",
+      "Desenvolvido para dar fluidez aos procedimentos, já que prevê as necessidades e conduz pelos casos continuamente.",
+      "Permite gestos semelhantes aos de um tablet para simplificar tarefas e a interface do usuário padronizada da Azurion para treinar e fazer o rodízio de equipes médicas facilmente entre laboratórios.",
+      "O FlexSpot permite a visualização, controle e manipulação de todos os aplicativos de um único local na sala de controle, com a possibilidade de um ou dois monitores widescreen de 27 polegadas, mouse e teclado, de onde é possível controlar várias fontes externas, layouts da tela de configuração e acessar os aplicativos disponíveis.",
+      "Tecnologia ClarityIQ fornece alta qualidade no diagnóstico por imagem a uma ampla variedade de procedimentos clínicos, obtendo excelente visibilidade em níveis ultrabaixos de dosagem de raios-X para pacientes de todos os tamanhos."
+    ],
+    "specs": [],
+    "specialties": [
+      "cardiologia",
+      "vascular"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/azurion7.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/10_Azurion_7_B20-B12_LN-PEDS_ControlRoom_01-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Azurion_7_C20_OR_FlexMove_TACE-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Azurion_7_C20_OR_Flexvision1-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_1219_4834_Azurion_FlexSpot_ISCV_integration-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_1219_4853_Azurion_FlexSpot_ISCV_integration-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_1219_4924_Azurion_7C20_PCI_integration_pullback_2-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_1219_5187_Azurion_7C20_peripheral-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_1219_5187_Azurion_7C20_peripheral_16x9-def-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT0918_3502_Azurion_Hybrid_OR_Live_spine_case_UKSH_Kiel_Germany-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Philips-Azurion-7-C20-CardiacSwing-visual-2_Desktop-copiar.webp"
+    ],
+    "notes": "O texto de introdução da página Azurion 7 menciona 'Azurion 5 com detector plano de 12 polegadas' (erro do site legado)."
+  },
+  {
+    "slug": "zenition-10",
+    "name": "Zenition 10",
+    "brand": "Philips",
+    "category": "arco-cirurgico",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/arco-cirurgico/zenition-10/",
+    "summary": "Sistema Flat Detector (FD) oferece imagens de alta qualidade, alto tempo de atividade e um fluxo de trabalho eficiente em um design extremamente compacto para sua combinação diária de cirurgias ortopédicas, trauma e outros procedimentos.",
+    "description": [
+      "Sistema Flat Detector (FD) oferece imagens de alta qualidade, alto tempo de atividade e um fluxo de trabalho eficiente em um design extremamente compacto para sua combinação diária de cirurgias ortopédicas, trauma e outros procedimentos."
+    ],
+    "highlights": [
+      "Imagens sem distorção com excelente resolução e eficiência de dosagem na realização de uma ampla variedade de procedimentos cirúrgicos. Ela se baseia na longa experiência da Philips em imagens de Detector Plano para sistemas de arco cirúrgico fixos e móveis.",
+      "Compatível com vários procedimentos cirúrgicos, incluindo ortopedia, trauma, coluna vertebral, gestão de dor, vascular periférico, abdominal, urologia e procedimentos cirúrgicos gerais.",
+      "Seu design versátil apresenta um excelente arco cirúrgico com profundidade e ampla faixa de angulação.",
+      "Protocolos específicos do procedimento de um clique podem definir os parâmetros de qualidade de imagem necessários sem aplicar uma dose excessivamente alta de raios-X de acordo com o princípio ALARA. Esses parâmetros de imagem podem ser ainda mais personalizados com perfis de usuário.",
+      "Fluxo de trabalho Unify que traz controle e manuseio intuitivos, aprimorando o trabalho em equipe que incluem ClearGuide e a codificação por cores. Isso pode reduzir a falta de comunicação durante a geração de imagens para ajudar as equipes cirúrgicas a se concentrar no paciente, em vez de discussões técnicas.",
+      "A profundidade do arco cirúrgico de 73 cm e o movimento de angulação de 150 graus melhoram a acessibilidade à anatomia, permitindo um posicionamento rápido e conveniente para todos os usuários.",
+      "Sistema Multi Modality Viewer permite que você carregue imagens de TC, RM e outras imagens DICOM para comparar com imagens de fluoroscopia ao vivo. Isso ajuda a melhorar a precisão nas decisões clínicas.",
+      "Transferência de dados além da sala de cirurgia capaz de estabelecer conexão com a infraestrutura hospitalar, graças às ferramentas avançadas de conectividade e interoperabilidade, incluindo transferência de dados sem fio de alta velocidade e funcionalidade DICOM3.0."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/zenition10-destaque.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Easy-positioning-of-Zenition-10-C-arm-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Surgical-team-discussing-the-intuitive-user-interface-of-Zenition-10-after-completion-of-case.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Surgical-team-performing-Urology-case-with-Zenition-10-2.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Zenition-10-C-arm-stand-angulation-movement_product-shot-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Zenition-10-C-arm-stand-back-view_product-shot-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Zenition-10-C-arm-stand-vertical-movement_product-shot-scaled.webp"
+    ]
+  },
+  {
+    "slug": "zenition-30",
+    "name": "Zenition 30",
+    "brand": "Philips",
+    "category": "arco-cirurgico",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/arco-cirurgico/zenition-30/",
+    "summary": "A tecnologia Flat Detector (FD), juntamente com algoritmos de imagem avançados e um recurso de QI personalizado, proporcionam excelente qualidade de imagem e eficiência de dose, Controle Exclusivo do Cirurgião e o Módulo de Touchscreen capacitam os usuários finais, enquanto os freios eletromagnéticos reduzem o esforço manual.",
+    "description": [
+      "A tecnologia Flat Detector (FD), juntamente com algoritmos de imagem avançados e um recurso de QI personalizado, proporcionam excelente qualidade de imagem e eficiência de dose, Controle Exclusivo do Cirurgião e o Módulo de Touchscreen capacitam os usuários finais, enquanto os freios eletromagnéticos reduzem o esforço manual."
+    ],
+    "highlights": [
+      "Modo pediátrico dedicado: As configurações de imagem e dose podem ser adaptadas a objetos pequenos e pacientes pediátricos removendo a grade de raios-X.",
+      "Oferece maior tempo de atividade durante todo o seu ciclo de vida graças ao seu design altamente confiável.",
+      "O Controle do Cirurgião permite o destrave dos freios pressionando um botão e o posicionamento do arco cirúrgico com mais agilidade e rapidez, o que acelera o fluxo de trabalho cirúrgico e reduz a dependência da equipe cirúrgica.",
+      "Disponível numa configuração de 4kW e 2,1kW, que permitem o atendimento de diversas necessidades. A potência de 4kW oferece imagens nítidas de uma anatomia estática, enquanto altas taxas de quadros se combinam com baixa largura de pulso para atender às suas necessidades com uma anatomia em movimento.",
+      "O curso de angulação de 156 graus oferece acessibilidade e suporte aprimorados ao se posicionar em torno de anatomias desafiadoras. A profundidade do arco cirúrgico de 73 cm permite a acomodação de uma grande variedade de pacientes.",
+      "O sistema é ideal para salas cirúrgicas ortopédicas menores e clínicas de dor, com um design compacto que permite fácil entrada e saída de rodas e passagem tranquila nos corredores e espaços estreitos."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/zenition30.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Surgeon-performing-Orthopedic-shoulder-case-using-Zenition-30.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Surgical-team-performing-Urology-case-with-Zenition-30_2.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Surgical-team-performing-Vascular-case-with-Zenition-30_2.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Zenition-30-C-arm-stand-product-shot-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Zenition-30-color-coding-product-shot-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Zenition-30-MVS-with-C-arm-stand_Orthopedic-product-shot-copiar-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/Zenition-30-Product-Shot-with-stille-table.webp"
+    ]
+  },
+  {
+    "slug": "zenition-50",
+    "name": "Zenition 50",
+    "brand": "Philips",
+    "category": "arco-cirurgico",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/arco-cirurgico/zenition-50/",
+    "summary": "Com um sistema que permite simplicidade da exposição, foco automático e tempo de atividade confiável, o Zenition 50 com Intensificador de Imagem é considerado um modelo ideal para ser utilizado em intervenções e cirurgias.",
+    "description": [
+      "Com um sistema que permite simplicidade da exposição, foco automático e tempo de atividade confiável, o Zenition 50 com Intensificador de Imagem é considerado um modelo ideal para ser utilizado em intervenções e cirurgias."
+    ],
+    "highlights": [
+      "O fluxo de trabalho Unify reduz falhas na comunicação e erros de posicionamento a quase metade. Oferece maior tempo de atividade durante todo o seu ciclo de vida graças ao seu design altamente confiável.",
+      "Ajuda a reduzir custos operacionais com opções colaborativas de suporte RightFit e prolonga a vida útil do sistema de maneira econômica com o Technology Maximizer.",
+      "A plataforma padrão Windows® é projetada para um desempenho rápido e confiável para suportar um alto volume de procedimentos e se adapta a novas opções de software para ampliar a relevância clínica.",
+      "Permite o gerenciamento de aquecimento do SmartFilters de maneira aprimorada, promovendo uma economia de tempo com protocolos específicos de aplicativos e predefinições personalizáveis.",
+      "Garante a melhoria na visualização de estruturas complexas e anatomia densa de maneira eficiente, com algoritmos avançados de processamento de imagem e recursos de gerenciamento de radiação.",
+      "Permite obter qualidade de imagem específica e exclusiva para níveis de dose eficientes, independentemente dos desafios do paciente. Por exemplo, a fluoroscopia pulsada melhora o diagnóstico por imagem de anatomia densa e complexa na eficiência da dose."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/zenition50.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_0418_9677_Zenition_50_II12_Urology_Remote_Control-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_0418_9813_Zenition_50_II9_Orthopedic_Pelvis_online-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_0418_9817_Zenition_50_II9_Orthopedic_Pelvis-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_0418_Zenition_50_II12_C-arm_oblique_view.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_0418_Zenition_50_II12_C-arm_orbital_movement-ok.webp"
+    ]
+  },
+  {
+    "slug": "zenition-70",
+    "name": "Zenition 70",
+    "brand": "Philips",
+    "category": "arco-cirurgico",
+    "subcategory": null,
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/arco-cirurgico/zenition-70/",
+    "summary": "Clareza e flexibilidade excepcionais no diagnóstico por imagem para a realização de uma grande variedade de casos com os sistemas contemplados com o Flat Detector de quarta geração.",
+    "description": [
+      "Clareza e flexibilidade excepcionais no diagnóstico por imagem para a realização de uma grande variedade de casos com os sistemas contemplados com o Flat Detector de quarta geração."
+    ],
+    "highlights": [
+      "Possui uma plataforma projetada para alto tempo de atividade e consequentemente aumento de desempenho da sala de cirurgia com controles e fáceis de usar, provendo economia de tempo eficiente.",
+      "Operadores em todos os níveis de experiência podem usar com facilidade o Zenition 70, graças ao seu design intuitivo de apontar e disparar. As configurações do sistema podem ser personalizadas e exportadas com a ferramenta Support Connect.",
+      "Permite a ampliação do desempenho clínico do seu arco com a plataforma Windows, pronta para receber novas inovações e atualizações de software.",
+      "Alto fluxo de trabalho, facilidade de manutenção e opções de suporte remoto, que permitem lidar com vários problemas de serviço sem uma visita ao local.",
+      "Amplia o desempenho clínico com a plataforma Windows, preparada para receber novas inovações e atualizações de software",
+      "A ferramenta de marcação permite desenhar um contorno em uma determinada imagem na tela touchscreen usando uma caneta, por exemplo, para marcar uma bifurcação ou ramificações laterais em imagens de fluoroscopia ao vivo.",
+      "Permite o gerenciamento de aquecimento do SmartFilters de maneira aprimorada, promovendo uma economia de tempo com protocolos específicos de aplicativos e predefinições personalizáveis.",
+      "Garante a melhoria na visualização de estruturas complexas e anatomia densa de maneira eficiente, com algoritmos avançados de processamento de imagem e recursos de gerenciamento de radiação."
+    ],
+    "specs": [],
+    "specialties": [
+      "vascular"
+    ],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/zenition70-destaque.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_0418_9392_Zenition_70_FD26x26_Urology_system_positioning-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_0418_9603_Zenition_70_FD26x26_Urology_Vascular_Outlining_Kidney-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_0418_9693_Zenition_70_FD21x21_Orthopedic_Hip_AP-scaled.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_0418_Zenition_70_FD21x21_C-arm_lateral_position-copiar.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/IGT_0418_Zenition_70_FD26x26_MVS_product_shot.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/MRRT_0708_Ingenia_00510-def-1-jpg-scaled.webp"
+    ],
+    "notes": "A última imagem da galeria do Zenition 70 no site legado é uma foto de ressonância Ingenia (MRRT_0708_Ingenia_00510...), provavelmente incluída por engano."
+  },
+  {
+    "slug": "vita-flex-cr",
+    "name": "Vita Flex CR",
+    "brand": "Carestream",
+    "category": "radiografia",
+    "subcategory": "cr",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/cr/vita-flex-cr/",
+    "summary": "Os sistemas CR Vita Flex foram projetados para hospitais, clínicas e consultórios de pequeno a médio porte que precisam de soluções digitais compactas por um valor acessível.",
+    "description": [
+      "Compacta, flexível e acessível",
+      "Os sistemas CR Vita Flex foram projetados para hospitais, clínicas e consultórios de pequeno a médio porte que precisam de soluções digitais compactas por um valor acessível. Com três opções para velocidades de transferência, esses sistemas oferecem aquisição de imagens de alta qualidade no próprio local para se adequar ao seu fluxo de trabalho."
+    ],
+    "highlights": [
+      "Tamanho e peso menores",
+      "Diferentes tipos de transferências (30/45/60 PPH)",
+      "Capacidade de posicionamento para transmissões horizontais ou verticais",
+      "Oferece excelentes imagens digitais",
+      "Ferramentas de medição para maior confiança no diagnóstico",
+      "Poderosas ferramentas de análise no software para melhorar o diagnóstico",
+      "Processamento de imagens utilizando barras deslizantes simples para ajustar o brilho, o contraste ou os detalhes da tela de aquisição",
+      "Aprimore consideravelmente seu fluxo de trabalho e acelere o tempo de realização dos exames em comparação com a utilização de filme",
+      "Revisão prévia da imagem, abrangendo técnicas e histórico de exposições por meio da consulta/recuperação a partir do PACS",
+      "Permite a seleção entre vários tamanhos de cassete",
+      "A opção Kit panorâmico odontológico permite a aquisição rápida e precisa de imagens odontológicas",
+      "O sistema de aquisição de imagens de comprimento longo possibilita uma captura de imagens de ossos longos versátil e de alta qualidade"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/vitaflex.webp"
+    ]
+  },
+  {
+    "slug": "classic-cr",
+    "name": "Classic CR",
+    "brand": "Carestream",
+    "category": "radiografia",
+    "subcategory": "cr",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/cr/classic-cr/",
+    "summary": "Sistema Classic CR foi projetado para agilizar a capacidade de atendimento, acelerar o fluxo de trabalho e melhorar a relação custo-benefício.",
+    "description": [
+      "Excelente qualidade de imagem, Tamanho compacto e Operação simples e fácil",
+      "Sistema Classic CR foi projetado para agilizar a capacidade de atendimento, acelerar o fluxo de trabalho e melhorar a relação custo-benefício. O CR Classic possui capacidade para até 69 cassetes por hora (usando um cassete de 35 cm x 43 cm, com o sistema no modo de digitalização em alta velocidade), tornando-o ideal para instituições de pequeno e médio portes. O Classic oferece o sistema Classic é pequeno, fácil de instalar e simples de usar."
+    ],
+    "highlights": [
+      "Gera imagens de alta qualidade e tem um tamanho compacto o suficiente para uma sala de raios X ou uma sala de console de controle de raios X.",
+      "A leitura de imagens com qualidade digital é mais rápida e mais fácil, aumentando a produtividade do radiologista.",
+      "Aprimore consideravelmente o fluxo de trabalho em comparação com a utilização do filme ao eliminar as etapas necessárias para revelá-lo. Além disso, as imagens digitais podem ser compartilhadas eletronicamente para agilizar as consultas e melhorar a colaboração com os médicos responsáveis pelos encaminhamentos.",
+      "O Classic utiliza uma ampla variedade de tamanhos de cassete padrão da indústria",
+      "Cassete de 15 x 30 cm para aquisição de imagens odontológicas",
+      "Cassete de 35 x 84 cm para exames de aquisição de imagens de ossos longos e da coluna vertebral",
+      "Oferece uma interface do usuário robusta e processamento ágil das imagens, além de uma variedade de opções de software e ferramentas.",
+      "O software de processamento de imagens com funcionalidade do Eclipse utiliza algoritmos exclusivos para fornecer excelente qualidade de imagem e confiança incomparável no diagnóstico.",
+      "Inclui funcionalidade e conectividade DICOM e IHE."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/classiccr.webp"
+    ]
+  },
+  {
+    "slug": "dr-retrofit",
+    "name": "DR Retrofit",
+    "brand": "Carestream",
+    "category": "radiografia",
+    "subcategory": "dr",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/dr/dr-retrofit/",
+    "summary": "As soluções de Retrofit da Carestream utilizam um único detector sem fio para converter seu equipamento existente de aquisição de imagens, tanto fixos quanto móveis, em operações totalmente digitais, com rapidez e economia.",
+    "description": [
+      "As soluções de Retrofit da Carestream utilizam um único detector sem fio para converter seu equipamento existente de aquisição de imagens, tanto fixos quanto móveis, em operações totalmente digitais, com rapidez e economia."
+    ],
+    "highlights": [
+      "Design flexível para sistemas de aquisição de imagens móveis dos mais variados fornecedores.",
+      "Ideal para centros de trauma, clínicas remotas, centros cirúrgicos e UTI.",
+      "Várias opções de montagem de tablet PC para se adequar ao seu sistema móvel de raios X.",
+      "Os componentes eletrônicos se encaixam na bandeja de cassete já existente.",
+      "Tela multitoque de 13 polegadas com resolução 3.000 x 2.000.",
+      "Recarregável, conta com alimentação de energia própria.",
+      "Compatibilidade com uma série de detectores DR."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/retrofit.webp"
+    ]
+  },
+  {
+    "slug": "drx",
+    "name": "DRX",
+    "brand": "Carestream",
+    "category": "radiografia",
+    "subcategory": "detectores",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/detectores/drx/",
+    "summary": "Um detector com grande desempenho em um formato compacto que permite o posicionamento rápido e fácil em incubadoras para a aquisição de imagens pediátricas.",
+    "description": [
+      "Um detector com grande desempenho em um formato compacto que permite o posicionamento rápido e fácil em incubadoras para a aquisição de imagens pediátricas.",
+      "Soluções pediátricas: Projetadas sob medida e aprovadas para aplicações pediátricas, com tamanho mais compacto encaixa-se facilmente na bandeja de raios x de uma incubadora neonatal.",
+      "Exames de longa duração mais rápidos – com uma única exposição.",
+      "Capturar imagens longas e de alta qualidade de pernas ou coluna vertebral pode ser difícil – especialmente em pacientes pediátricos ou pacientes com mobilidade limitada que têm dificuldade em permanecer imóveis por um longo período de tempo. O Detector DRX-LC permite a captura de imagens longas com uma única exposição, enquanto:",
+      "O detector DRX-L conduz a aquisição de imagens de comprimento longo a um novo patamar.",
+      "Avançado: Usa o processamento de imagens Eclipse para uma qualidade de imagem extraordinária e fornece uma imagem unificada, sem necessidade de tratar uma imagem corrigida em virtude do movimento do paciente.",
+      "Compartilhável: Oferece o recurso X-Factor, permitindo compartilhar o detector com outros Sistemas DRX.",
+      "Versátil: Acomoda facilmente exames do comprimento das pernas, escoliose e doenças degenerativas da coluna vertebral com o maior campo de visão.",
+      "Um detector mais rápido, leve, com uma inovação excepcional, o DRX Plus é também muito confiável. Baseado na plataforma X-Factor, pode ser compartilhado entre toda Família DRX de soluções de raios X."
+    ],
+    "highlights": [
+      "Redução da dose do paciente.",
+      "Economizando tempo de exame e acelerando o fluxo de trabalho.",
+      "Diminuindo as repetições.",
+      "Permitindo um maior nível de conforto ao paciente."
+    ],
+    "specs": [
+      {
+        "group": "DRX 2530C",
+        "items": [
+          "Oferece o poder do compartilhamento X-Factor.",
+          "Menor distância entre pixels para melhor qualidade de imagem e maior confiança no diagnóstico.",
+          "Design com iodeto de césio (CsI) para aplicações pediátricas sensíveis à dose.",
+          "Flexibilidade de posicionamento e facilidade de manuseio, que contribui para a aquisição de imagens ortopédicas na mesa.",
+          "Conectividade sem fio, que acelera o fluxo de trabalho, elimina os transtornos causados pelos cabos, além de reduzir o risco de infecção.",
+          "Imagens digitais nítidas. Ideal também para a aquisição de imagens ortopédicas na mesa, graças à sua flexibilidade de posicionamento e facilidade de manuseio, contribuindo para a confiança no diagnóstico.",
+          "A DQE mais elevada gera qualidade de imagem superior com uma dose menor.",
+          "Um carregador separado de bateria possibilita que o detector seja utilizado enquanto outra bateria é carregada.",
+          "Tecnologia hot-swap para troca rápida da bateria, eliminando a necessidade de reinicializar.",
+          "Graças ao armazenamento integrado de arquivos de calibração, a configuração do detector em diversos sistemas é mais rápida.",
+          "Desempenho rápido e acesso instantâneo a imagens."
+        ]
+      },
+      {
+        "group": "DRX-LC",
+        "items": [
+          "Usa processamento de imagem Eclipse para fornecer qualidade de imagem extraordinária com apresentação consistente.",
+          "Fornece uma imagem unificada, sem necessidade de costura manual ou manipulação da imagem devido ao movimento do paciente.",
+          "Permite medições mais precisas e um maior grau de segurança no planejamento do tratamento.",
+          "Minimiza o desconforto do paciente com menor tempo de espera e aquisição mais rápida de imagens.",
+          "Reduz a dose usando uma única exposição versus duas ou três.",
+          "Simplifica o fluxo de trabalho e o tempo de configuração, pois as imagens são adquiridas com uma exposição.",
+          "Fornece visualização completa da imagem em menos de um minuto para reduzir o tempo do exame.",
+          "Acelera o tempo dos exames e libera a sala de exame mais rapidamente, permitindo a obtenção de imagens de mais pacientes."
+        ]
+      },
+      {
+        "group": "DRX-LC – sistemas Carestream compatíveis",
+        "items": [
+          "DRX-Evolução Plus",
+          "Evolução DRX",
+          "DRX-Ascend/Q-Rad",
+          "Sistema DRX-1 (retrofit no quarto)"
+        ]
+      },
+      {
+        "group": "DRX-LC – componentes adicionais",
+        "items": [
+          "Suporte para transformador de detector móvel ou suporte para transformador de detector de montagem na parede",
+          "Grade",
+          "Limite de peso",
+          "Régua de Medição Radiopaca"
+        ]
+      },
+      {
+        "group": "DRX Plus",
+        "items": [
+          "Peso reduzido e design mais fino para facilitar ainda mais o manuseio",
+          "Uma eficiência quântica detectiva (DQE) mais elevada possibilita a redução da dose e aprimora a qualidade da imagem.",
+          "Design moderno do gabinete com classificação IP57 para proteção máxima contra entrada de poeira e água.",
+          "Tecnologia hot-swap para troca rápida da bateria, eliminando a necessidade de reinicializar.",
+          "São fornecidos em uma variedade de tamanhos e estão disponíveis com cintiladores de iodeto de césio ou gadolínio.",
+          "Incluem o recurso X-Factor, portanto, todos os detectores DRX Plus podem ser compartilhados com qualquer sistema DRX.",
+          "Fornece a qualidade de imagem que apenas a tecnologia totalmente digital é capaz de oferecer.",
+          "A DQE mais elevada gera qualidade de imagem superior com uma dose menor.",
+          "Um carregador separado de bateria que possibilita que o detector seja utilizado enquanto outra bateria é carregada.",
+          "Tecnologia hot-swap para troca rápida da bateria, eliminando a necessidade de reinicializar",
+          "Graças ao armazenamento integrado de arquivos de calibração, a configuração do detector em diversos sistemas é mais rápida.",
+          "O modo de detecção de feixes (para aplicações de reconversão de salas) elimina a necessidade de conexão de um cabo do gerador. A captura se inicia automaticamente quando o detector identifica a exposição dos raios X.",
+          "O design moderno do gabinete oferece proteção completa contra entrada de água com classificação IEC Nível 7 (IP57).",
+          "LEDs em três e duas cores oferecem feedback aprimorado do estado do detector."
+        ]
+      }
+    ],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/DRX-2530C.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/DRX-LC.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/DRX-Plus-1.webp"
+    ],
+    "notes": "Página reúne três modelos (DRX 2530C, DRX-LC, DRX Plus); bullets de cada modelo estão em specs por grupo. highlights = benefícios do DRX-LC listados na página. Considerar dividir em produtos separados."
+  },
+  {
+    "slug": "detector-lux-35",
+    "name": "Detector Lux 35",
+    "brand": "Carestream",
+    "category": "radiografia",
+    "subcategory": "detectores",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/detectores/detector-lux-35/",
+    "summary": "Com design inovador, substitui o vidro por um material que pesa menos e dura mais, ajuda a minimizar a tensão muscular e a fadiga do técnico, graças à facilidade de transporte e posicionamento.",
+    "description": [
+      "Sofisticado. Sem vidro. Leve.",
+      "Com design inovador, substitui o vidro por um material que pesa menos e dura mais, ajuda a minimizar a tensão muscular e a fadiga do técnico, graças à facilidade de transporte e posicionamento.",
+      "Formato ergonômico, leve e de cantos arredondados, especialmente útil para realizar a aquisição de imagens no leito dos pacientes.",
+      "Oferece alças para os dedos estrategicamente posicionadas para facilitar ainda mais o transporte e o posicionamento. A leveza e a empunhadura aprimorada reduzem a frequência e o custo de quedas e quebras."
+    ],
+    "highlights": [
+      "Cintilador de iodeto de césio (CsI) para dose reduzida e qualidade de imagem superior.",
+      "Os cantos arredondados e as bordas chanfradas proporcionam mais conforto para o paciente quando o detector precisa ser posicionado atrás da coluna ou embaixo do paciente.",
+      "Conta com o X-Factor para que o detector possa ser compartilhado entre todos os equipamentos DRX.",
+      "Utiliza o Software ImageView, alimentado pelo Eclipse, para fornecer extraordinária qualidade de imagem.",
+      "Nosso detector mais leve, pesando cerca de 2,4 kg.",
+      "Possui certificação ISO 4090."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/lux35.webp"
+    ]
+  },
+  {
+    "slug": "detectores-focus",
+    "name": "Detectores Focus",
+    "brand": "Carestream",
+    "category": "radiografia",
+    "subcategory": "detectores",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/detectores/detectores-focus/",
+    "summary": "Uma opção econômica para salas, unidades móveis e sistemas de retrofit, os Detectores Focus são essenciais para acelerar o fluxo de trabalho, aumentar a produtividade e garantir um alto padrão de atendimento aos pacientes.",
+    "description": [
+      "Uma opção econômica para salas, unidades móveis e sistemas de retrofit, os Detectores Focus são essenciais para acelerar o fluxo de trabalho, aumentar a produtividade e garantir um alto padrão de atendimento aos pacientes."
+    ],
+    "highlights": [
+      "Excelência na aquisição de imagens graças à tecnologia digital.",
+      "O modo de detecção de feixes inicia a captura da imagem automaticamente quando o detector identifica a exposição dos raios X.",
+      "Fornece uma interface do usuário simples e intuitiva.",
+      "O design e a operação sem fio aceleram o fluxo de trabalho e ajudam a aumentar a produtividade.",
+      "Funciona com o Software Image Suite, desenvolvido como uma solução de retrofit especificamente para instituições menores e consultórios de especialidades médicas.",
+      "Realize vários tipos de exame, seja no Bucky ou na mesa.",
+      "Compatibilidade com o Software ImageView e uma variedade de salas de DR, unidades móveis e sistemas de retrofit."
+    ],
+    "specs": [
+      {
+        "group": "Focus 35C e Focus 43C",
+        "items": [
+          "O design e a operação sem fio aceleram o fluxo de trabalho e eliminam o emaranhado de cabos.",
+          "Compatibilidade com o Software ImageView, habilitado pelo mecanismo Eclipse com IA. Projetados para aprimorar a eficiência e a segurança da aquisição de imagens.",
+          "Oferece uma interface do usuário comum, além de recursos inteligentes avançados para automatizar tarefas manuais e simplificar os processos.",
+          "Funcionam com o Software Image Suite como uma solução de retrofit, desenvolvido especificamente para instituições menores e consultórios de especialidades médicas, como ortopedia, quiropraxia e veterinária."
+        ]
+      },
+      {
+        "group": "Focus HD 35 e Focus HD 43",
+        "items": [
+          "Produzem imagens ultradetalhadas com maior resolução, garantindo qualidade diagnóstica excepcional por um valor incrivelmente econômico.",
+          "A densidade de pixels de 100 mícrons aprimora a resolução da imagem e amplia objetos pequenos, bem como microestruturas.",
+          "O design e a operação sem fio aceleram o fluxo de trabalho e eliminam o emaranhado de cabos.",
+          "A classificação IP56 assegura proteção superior contra entrada de poeira e líquidos.",
+          "O Software ImageView, habilitado pelo Eclipse, eleva o processamento das imagens a um novíssimo patamar.",
+          "Possui duas opções de tamanho: 35 x 43 e 43 x 43"
+        ]
+      }
+    ],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/focus.webp"
+    ]
+  },
+  {
+    "slug": "raiox-horizon",
+    "name": "Raio-X Horizon",
+    "brand": "Carestream",
+    "category": "radiografia",
+    "subcategory": "raio-x",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/raio-x/raiox-horizon/",
+    "summary": "O novo sistema de raios X CARESTREAM HORIZON oferece o que sua clínica de radiologia precisa hoje, sem perder o futuro de vista.",
+    "description": [
+      "Desempenho acessível, design eficiente",
+      "O novo sistema de raios X CARESTREAM HORIZON oferece o que sua clínica de radiologia precisa hoje, sem perder o futuro de vista. Esse sistema de raios X analógico simples e altamente acessível oferece todas as principais funcionalidades de que você precisa para realizar diagnósticos com confiança e prestar atendimento excepcional ao paciente.",
+      "Projetado para centros de imagem, instituições ortopédicas, prontos-socorros e hospitais de pequeno a médio porte, o sistema de raios X HORIZON oferece qualidade de imagem excepcional para aumentar a produtividade, bem como excelente flexibilidade para todos os principais exames. Além disso, o sistema está pronto para a tecnologia digital, compondo uma solução completa de impressão CR/DR, à medida que suas necessidades de radiologia evoluem."
+    ],
+    "highlights": [],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/horizon.webp"
+    ]
+  },
+  {
+    "slug": "drx-revolution",
+    "name": "DRX Revolution",
+    "brand": "Carestream",
+    "category": "radiografia",
+    "subcategory": "raio-x",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/raio-x/drx-revolution/",
+    "summary": "Com a introdução do DRX-Revolution ultramanobável, que apresenta a primeira coluna dobrável e automática do mundo, a Carestream redefiniu a imagem móvel.",
+    "description": [
+      "Com a introdução do DRX-Revolution ultramanobável, que apresenta a primeira coluna dobrável e automática do mundo, a Carestream redefiniu a imagem móvel. Agora, com o Revolution atualizado, adicionamos novos recursos e benefícios poderosos:"
+    ],
+    "highlights": [
+      "A cabeça do tubo e o colimador são menores, mais leves e mais bem balanceados, para facilitar o uso e posicionar mais rápido.",
+      "As telas são mais responsivas, com funções aprimoradas e reprojetadas para proteger melhor contra a entrada de fluidos",
+      "Os freios e os motores de acionamento são mais silenciosos e menos propensos a incomodar os pacientes.",
+      "A iluminação LED funcional fornece ao técnico outro ponto de visibilidade do status do sistema",
+      "Carregamento opcional no compartimento – carregue seu detector sem remover a bateria (apenas slot superior)"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/drxrevolution.webp"
+    ]
+  },
+  {
+    "slug": "impressora-dryview",
+    "name": "Impressora Laser DryView",
+    "brand": "Carestream",
+    "category": "radiografia",
+    "subcategory": "impressao",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/impressao/impressora-dryview/",
+    "summary": "Permite um diagnóstico com maior confiança, mesmo nos ambientes mais exigentes e de alto volume.",
+    "description": [
+      "DRYVIEW 6950: Permite um diagnóstico com maior confiança, mesmo nos ambientes mais exigentes e de alto volume. Este sistema oferece a inovação, suporta impressão de imagens médicas para todas as modalidades digitais, incluindo mamografia digital.",
+      "Dryview 5950: O sistema de imagem a laser 5950 é uma ferramenta de diagnóstico ideal para tratamentos de pacientes, bem como para fins educacionais, de referência e de compartilhamento.",
+      "DRYVIEW 5700: Oferece simplicidade e acessibilidade em tamanho compacto. É compatível com muitas modalidades: Radiologia computadorizada (CR), Radiografia digital (DR), Imagem por ressonância magnética (MRI) e Tomografia computadorizada (TC)."
+    ],
+    "highlights": [],
+    "specs": [
+      {
+        "group": "DRYVIEW 6950",
+        "items": [
+          "Velocidades de impressão rápidas",
+          "Até três tamanhos de filme online",
+          "Facilidade de uso com acesso rápido ao filme",
+          "Operação intuitiva e simplificada",
+          "Qualidade de impressão excepcional para mamografia digital"
+        ]
+      },
+      {
+        "group": "Dryview 5950",
+        "items": [
+          "Imagens de alta qualidade para todos os tipos de aplicações, incluindo mamografia digital de campo total",
+          "Fácil carregamento de filme e alterações de tamanho de filme",
+          "Até dois tamanhos de filme online",
+          "Ocupa pouco espaço",
+          "Monitoramento automático da qualidade da imagem"
+        ]
+      },
+      {
+        "group": "Dryview 5950 – ideal para diversas aplicações",
+        "items": [
+          "Radiologia computadorizada (CR)",
+          "Radiografia digital (DR)",
+          "Imagem por ressonância magnética (MRI)",
+          "Tomografia computadorizada (TC)",
+          "Mamografia digital de campo total e mamografia CR"
+        ]
+      },
+      {
+        "group": "DRYVIEW 5700",
+        "items": [
+          "Excelente qualidade de impressão em qualquer tamanho de filme com tecnologia a laser",
+          "Tecnologia Fototermográfico (laser e seco)",
+          "Qualidade de impressão a laser com 325 pixels por polegada; espaçamento de ponto de laser de 78 mícrons",
+          "Filme para impressão a laser DRYVIEW DVB: Base de poliéster azul de 7 milésimos de polegada, cartuchos de filme de carregamento durante o dia, 125 folhas/cartucho",
+          "Opções de tamanho de filme: 35 x 43 cm/ 28 x 35 cm/ 25 x 30 cm/ 20 x 25 cm"
+        ]
+      }
+    ],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/driview6950.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/driview5950.webp",
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/dryview5700.webp"
+    ],
+    "notes": "Título da página no site: 'Impressora Dryview'; heading 'Impressora a laser Driview'; listagens usam 'Impressora Laser DryView'. Página cobre três modelos (6950, 5950, 5700)."
+  },
+  {
+    "slug": "filmes-impressora-dryview",
+    "name": "Filmes Impressora Laser DryView",
+    "brand": "Carestream",
+    "category": "radiografia",
+    "subcategory": "impressao",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/impressao/filmes-impressora-dryview/",
+    "summary": "Combina a vantagem de uma geração de imagem a laser seca com filmes de alta qualidade.",
+    "description": [
+      "Combina a vantagem de uma geração de imagem a laser seca com filmes de alta qualidade. Oferece excelente visualização para diagnóstico com captura de imagem fina, nítida e detalhada e tom de imagem frio."
+    ],
+    "highlights": [
+      "Com diversas opções de tamanho de filme, o DRYVIEW está disponível para atender às necessidades específicas de geração de imagem.",
+      "Longa vida útil – o filme DRYVIEW pode ser armazenado e usado por muitos meses, simplificando o controle de estoque e criando potencial para economias de custo.",
+      "Fácil reinserção de filme – os cartuchos do filme DRYVIEW podem ser inseridos facilmente sob luz total e usam embalagens mínimas."
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://daanimagem.com.br/wp-content/uploads/2024/06/filme-impressao.webp"
+    ]
+  }
+]

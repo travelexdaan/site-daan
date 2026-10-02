@@ -1,0 +1,97 @@
+[
+  {
+    "slug": "cardiologia",
+    "name": "Cardiologia",
+    "intro": "Com o aumento nos índices de doenças cardiovasculares as demandas para a cardiologia estão cada vez mais altas. Neste cenário os diagnósticos precisam ser cada vez mais rápidos, assertivos e confiáveis e por isso é preciso investir em soluções capazes de fortalecer a confiança clínica, aumentar a eficiência no atendimento e contribuir para melhorar a experiência de cuidados cardíacos.\n\nTrabalhamos com um portfólio completo de equipamentos da Philips voltados para esta especialidade. Ultrassons que possuem design moderno e ergonômicos, com sistemas inovadores que oferecem imagens de altíssima qualidade, capazes de garantir um diagnóstico mais completo e seguro.\n\nAlém disso, a DAAN Imagem conta com uma equipe técnica especializada e pronta para atender e oferecer todo suporte necessário para torna-lo um grande aliado no dia a dia das clínicas e hospitais.",
+    "image": "https://daanimagem.com.br/wp-content/uploads/2024/06/cardiologia-destaque.webp",
+    "productNames": [
+      "EPIQ CVx",
+      "Affiniti 70",
+      "Compacto 5000",
+      "Azurion 7",
+      "MR 5300",
+      "CX50"
+    ],
+    "legacyUrl": "https://daanimagem.com.br/especialidades/cardiologia/"
+  },
+  {
+    "slug": "cirurgia-plastica",
+    "name": "Cirurgia Plástica",
+    "intro": "Os ultrassons portáteis estão ganhando cada vez mais espaço nas salas de cirurgia plástica. Isto porque a tecnologia permite um acompanhamento mais efetivo e confiável durante os procedimentos, o que traz aos médicos e seus pacientes muito mais segurança.\n\nContribuindo para um aumento da assertividade e a minimização de chances de complicações, os ultrassons portáteis são perfeitos para a salas de cirurgia, graças à portabilidade e excelente qualidade das imagens. Avaliação dos implantes mamários, tratamentos de seromas e acompanhamento de enxerto de gordura são algumas das aplicações do ultrassom para a cirurgia plástica.",
+    "image": "https://daanimagem.com.br/wp-content/uploads/2024/06/cirurgia-plastica-destaque.webp",
+    "productNames": [
+      "Innosight",
+      "Lumify"
+    ],
+    "legacyUrl": "https://daanimagem.com.br/especialidades/cirurgia-plastica/"
+  },
+  {
+    "slug": "ginecologia-obstetricia",
+    "name": "Ginecologia e Obstetrícia",
+    "intro": "Equipamentos inovadores para fornecer imagens de alta qualidade, capazes de otimizar os processos e reduzir o tempo de exame, além de garantir maior confiabilidade aos diagnósticos.\n\nO pacote de funcionalidade de visualização avançada dos equipamentos da Philips permite obter imagens reais em 3D. Os sistemas TrueVue e GlassVue fornecem imagens para obstetrícia e ginecologia de alta qualidade 3D com o aReveal, que permite mostrar o rosto do feto em só um toque.",
+    "image": "https://daanimagem.com.br/wp-content/uploads/2024/06/ginecologia-destaque.webp",
+    "productNames": [
+      "EPIQ Elite",
+      "Affiniti 70",
+      "Affiniti 50",
+      "Compacto 5000",
+      "CX50",
+      "ClearVue 350",
+      "ClearVue 650",
+      "ClearVue 850"
+    ],
+    "legacyUrl": "https://daanimagem.com.br/especialidades/ginecologia-obstetricia/"
+  },
+  {
+    "slug": "ortopedia",
+    "name": "Ortopedia",
+    "intro": "A ultrassonografia é uma grande aliada na prática da Ortopedia para identificar com mais precisão o local exato da lesão, o que é fundamental para auxiliar na definição do melhor tratamento para cada paciente.\n\nO diagnóstico por imagem de ultrassom permite fazer uma avaliação dos tipos de doenças articulares que podem acometer ombros, cotovelos, punhos, dedos, quadris, joelhos e tornozelos, identificando locais de rupturas, traumas e inflamações.\n\nO portfólio de equipamentos médicos da Philips conta com os mais avançados recursos tecnológicos, que garantem a alta qualidade na resolução de imagens, que impactam diretamente no fechamento de um diagnóstico mais confiável, seguro e assertivo.",
+    "image": "https://daanimagem.com.br/wp-content/uploads/2024/06/ortopedia-destaque.webp",
+    "productNames": [
+      "EPIQ Elite",
+      "Affiniti 30",
+      "Affiniti 50",
+      "Affiniti 70",
+      "Compacto 5000",
+      "Lumify"
+    ],
+    "legacyUrl": "https://daanimagem.com.br/especialidades/ortopedia/"
+  },
+  {
+    "slug": "point-of-care",
+    "name": "Point of Care",
+    "intro": "O Ultrassom Point-Of-Care (POCUS) é um exame que representa a integração da ultrassonografia na avaliação clínica direta do paciente, podendo ser utilizado por profissionais de saúde no auxílio ao diagnóstico e na orientação para os respectivos procedimentos médicos.\n\nDesde a atenção primária à saúde até as unidades de terapia intensiva, o POCUS representa uma versatilidade nos mais diferentes cenários, incluindo a medicina de emergência, desde a entrada do paciente no pronto-socorro até a alta hospitalar.\n\nEntre os cenários comuns de utilização estão a avaliação de dispneia e de choque, que são cenários críticos.",
+    "image": "https://daanimagem.com.br/wp-content/uploads/2024/06/point-of-care-destaque.webp",
+    "productNames": [
+      "Compacto 5000",
+      "Innosight",
+      "Lumify"
+    ],
+    "legacyUrl": "https://daanimagem.com.br/especialidades/point-of-care/"
+  },
+  {
+    "slug": "radiologia",
+    "name": "Radiologia",
+    "intro": "Na Radiologia, a precisão é um fator fundamental em todas as etapas, desde a prevenção, detecção, diagnóstico e monitoramento. Neste contexto, os equipamentos da Philips oferecem soluções totalmente integradas, que abrangem este processo de ponta a ponta, gerando um aumento da confiança clínica, melhoria na detecção e oferecendo suporte às necessidades do paciente.\n\nInovações tecnológicas que permitem ir além das complexidades clínicas e dos desafios do fluxo de trabalho, que serão capazes de contribuir para um melhor atendimento aos pacientes.",
+    "image": "https://daanimagem.com.br/wp-content/uploads/2024/07/radiografia-capa.webp",
+    "productNames": [],
+    "legacyUrl": "https://daanimagem.com.br/especialidades/radiologia/",
+    "notes": "Page lists no specific products; only a 'Confira todos os equipamentos' button linking to /equipamentos/ (confirmed via REST API)."
+  },
+  {
+    "slug": "vascular",
+    "name": "Vascular",
+    "intro": "As intervenções vasculares estão se tornando mais diversas e mais complexas. A Philips possui um portfólio completo, capaz de oferecer soluções que fornecem imagens excelentes e uma ampla oferta de dispositivos, para procedimentos mais simples até os mais difíceis.\n\nArco cirúrgicos, equipamentos de hemodinâmica e ultrassons vêm equipados com o que há mais moderno e tecnológico para ajudar a rotina dos médicos, com muito mais segurança e confiabilidade.\n\nConsiga as respostas de que precisa, de forma eficiente, com excelente qualidade de imagem, formatação de imagens revolucionárias, fluxo de trabalho de geração de imagens 3D/4D e ferramentas clínicas complementares.",
+    "image": "https://daanimagem.com.br/wp-content/uploads/2024/06/vascular-destaque.webp",
+    "productNames": [
+      "Zenition 70",
+      "Azurion 7",
+      "EPIQ CVx",
+      "Affiniti 50",
+      "Affiniti 70",
+      "Compacto 5000",
+      "Innosight"
+    ],
+    "legacyUrl": "https://daanimagem.com.br/especialidades/vascular/"
+  }
+]

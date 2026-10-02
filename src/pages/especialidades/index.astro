@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { getSpecialties } from '../../lib/data';
+const specialties = await getSpecialties();
+---
+<Base title="Especialidades" description="Equipamentos de diagnóstico por imagem por especialidade médica: cardiologia, ginecologia e obstetrícia, ortopedia, vascular e mais.">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="/">Início</a> / Especialidades</nav>
+      <h1>Especialidades</h1>
+      <p class="lead">Encontre os equipamentos indicados para a sua área de atuação.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container grid grid-3">
+      {specialties.map((s) => (
+        <a class="card" href={`/especialidades/${s.slug}/`}>
+          {s.image && <div class="card-media cover"><img src={s.image} alt="" loading="lazy" /></div>}
+          <div class="card-body">
+            <h3>{s.name}</h3>
+            <p>{s.productSlugs.length > 0 ? `${s.productSlugs.length} equipamentos indicados` : 'Conheça as soluções'}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+  <CtaBand />
+</Base>

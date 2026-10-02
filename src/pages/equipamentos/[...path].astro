@@ -1,0 +1,216 @@
+---
+// Mantém os mesmos endereços do site antigo:
+//   /equipamentos/<linha>/                      → página da linha
+//   /equipamentos/<linha>/<sub>/                → subcategoria (ex.: ultrassom/estacionarios)
+//   /equipamentos/<linha>/[<sub>/]<produto>/    → página do produto
+import Base from '../../layouts/Base.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import QuoteForm from '../../components/QuoteForm.astro';
+import { getProducts, getCategories, getSpecialties, getSite, productUrl, whatsappLink, type Product, type Category } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const products = await getProducts();
+  const cats = await getCategories();
+  const paths: { params: { path: string }; props: { kind: 'category' | 'product'; category?: Category; product?: Product } }[] = [];
+  for (const c of cats) {
+    const p = c.parent ? `${c.parent}/${c.slug}` : c.slug;
+    paths.push({ params: { path: p }, props: { kind: 'category', category: c } });
+  }
+  for (const pr of products) {
+    paths.push({ params: { path: productUrl(pr).replace(/^\/equipamentos\/|\/$/g, '') }, props: { kind: 'product', product: pr } });
+  }
+  return paths;
+}
+
+const { kind, category, product } = Astro.props;
+const products = await getProducts();
+const cats = await getCategories();
+const specialties = await getSpecialties();
+const site = await getSite();
+const byslug = (s: string | null | undefined) => cats.find((c) => c.slug === s);
+
+let title = '';
+let list: Product[] = [];
+let crumbs: { href: string; label: string }[] = [{ href: '/equipamentos/', label: 'Equipamentos' }];
+let children: Category[] = [];
+let related: Product[] = [];
+let productSpecialties: typeof specialties = [];
+
+if (kind === 'category' && category) {
+  title = category.name;
+  const parent = byslug(category.parent);
+  if (parent) crumbs.push({ href: `/equipamentos/${parent.slug}/`, label: parent.name });
+  list = parent
+    ? products.filter((p) => p.category === parent.slug && p.subcategory === category.slug)
+    : products.filter((p) => p.category === category.slug);
+  children = parent ? [] : cats.filter((c) => c.parent === category.slug);
+} else if (product) {
+  title = product.name;
+  const cat = byslug(product.category);
+  const sub = cats.find((c) => c.slug === product.subcategory && c.parent === product.category);
+  if (cat) crumbs.push({ href: `/equipamentos/${cat.slug}/`, label: cat.name });
+  if (sub && cat) crumbs.push({ href: `/equipamentos/${cat.slug}/${sub.slug}/`, label: sub.name });
+  related = products
+    .filter((p) => p.slug !== product.slug && p.category === product.category && (p.subcategory === product.subcategory || !product.subcategory))
+    .slice(0, 3);
+  productSpecialties = specialties.filter((s) => product.specialties.includes(s.slug) || s.productSlugs.includes(product.slug));
+}
+const catName = Object.fromEntries(cats.map((c) => [c.slug, c.name]));
+---
+{kind === 'category' && category && (
+  <Base title={title} description={category.intro?.slice(0, 160) || `Equipamentos de ${title} Philips e Carestream com a Daan Imagem.`}>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb"><a href="/">Início</a> / {crumbs.map((c) => <><a href={c.href}>{c.label}</a> / </>)}{title}</nav>
+        <h1>{title}</h1>
+        {category.intro && <p class="lead">{category.intro}</p>}
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        {children.length > 0 && (
+          <div class="chips" style="margin-bottom:28px">
+            {children.map((c) => <a class="chip" href={`/equipamentos/${category.slug}/${c.slug}/`}>{c.name}</a>)}
+          </div>
+        )}
+        {list.length > 0 ? (
+          <div class="grid grid-3">{list.map((p) => <ProductCard product={p} categoryName={p.subcategory ? catName[p.subcategory] : p.brand} />)}</div>
+        ) : (
+          <p class="muted">Em breve. Fale com a nossa equipe para conhecer as opções desta linha.</p>
+        )}
+      </div>
+    </section>
+    <CtaBand message={`Olá! Gostaria de uma cotação de ${title}.`} />
+  </Base>
+)}
+
+{kind === 'product' && product && (
+  <Base title={`${product.name}${product.brand ? ' ' + product.brand : ''}`} description={product.summary?.slice(0, 160)} image={product.images[0]}>
+    <section class="section product">
+      <div class="container">
+        <nav class="breadcrumb"><a href="/">Início</a> / {crumbs.map((c) => <><a href={c.href}>{c.label}</a> / </>)}{title}</nav>
+        <div class="product-grid">
+          <div class="gallery">
+            <div class="gallery-main">
+              {product.images[0] ? <img id="main-img" src={product.images[0]} alt={product.name} /> : <span class="muted">{product.brand}</span>}
+            </div>
+            {product.images.length > 1 && (
+              <div class="thumbs">
+                {product.images.slice(0, 10).map((src, i) => (
+                  <button type="button" class="thumb" data-src={src} aria-label={`Imagem ${i + 1}`}><img src={src} alt="" loading="lazy" /></button>
+                ))}
+              </div>
+            )}
+          </div>
+          <div class="info">
+            <span class="tag">{product.brand}</span>
+            <h1>{product.name}</h1>
+            {product.summary && <p class="lead">{product.summary}</p>}
+            {productSpecialties.length > 0 && (
+              <div class="chips specs-chips">
+                {productSpecialties.map((s) => <a class="chip" href={`/especialidades/${s.slug}/`}>{s.name}</a>)}
+              </div>
+            )}
+            <div class="btn-row">
+              <a class="btn btn-primary" href="#cotacao">Solicitar cotação</a>
+              <a class="btn btn-whats" href={whatsappLink(site, `Olá! Gostaria de uma cotação do ${product.name}.`)} target="_blank" rel="noopener">WhatsApp</a>
+              {product.catalogPdf && <a class="btn btn-ghost" href={product.catalogPdf} target="_blank" rel="noopener">Baixar catálogo (PDF)</a>}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {(product.description.length > 0 || product.highlights.length > 0) && (
+      <section class="section section-soft">
+        <div class="container detail-grid">
+          {product.description.length > 0 && (
+            <div class="prose">
+              <h2>Sobre o {product.name}</h2>
+              {product.description.map((p) => <p>{p}</p>)}
+            </div>
+          )}
+          {product.highlights.length > 0 && (
+            <div>
+              <h2>Destaques</h2>
+              <ul class="check-list">{product.highlights.map((h) => <li>{h}</li>)}</ul>
+            </div>
+          )}
+        </div>
+      </section>
+    )}
+
+    {product.specs.length > 0 && (
+      <section class="section">
+        <div class="container">
+          <h2>Especificações e aplicações</h2>
+          <div class="grid grid-2 specs">
+            {product.specs.map((g) => (
+              <div class="spec-group">
+                <h3>{g.group}</h3>
+                <ul>{g.items.map((i) => <li>{i}</li>)}</ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="section section-soft" id="cotacao">
+      <div class="container quote">
+        <div>
+          <p class="eyebrow">Cotação</p>
+          <h2>Receba uma proposta do {product.name}</h2>
+          <p class="muted">Nossa equipe comercial retorna em até 1 dia útil com condições, prazos e opções de configuração.</p>
+        </div>
+        <QuoteForm product={product.name} />
+      </div>
+    </section>
+
+    {related.length > 0 && (
+      <section class="section">
+        <div class="container">
+          <h2>Veja também</h2>
+          <div class="grid grid-3" style="margin-top:20px">{related.map((p) => <ProductCard product={p} categoryName={catName[p.category]} />)}</div>
+        </div>
+      </section>
+    )}
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: product.name,
+      brand: { '@type': 'Brand', name: product.brand },
+      description: product.summary,
+      image: product.images.slice(0, 3),
+    })} />
+  </Base>
+)}
+
+<script>
+  const main = document.getElementById('main-img') as HTMLImageElement | null;
+  document.querySelectorAll<HTMLButtonElement>('.thumb').forEach((b) =>
+    b.addEventListener('click', () => { if (main && b.dataset.src) main.src = b.dataset.src; }),
+  );
+</script>
+
+<style>
+  .product-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: start; }
+  .gallery-main { background: var(--bg-soft); border-radius: 20px; aspect-ratio: 4 / 3; display: grid; place-items: center; overflow: hidden; }
+  .gallery-main img { width: 100%; height: 100%; object-fit: contain; padding: 24px; }
+  .thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: 10px; margin-top: 12px; }
+  .thumb { border: 1px solid var(--line); background: #fff; border-radius: 10px; padding: 4px; cursor: pointer; aspect-ratio: 1; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
+  .info h1 { margin: 10px 0 12px; }
+  .info .lead { margin-bottom: 20px; }
+  .specs-chips { margin-bottom: 24px; }
+  .detail-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; }
+  .check-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .check-list li { padding-left: 30px; position: relative; }
+  .check-list li::before { content: '✓'; position: absolute; left: 0; color: var(--teal); font-weight: 800; }
+  .spec-group { border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+  .spec-group ul { margin: 0; padding-left: 1.1em; color: var(--muted); }
+  .quote { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 48px; }
+  @media (max-width: 860px) { .product-grid, .detail-grid, .quote { grid-template-columns: 1fr; gap: 28px; } }
+</style>

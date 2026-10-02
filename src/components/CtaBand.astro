@@ -1,0 +1,20 @@
+---
+import { getSite, whatsappLink } from '../lib/data';
+interface Props { title?: string; text?: string; message?: string }
+const { title = 'Vamos encontrar o equipamento certo para sua clínica?', text = 'Fale com nosso time comercial e receba uma proposta sob medida.', message } = Astro.props;
+const site = await getSite();
+---
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>{title}</h2>
+        <p>{text}</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-light" href="/contato/#cotacao">Solicitar cotação</a>
+        <a class="btn btn-whats" href={whatsappLink(site, message ?? 'Olá! Vim pelo site e gostaria de uma cotação.')} target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
