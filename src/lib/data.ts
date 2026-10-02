@@ -168,7 +168,7 @@ export const getHome = () =>
       const h = await sanity.fetch(`*[_id == "home"][0]{heroTitle, heroSubtitle, aboutText, highlights, "heroImages": heroImages[].asset->url}`);
       return { ...fallback, ...(h ?? {}) };
     }
-    const h = seedPages().home ?? {};
+    const h: Partial<Home> = seedPages().home ?? {};
     return {
       heroTitle: h.heroTitle || fallback.heroTitle,
       heroSubtitle: h.heroSubtitle || fallback.heroSubtitle,
