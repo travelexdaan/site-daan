@@ -72,7 +72,7 @@ a.card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
 .card-body { padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
 .card-body h3 { margin: 0; }
 .card-body p { margin: 0; color: var(--muted); font-size: 0.95rem; }
-.tag { display: inline-block; font-size: 0.75rem; font-weight: 600; color: var(--blue); background: #e8f1fb; padding: 3px 10px; border-radius: 999px; }
+.tag { align-self: flex-start; display: inline-block; font-size: 0.75rem; font-weight: 600; color: var(--blue); background: #e8f1fb; padding: 3px 10px; border-radius: 999px; }
 
 .breadcrumb { font-size: 0.88rem; color: var(--muted); margin-bottom: 16px; }
 .breadcrumb a { color: var(--muted); text-decoration: none; }
