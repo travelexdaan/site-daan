@@ -1,0 +1,38 @@
+# Tarefas do painel Sanity, rodadas manualmente em Actions › "Sanity" › Run workflow.
+# Precisa do segredo SANITY_AUTH_TOKEN (token com permissão Editor, criado em sanity.io/manage › API › Tokens).
+name: Sanity
+
+on:
+  workflow_dispatch:
+    inputs:
+      tarefa:
+        description: 'O que fazer'
+        type: choice
+        options:
+          - publicar-painel
+          - importar-conteudo-do-wordpress
+        default: publicar-painel
+
+jobs:
+  sanity:
+    runs-on: ubuntu-latest
+    env:
+      SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npm ci
+        working-directory: studio
+
+      - name: Importar conteúdo e fotos do site antigo (substitui o que tiver o mesmo ID)
+        if: inputs.tarefa == 'importar-conteudo-do-wordpress'
+        run: |
+          node scripts/seed-to-ndjson.mjs
+          cd studio && npx sanity dataset import ../seed.ndjson production --replace
+
+      - name: Publicar o painel em https://daanimagem.sanity.studio
+        run: npx sanity deploy -y
+        working-directory: studio
