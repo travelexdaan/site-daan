@@ -73,4 +73,4 @@ Entre no painel, abra a seção desejada, altere e clique em **Publish**. O site
 - **E-mail:** o site antigo mostra comercial@ e comercial1@. O novo usa comercial@.
 - **Radiologia:** não tem equipamentos vinculados.
 - **Carestream:** só as impressoras DryView e os filmes continuam no site. Os outros 8 itens Carestream estão com *Ocultar do site* marcado.
-- **Konica Minolta e Guerbet:** as linhas (Raio-X, Raio-X portátil, Mamografia, Placas detectoras, Placas veterinárias, Injetoras e Meios de contraste) estão criadas e mostram "sob consulta" até receberem produtos pelo painel. Xenetix e Optiray já estão cadastrados, mas ainda sem fotos.
+- **Konica Minolta e Guerbet:** as linhas (Raio-X, Raio-X portátil, Mamografia, Placas detectoras, Placas veterinárias, Injetoras e Meios de contraste) estão criadas. Produtos Konica Minolta e Guerbet vieram dos sites oficiais dos fabricantes (fotos linkadas de lá). Henetix e Optiray ainda estão sem foto; confira as fotos dos mamógrafos Delicata.

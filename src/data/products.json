@@ -1434,31 +1434,1138 @@
     ]
   },
   {
-    "slug": "xenetix",
-    "name": "Xenetix",
+    "slug": "aerodr-maximus",
+    "name": "AeroDR Maximus",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "raio-x",
+    "summary": "Sala de raio-X digital versátil com gerador de alta frequência de até 64 kW e mesa de tampo flutuante para até 350 kg.",
+    "description": [
+      "O AeroDR Maximus é um sistema de raio-X digital configurável com diferentes opções de painéis DR da linha AeroDR. Seu gerador de alta frequência chega a 64 kW e 150 kV, com faixa de corrente de até 800 mA.",
+      "Conta com dispositivos eDAP (produto dose-área estimado) e AEC (controle automático de exposição), que ajudam a reduzir a dose no paciente em conformidade com as normas NBR IEC."
+    ],
+    "highlights": [
+      "Gerador de alta frequência de até 64 kW / 150 kV",
+      "Faixa de mA de até 800",
+      "Mesa de tampo flutuante para até 350 kg",
+      "eDAP e AEC para controle de dose",
+      "Configurável com painéis DR AeroDR"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/12/AeroDR-Maximus.jpg",
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/11/Aero-DR-Maximus.jpeg"
+    ]
+  },
+  {
+    "slug": "altus-dr",
+    "name": "AltusDR",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "raio-x",
+    "summary": "Equipamento de raio-X digital com gerador de alta frequência para exames de tórax, abdômen, crânio, coluna e extremidades.",
+    "description": [
+      "O AltusDR é um equipamento de radiodiagnóstico digital com gerador de alta frequência, microcontroladores avançados e componentes totalmente integrados.",
+      "A estativa fixada ao piso simplifica a instalação e facilita exames em pacientes com mobilidade reduzida ou em macas."
+    ],
+    "highlights": [
+      "Gerador de alta frequência",
+      "Exames de tórax, abdômen, crânio, coluna e extremidades",
+      "Estativa fixada ao piso, de instalação simplificada",
+      "Atende pacientes com mobilidade reduzida ou em maca"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2022/11/171106-0003altusDRlat-scaled.jpg-copiar-SEM-COMANDO_.jpg"
+    ]
+  },
+  {
+    "slug": "aerodr-maxmove",
+    "name": "AeroDR Maxmove",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "raio-x-portatil",
+    "summary": "Raio-X móvel digital motorizado, compacto e leve, compatível com DDR e com compartimento para três detectores.",
+    "description": [
+      "O AeroDR Maxmove é apresentado pela Konica Minolta como o menor e mais leve sistema de raio-X móvel motorizado disponível. Ele é compatível com a Radiografia Digital Dinâmica (DDR).",
+      "Possui carregamento embutido para três detectores, interface frontal com pré-visualização da imagem e software de aquisição Ultra, com worklist e opções de personalização."
+    ],
+    "highlights": [
+      "Raio-X móvel digital motorizado",
+      "Compatível com Radiografia Digital Dinâmica (DDR)",
+      "Carregamento embutido para três detectores",
+      "Interface frontal com pré-visualização da imagem",
+      "Software de aquisição Ultra com worklist"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2024/09/AeroDR-MaxMove.jpg",
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2025/07/AeroDR-MaxMove.jpg"
+    ]
+  },
+  {
+    "slug": "aerodr-essential",
+    "name": "AeroDR Essential",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "detectores",
+    "summary": "Detector digital robusto e fácil de usar, com proteção IP56, pixel de 150 µm e revestimento antibacteriano.",
+    "description": [
+      "O AeroDR Essential foi pensado para simplicidade de uso e resistência, com proteção IP56 contra líquidos e poeira.",
+      "Oferece imagens de alta resolução com pixel de 150 µm e baixa dose de radiação, além de acabamento antibacteriano."
+    ],
+    "highlights": [
+      "Proteção IP56 contra líquidos e poeira",
+      "Pixel de 150 µm",
+      "Baixa dose de radiação",
+      "Revestimento antibacteriano"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2026/09/AERODR-Essential-1.jpg"
+    ]
+  },
+  {
+    "slug": "aerodr-core",
+    "name": "AeroDR Core",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "detectores",
+    "summary": "Detector sem vidro em fibra de carbono, de 35 x 43 cm e 1,8 kg, mais leve que um cassete de CR.",
+    "description": [
+      "O AeroDR Core é um detector sem vidro com estrutura em fibra de carbono totalmente redesenhada e cantos reforçados para resistir a quedas e impactos.",
+      "Pesa menos que um cassete de CR e está disponível em versões fixa ou portátil com a estação de aquisição CS-7."
+    ],
+    "highlights": [
+      "Tamanho 35 x 43 cm",
+      "Peso de 1,8 kg",
+      "Estrutura sem vidro em fibra de carbono",
+      "Cantos reforçados contra quedas",
+      "Versões fixa ou portátil com CS-7"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2024/01/AeroDR_SL.png"
+    ]
+  },
+  {
+    "slug": "aerodr-core-ii",
+    "name": "AeroDR Core II",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "detectores",
+    "summary": "Detector sem vidro com TFT em substrato de filme e cintilador de iodeto de césio, em 35 x 43 cm e 43 x 43 cm.",
+    "description": [
+      "O AeroDR Core II combina TFT em substrato de filme e cintilador de iodeto de césio para maior eficiência e menor dose ao paciente.",
+      "Opera continuamente por mais de 8 horas graças a um banco capacitivo e está disponível em versões fixa ou portátil com a estação CS-7."
+    ],
+    "highlights": [
+      "Tamanhos 35 x 43 cm e 43 x 43 cm",
+      "Cintilador de iodeto de césio (CsI)",
+      "Operação contínua por mais de 8 horas",
+      "Versões fixa ou portátil com CS-7"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/11/AERODR-HL-768x514.png"
+    ]
+  },
+  {
+    "slug": "aerodr-dynamic",
+    "name": "AeroDR Dynamic",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "detectores",
+    "summary": "Modelo mais avançado da família AeroDR, com pixel de 100 µm e compatibilidade com Radiografia Digital Dinâmica.",
+    "description": [
+      "O AeroDR Dynamic é o topo da família AeroDR e o único modelo compatível com a Radiografia Digital Dinâmica (DDR) da Konica Minolta, que registra estruturas anatômicas em movimento.",
+      "Possui memória interna, acabamento antibacteriano e está disponível em 35 x 43 cm e 43 x 43 cm."
+    ],
+    "highlights": [
+      "Compatível com DDR",
+      "Pixel de 100 µm",
+      "Tamanhos 35 x 43 cm e 43 x 43 cm",
+      "Memória interna e acabamento antibacteriano"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/11/Aero-DR-Carbon-768x514.jpg"
+    ]
+  },
+  {
+    "slug": "aerodr-primary",
+    "name": "AeroDR Primary",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "detectores",
+    "summary": "Detector digital 14 x 17\" que digitaliza equipamentos de raio-X analógicos fixos ou móveis, com fluxo totalmente sem fio.",
+    "description": [
+      "O AeroDR Primary converte qualquer equipamento de raio-X analógico, fixo ou móvel, para o digital. A detecção automática de exposição dispensa cabo de conexão com o gerador.",
+      "Com memória interna e ponto de acesso integrado, envia as imagens à estação ImagePilot, fixa ou portátil, em segundos."
+    ],
+    "highlights": [
+      "Tamanho 14 x 17 polegadas",
+      "Detecção automática de exposição, sem cabo ao gerador",
+      "Memória interna para uso à beira do leito",
+      "Ponto de acesso integrado e fluxo sem fio",
+      "Acompanha estação de aquisição ImagePilot"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2022/12/AeroDR-NS_Sozinho.jpg"
+    ]
+  },
+  {
+    "slug": "aerodr-uno",
+    "name": "AeroDR Uno",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "detectores",
+    "summary": "Painel digital de 10 x 12\" para UTI neonatal, que cabe na maioria das incubadoras e evita mover o recém-nascido.",
+    "description": [
+      "O AeroDR Uno é um detector digital compacto de 10 x 12\" voltado à UTI neonatal. Usado com um raio-X móvel analógico, leva a radiografia digital ao leito do recém-nascido.",
+      "Seu tamanho se adapta à maioria das incubadoras nacionais e importadas. Inclui o software Tube Gaze, que ajuda a visualizar cateteres e sondas, e trabalha com a estação CS-7 portátil."
+    ],
+    "highlights": [
+      "Tamanho 10 x 12 polegadas",
+      "Compatível com a maioria das incubadoras",
+      "Software Tube Gaze para cateteres e sondas",
+      "Estação de aquisição CS-7 portátil"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/01/aero-dr-neo-natal-01.jpg",
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/01/aero-dr-neo-natal-02.jpg"
+    ]
+  },
+  {
+    "slug": "cr-regius-sigma-ii",
+    "name": "CR Regius Sigma II",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "detectores",
+    "summary": "Digitalizador CR compacto e acessível, com 28 kg, ocupando 0,31 m² e processando até 60 cassetes por hora.",
+    "description": [
+      "O CR Regius Sigma II é um digitalizador de radiografia computadorizada compacto, pensado para clínicas de radiologia, mantendo a qualidade de imagem da Konica Minolta.",
+      "Ocupa apenas 0,31 m², pesa 28 kg e, com a estação de aquisição ImagePilot, oferece operação simples."
+    ],
+    "highlights": [
+      "Até 60 cassetes por hora (35 x 43 cm)",
+      "Peso de 28 kg",
+      "Ocupa 0,31 m²",
+      "Opera com a estação ImagePilot"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2020/03/Regius-Sigma.jpg"
+    ]
+  },
+  {
+    "slug": "delicata-evolution-dr",
+    "name": "Delicata Evolution DR",
+    "brand": "Konica Minolta",
+    "category": "mamografia",
+    "subcategory": null,
+    "summary": "Mamógrafo digital compacto com estação de aquisição integrada à unidade principal e até 91 cm de deslocamento vertical.",
+    "description": [
+      "O Delicata Evolution DR é uma solução compacta de mamografia digital, com a estação de aquisição (AWS) integrada à unidade principal do mamógrafo.",
+      "Oferece o mesmo desempenho e qualidade de imagem da família de mamógrafos digitais da Konica Minolta."
+    ],
+    "highlights": [
+      "Estação de aquisição (AWS) integrada",
+      "Até 91 cm de deslocamento vertical",
+      "Design compacto",
+      "Qualidade de imagem da família digital Konica Minolta"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/02/Layer-1.jpg",
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/02/Layer-2.jpg"
+    ]
+  },
+  {
+    "slug": "delicata-dr",
+    "name": "Delicata DR",
+    "brand": "Konica Minolta",
+    "category": "mamografia",
+    "subcategory": null,
+    "summary": "Mamógrafo digital 2D com detector flat panel de selênio amorfo de conversão direta.",
+    "description": [
+      "O Delicata DR realiza, em sua configuração padrão, a aquisição de imagens mamográficas 2D.",
+      "Utiliza detector flat panel (FPD) de selênio amorfo (a-Se) com tecnologia de conversão direta."
+    ],
+    "highlights": [
+      "Aquisição mamográfica 2D",
+      "Detector flat panel de selênio amorfo (a-Se)",
+      "Conversão direta",
+      "Pode ser configurado com tomossíntese (DBT)"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2026/09/delicata-dr-e-dr-dbt-1.png",
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2025/03/Layer-3.jpg",
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2025/03/Layer-4.jpg",
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2021/10/delicata-dr-01-560x420.jpg"
+    ]
+  },
+  {
+    "slug": "delicata-dr-dbt",
+    "name": "Delicata DR DBT",
+    "brand": "Konica Minolta",
+    "category": "mamografia",
+    "subcategory": null,
+    "summary": "Configuração com tomossíntese do Delicata DR, que adquire imagens 2D e 3D na mesma compressão.",
+    "description": [
+      "O Delicata DR DBT é a versão com tomossíntese mamária digital do Delicata DR.",
+      "A aplicação COMBO permite obter imagens 2D e 3D no mesmo ciclo de compressão da mama."
+    ],
+    "highlights": [
+      "Tomossíntese mamária digital (DBT)",
+      "Aplicação COMBO: 2D e 3D na mesma compressão",
+      "Detector de selênio amorfo de conversão direta"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2026/09/delicata-dr-e-dr-dbt-1.png"
+    ]
+  },
+  {
+    "slug": "delicata-evolution",
+    "name": "Delicata Evolution",
+    "brand": "Konica Minolta",
+    "category": "mamografia",
+    "subcategory": null,
+    "summary": "Mamógrafo analógico redesenhado a partir do Delicata 10, com baixos níveis de radiação e fluxo de trabalho otimizado.",
+    "description": [
+      "O Delicata Evolution é a versão redesenhada e aprimorada do Delicata 10, com foco no cuidado ao paciente e em baixos níveis de radiação.",
+      "É adequado para todos os exames de mama, inclusive programas de rastreamento de alto volume, com o conforto e a usabilidade da família de mamógrafos Konica Minolta."
+    ],
+    "highlights": [
+      "Evolução do Delicata 10",
+      "Reduzidos níveis de radiação",
+      "Indicado para rastreamento de alto volume",
+      "Pode ser digitalizado com o detector RoseM"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/01/delicata-evolution-01.jpg",
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/01/delicata-evolution-02.jpg"
+    ]
+  },
+  {
+    "slug": "rosem",
+    "name": "RoseM",
+    "brand": "Konica Minolta",
+    "category": "mamografia",
+    "subcategory": null,
+    "summary": "Detector digital para mamografia que se adapta a mamógrafos analógicos, com cintilador de iodeto de césio de 76 µm.",
+    "description": [
+      "O RoseM digitaliza a mamografia em equipamentos analógicos, oferecendo maior produtividade que sistemas de digitalização CR.",
+      "Seu cintilador de iodeto de césio de 76 µm proporciona alta sensibilidade e redução de dose, e o recurso Truview MAG faz magnificação virtual sem bucky de magnificação."
+    ],
+    "highlights": [
+      "Adaptável a mamógrafos analógicos",
+      "Cintilador de iodeto de césio de 76 µm",
+      "Maior produtividade que digitalização CR",
+      "Magnificação virtual Truview MAG"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/01/rose-M-01.jpg",
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/01/rose-M-02-1.jpg",
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/01/rose-M-03.jpg"
+    ]
+  },
+  {
+    "slug": "altus-vet",
+    "name": "Altus Vet",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "veterinaria",
+    "summary": "Raio-X veterinário com mesa fixa de tampo flutuante para até 220 kg e gerador de alta frequência de 54 kW.",
+    "description": [
+      "O Altus Vet é um equipamento de radiodiagnóstico veterinário para animais de pequeno, médio e grande porte, com mesa fixa de tampo flutuante e freio eletromagnético.",
+      "O gerador de alta frequência chega a 54 kW e 125 kV, com faixa de até 630 mA, e o painel de comando indica falhas e valores de exposição."
+    ],
+    "highlights": [
+      "Gerador de 54 kW, 125 kV e até 630 mA",
+      "Mesa de tampo flutuante para até 220 kg",
+      "Freio eletromagnético",
+      "Painel com indicação de falhas e exposição"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/06/Altus-VET-lat_painel-azul.jpg"
+    ]
+  },
+  {
+    "slug": "regius-sigma-ii-vet",
+    "name": "CR Regius Sigma II Vet",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "veterinaria",
+    "summary": "Digitalizador CR compacto para clínicas veterinárias, com resolução de 175 e 87,5 µm e apenas 28 kg.",
+    "description": [
+      "Versão do CR Regius Sigma II voltada ao mercado veterinário: um digitalizador de radiografia computadorizada compacto e acessível, que trabalha com a estação ImagePilot.",
+      "Aceita cassetes de 8\" x 10\" até 15 x 30 cm e tem dimensões de 510 x 610 x 355 mm."
+    ],
+    "highlights": [
+      "Resolução de 175 e 87,5 µm",
+      "Peso de 28 kg",
+      "Dimensões 510 x 610 x 355 mm",
+      "Integra-se à estação ImagePilot"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/06/Regius-110HQ_FolderVETsmart.jpg"
+    ]
+  },
+  {
+    "slug": "aerodr-ns-vet",
+    "name": "AeroDR NS Vet",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "veterinaria",
+    "summary": "Detector digital 14 x 17\" que converte qualquer raio-X veterinário analógico em digital, com pixel de 150 µm.",
+    "description": [
+      "O AeroDR NS permite digitalizar qualquer equipamento de raio-X analógico, fixo ou móvel, aumentando a produtividade da clínica veterinária.",
+      "Usa cintilador de CsI com pixel de 150 µm, suporta tags DICOM veterinárias e campos de cadastro como tutor, espécie e raça."
+    ],
+    "highlights": [
+      "Tamanho 14 x 17 polegadas",
+      "Pixel de 150 µm e cintilador CsI",
+      "Tags DICOM veterinárias",
+      "Cadastro de tutor, espécie e raça"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/06/Imagem-Aero-DR-NS.jpg"
+    ]
+  },
+  {
+    "slug": "imagepilot-vet",
+    "name": "ImagePilot Vet",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "veterinaria",
+    "summary": "Estação de aquisição veterinária que integra cadastro do animal, captura de imagens e distribuição de resultados.",
+    "description": [
+      "O ImagePilot é um console integrado que reúne os dados do animal (nome, tutor, raça e espécie), a aquisição das imagens digitais e a distribuição dos resultados.",
+      "O recurso AutoPilot processa as imagens automaticamente sem exigir a indicação do tipo de exame, ajudando a corrigir erros de técnica e evitar repetições."
+    ],
+    "highlights": [
+      "Cadastro de nome, tutor, raça e espécie",
+      "Processamento automático AutoPilot",
+      "Aquisição, visualização e distribuição integradas",
+      "Compatível com AeroDR e CR Regius"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2023/08/Visualizacao-VET_aplicacao-laptop2.jpg"
+    ]
+  },
+  {
+    "slug": "airray-20",
+    "name": "AirRay-20",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "veterinaria",
+    "summary": "Emissor de raio-X portátil a bateria, leve, com 1,6 kW e ajuste completo dos parâmetros por controle remoto.",
+    "description": [
+      "O AirRay-20 é um emissor de raio-X portátil alimentado por bateria, indicado para clínicas, hospitais, emergências e atendimentos móveis.",
+      "Permite ajustar todos os parâmetros de exposição por controle remoto e oferece 10 técnicas radiográficas pré-programáveis."
+    ],
+    "highlights": [
+      "Potência de 1,6 kW",
+      "Faixa de 50 a 90 kV e 0,4 a 20 mAs",
+      "Colimador manual com LED",
+      "Cerca de 5,3 kg",
+      "10 técnicas pré-programáveis"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2024/02/AIRRAY-20.png"
+    ]
+  },
+  {
+    "slug": "pxm-40bt-plus",
+    "name": "PXM-40BT PLUS",
+    "brand": "Konica Minolta",
+    "category": "radiografia",
+    "subcategory": "veterinaria",
+    "summary": "Emissor de raio-X portátil de 2,4 kW com bateria, corpo resistente a impactos e 21 técnicas pré-programáveis.",
+    "description": [
+      "O PXM-40BT PLUS é um emissor de raio-X portátil com bateria que dispensa recarga antes das exposições e corpo resistente a choques e contaminação.",
+      "Pode ser fixado em mesas de exame ou estativas móveis e acompanha maleta de transporte."
+    ],
+    "highlights": [
+      "Potência de 2,4 kW",
+      "Faixa de 40 a 100 kV (passos de 1 kV) e 0,4 a 100 mAs",
+      "21 técnicas pré-programáveis",
+      "Peso de 14 kg",
+      "Resistente a choques e contaminação"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.konicaminoltahc.com.br/wp-content/uploads/2024/02/PXM-40BT-PLUS.png"
+    ]
+  },
+  {
+    "slug": "optistar-elite",
+    "name": "OptiStar® Elite",
+    "brand": "Guerbet",
+    "category": "injetoras",
+    "subcategory": "injetoras-ressonancia",
+    "summary": "Injetora de contraste de cabeça dupla para sala de ressonância magnética, com motor ultrassônico não magnético e uso em equipamentos de até 3 T.",
+    "description": [
+      "O OptiStar® Elite é um sistema de injeção de meio de contraste com duas seringas, projetado para operar dentro da sala de ressonância magnética. O motor ultrassônico não é magnético e o equipamento funciona sem bateria, com conexão por fibra óptica.",
+      "Aceita seringas pré-preenchidas e frascos, permite protocolos multifásicos e conta com console com tela sensível ao toque e controle remoto completo da injeção."
+    ],
+    "highlights": [
+      "Cabeça dupla com motor ultrassônico não magnético",
+      "Compatível com RM de até 3 Tesla",
+      "Operação sem bateria e conexão por fibra óptica",
+      "Até 6 fases por protocolo, incluindo Timing Bolus®",
+      "Função Patency Check® e modo gotejamento"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://brazil.guerbet.com/sites/default/files/styles/sobki_style/public/media/jhfpah2f/16666f3f4db45a17b666b4074da7e11c88aca247.png.webp?itok=_m5hJe0r&gbt=fb27f983",
+      "https://brazil.guerbet.com/sites/default/files/styles/hero_slider_mobile_360/public/media/hdifrssb/optistarelite_hero.jpg.webp?itok=8DHRUhAu&gbt=55e643d7",
+      "https://www.guerbet.com/sites/default/files/styles/hero_slider_mobile_360/public/media/1mkhhplh/45340-site-optistar-guerbet-200-header.jpg.webp?itok=Y0jRlhtX&gbt=55e643d7"
+    ]
+  },
+  {
+    "slug": "optivantage-multi-uso",
+    "name": "OptiVantage® Multi-uso (Multi-paciente)",
+    "brand": "Guerbet",
+    "category": "injetoras",
+    "subcategory": "injetoras-tomografia",
+    "summary": "Injetora de contraste de cabeça dupla para tomografia, preparada para uso multipaciente com descartáveis dedicados Manyfill® e Secufill®.",
+    "description": [
+      "A OptiVantage® Multi-uso é uma injetora de meio de contraste de duas seringas para tomografia computadorizada, pensada para acompanhar tomógrafos rápidos e protocolos de injeção mais complexos.",
+      "Faz parte de uma solução para uso em vários pacientes, que combina o kit diário Manyfill®, a linha de paciente Secufill® com dupla válvula e os serviços de suporte técnico da Guerbet. É compatível com o software OptiBolus®."
+    ],
+    "highlights": [
+      "Injetora de cabeça dupla para TC",
+      "Uso multipaciente com kit Manyfill® e linha Secufill®",
+      "Função Patency Check® para verificar o acesso venoso",
+      "Compatível com o software OptiBolus®"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.guerbet.com/sites/default/files/styles/hero_slider_mobile_360/public/2025-09/injectorv2.jpg.webp?itok=FTwetbYT&gbt=d4e38867",
+      "https://brazil.guerbet.com/sites/default/files/styles/hero_slider_mobile_360/public/media/o3he0uc5/b1-multiuse.jpg.webp?itok=eiMrB0Zs&gbt=55e643d7",
+      "https://brazil.guerbet.com/sites/default/files/styles/sobki_style/public/media/di0bngz4/c1_manyfill.png.webp?itok=U8iXrK3t&gbt=55e643d7",
+      "https://brazil.guerbet.com/sites/default/files/styles/sobki_style/public/media/1t0poaik/c1_secufill.png.webp?itok=r02Im1z3&gbt=55e643d7"
+    ]
+  },
+  {
+    "slug": "optivantage-single-use",
+    "name": "OptiVantage™ Single-use",
+    "brand": "Guerbet",
+    "category": "injetoras",
+    "subcategory": "injetoras-tomografia",
+    "summary": "Injetora de contraste de cabeça dupla para tomografia, para uso por paciente, compatível com seringas pré-preenchidas e frascos.",
+    "description": [
+      "A OptiVantage™ Single-use é uma injetora de meio de contraste de duas seringas para tomografia computadorizada, desenvolvida para acompanhar a velocidade dos tomógrafos atuais e protocolos de injeção mais complexos.",
+      "É uma injetora conectada, compatível com seringas pré-preenchidas ou frascos de contraste, com a linha de descartáveis da Guerbet e com o software OptiBolus®."
+    ],
+    "highlights": [
+      "Injetora de cabeça dupla para TC",
+      "Compatível com seringas pré-preenchidas e frascos",
+      "Compatível com o software OptiBolus®",
+      "Suporte pelo programa de serviços OptiProtect™ 3S"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://www.guerbet.com/sites/default/files/styles/sobki_style/public/media/zazfykxf/optivantage-single-use_c1.png.webp?itok=cscV6kec&gbt=55e643d7",
+      "https://www.guerbet.com/sites/default/files/styles/hero_slider_mobile_360/public/media/vjyjckhw/optivantagesingleuse_hero.jpg.webp?itok=FUYPwhTR&gbt=55e643d7"
+    ]
+  },
+  {
+    "slug": "optione",
+    "name": "OptiOne®",
+    "brand": "Guerbet",
+    "category": "injetoras",
+    "subcategory": "injetoras-tomografia",
+    "summary": "Injetora de contraste de cabeça única para tomografia, compatível com seringas pré-preenchidas e descartáveis, para diversos ambientes de imagem.",
+    "description": [
+      "O OptiOne® é uma injetora de meio de contraste de cabeça única, com recursos completos, que une facilidade de uso e funcionalidade multiuso.",
+      "Foi projetada para diferentes ambientes de imagem, como tomógrafos de trauma, radioterapia, mamografia e PET-CT, e é compatível com seringas pré-preenchidas e descartáveis. É compatível com o software OptiBolus®."
+    ],
+    "highlights": [
+      "Injetora de cabeça única para TC",
+      "Compatível com seringas pré-preenchidas e descartáveis",
+      "Indicada para TC de trauma, radioterapia, mamografia e PET-CT",
+      "Linha de descartáveis e serviços da Guerbet"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://brazil.guerbet.com/sites/default/files/styles/sobki_style/public/media/afao2wot/c1_optione.png.webp?itok=X5Z0NCI6&gbt=55e643d7",
+      "https://brazil.guerbet.com/sites/default/files/styles/hero_slider_mobile_360/public/media/slbb34kx/optione_hero.jpg.webp?itok=2vK7_3WC&gbt=55e643d7"
+    ]
+  },
+  {
+    "slug": "illumena-neo",
+    "name": "Illumena® Néo",
+    "brand": "Guerbet",
+    "category": "injetoras",
+    "subcategory": "injetoras-hemodinamica",
+    "summary": "Injetora de contraste de alta pressão e cabeça única para hemodinâmica, com modos angio-cardíaco, angio-periférico e tomografia.",
+    "description": [
+      "A Illumena® Néo é uma injetora de meio de contraste de cabeça única e alta pressão, da família Angiomat®, voltada principalmente para salas de hemodinâmica. Permite alternar entre os modos angio-cardíaco, angio-periférico e tomografia com um único toque.",
+      "Foi projetada para sincronizar com a maioria dos principais sistemas de imagem, aceita seringas de 150 mL e 200 mL e seringas pré-preenchidas, e pode ser montada em pedestal, teto ou mesa."
+    ],
+    "highlights": [
+      "Injetora de cabeça única e alta pressão",
+      "Modos angio-cardíaco, angio-periférico e TC",
+      "Aceita seringas de 150 mL, 200 mL e pré-preenchidas",
+      "Montagem em pedestal, teto ou mesa",
+      "Sistema opcional de detecção de ar (ADAWS)"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://brazil.guerbet.com/sites/default/files/styles/sobki_style/public/media/3kpl11l4/c1_illumena.png.webp?itok=PrufZND7&gbt=55e643d7",
+      "https://www.guerbet.com/sites/default/files/styles/sobki_style/public/media/lknp13xs/illumena-n%C3%A9o-c1-min.png.webp?itok=lLcAgixw&gbt=55e643d7",
+      "https://brazil.guerbet.com/sites/default/files/styles/hero_slider_mobile_360/public/media/bckp40or/illumena_hero.jpg.webp?itok=C8viJf61&gbt=55e643d7"
+    ]
+  },
+  {
+    "slug": "henetix",
+    "name": "Henetix®",
     "brand": "Guerbet",
     "category": "meios-de-contraste",
     "subcategory": null,
-    "legacyUrl": "",
-    "summary": "Meio de contraste iodado Guerbet para exames de tomografia computadorizada e radiologia.",
-    "description": [],
-    "highlights": [],
+    "summary": "Meio de contraste iodado à base de iobitridol, utilizado em tomografia computadorizada e hemodinâmica.",
+    "description": [
+      "X",
+      "e",
+      "n",
+      "e",
+      "t",
+      "i",
+      "x",
+      "®",
+      " ",
+      "é",
+      " ",
+      "o",
+      " ",
+      "m",
+      "e",
+      "i",
+      "o",
+      " ",
+      "d",
+      "e",
+      " ",
+      "c",
+      "o",
+      "n",
+      "t",
+      "r",
+      "a",
+      "s",
+      "t",
+      "e",
+      " ",
+      "i",
+      "o",
+      "d",
+      "a",
+      "d",
+      "o",
+      " ",
+      "d",
+      "a",
+      " ",
+      "G",
+      "u",
+      "e",
+      "r",
+      "b",
+      "e",
+      "t",
+      " ",
+      "c",
+      "u",
+      "j",
+      "o",
+      " ",
+      "p",
+      "r",
+      "i",
+      "n",
+      "c",
+      "í",
+      "p",
+      "i",
+      "o",
+      " ",
+      "a",
+      "t",
+      "i",
+      "v",
+      "o",
+      " ",
+      "é",
+      " ",
+      "o",
+      " ",
+      "i",
+      "o",
+      "b",
+      "i",
+      "t",
+      "r",
+      "i",
+      "d",
+      "o",
+      "l",
+      ",",
+      " ",
+      "u",
+      "t",
+      "i",
+      "l",
+      "i",
+      "z",
+      "a",
+      "d",
+      "o",
+      " ",
+      "e",
+      "m",
+      " ",
+      "e",
+      "x",
+      "a",
+      "m",
+      "e",
+      "s",
+      " ",
+      "d",
+      "e",
+      " ",
+      "t",
+      "o",
+      "m",
+      "o",
+      "g",
+      "r",
+      "a",
+      "f",
+      "i",
+      "a",
+      " ",
+      "c",
+      "o",
+      "m",
+      "p",
+      "u",
+      "t",
+      "a",
+      "d",
+      "o",
+      "r",
+      "i",
+      "z",
+      "a",
+      "d",
+      "a",
+      " ",
+      "e",
+      " ",
+      "e",
+      "m",
+      " ",
+      "h",
+      "e",
+      "m",
+      "o",
+      "d",
+      "i",
+      "n",
+      "â",
+      "m",
+      "i",
+      "c",
+      "a",
+      ".",
+      " ",
+      "R",
+      "e",
+      "c",
+      "e",
+      "b",
+      "e",
+      "u",
+      " ",
+      "s",
+      "u",
+      "a",
+      " ",
+      "p",
+      "r",
+      "i",
+      "m",
+      "e",
+      "i",
+      "r",
+      "a",
+      " ",
+      "a",
+      "u",
+      "t",
+      "o",
+      "r",
+      "i",
+      "z",
+      "a",
+      "ç",
+      "ã",
+      "o",
+      " ",
+      "d",
+      "e",
+      " ",
+      "c",
+      "o",
+      "m",
+      "e",
+      "r",
+      "c",
+      "i",
+      "a",
+      "l",
+      "i",
+      "z",
+      "a",
+      "ç",
+      "ã",
+      "o",
+      " ",
+      "n",
+      "a",
+      " ",
+      "F",
+      "r",
+      "a",
+      "n",
+      "ç",
+      "a",
+      " ",
+      "e",
+      "m",
+      " ",
+      "1",
+      "9",
+      "9",
+      "4",
+      ".",
+      "\n",
+      "\n",
+      "N",
+      "o",
+      " ",
+      "B",
+      "r",
+      "a",
+      "s",
+      "i",
+      "l",
+      ",",
+      " ",
+      "a",
+      " ",
+      "G",
+      "u",
+      "e",
+      "r",
+      "b",
+      "e",
+      "t",
+      " ",
+      "a",
+      "p",
+      "r",
+      "e",
+      "s",
+      "e",
+      "n",
+      "t",
+      "a",
+      " ",
+      "o",
+      " ",
+      "i",
+      "o",
+      "b",
+      "i",
+      "t",
+      "r",
+      "i",
+      "d",
+      "o",
+      "l",
+      " ",
+      "s",
+      "o",
+      "b",
+      " ",
+      "a",
+      " ",
+      "m",
+      "a",
+      "r",
+      "c",
+      "a",
+      " ",
+      "H",
+      "e",
+      "n",
+      "e",
+      "t",
+      "i",
+      "x",
+      "®",
+      ".",
+      " ",
+      "A",
+      "l",
+      "é",
+      "m",
+      " ",
+      "d",
+      "o",
+      "s",
+      " ",
+      "f",
+      "r",
+      "a",
+      "s",
+      "c",
+      "o",
+      "s",
+      ",",
+      " ",
+      "e",
+      "x",
+      "i",
+      "s",
+      "t",
+      "e",
+      " ",
+      "a",
+      " ",
+      "a",
+      "p",
+      "r",
+      "e",
+      "s",
+      "e",
+      "n",
+      "t",
+      "a",
+      "ç",
+      "ã",
+      "o",
+      " ",
+      "e",
+      "m",
+      " ",
+      "b",
+      "o",
+      "l",
+      "s",
+      "a",
+      " ",
+      "f",
+      "l",
+      "e",
+      "x",
+      "í",
+      "v",
+      "e",
+      "l",
+      " ",
+      "d",
+      "e",
+      " ",
+      "p",
+      "o",
+      "l",
+      "i",
+      "p",
+      "r",
+      "o",
+      "p",
+      "i",
+      "l",
+      "e",
+      "n",
+      "o",
+      " ",
+      "S",
+      "c",
+      "a",
+      "n",
+      "B",
+      "a",
+      "g",
+      "®",
+      ",",
+      " ",
+      "c",
+      "o",
+      "m",
+      " ",
+      "d",
+      "i",
+      "s",
+      "p",
+      "o",
+      "n",
+      "i",
+      "b",
+      "i",
+      "l",
+      "i",
+      "d",
+      "a",
+      "d",
+      "e",
+      " ",
+      "q",
+      "u",
+      "e",
+      " ",
+      "v",
+      "a",
+      "r",
+      "i",
+      "a",
+      " ",
+      "c",
+      "o",
+      "n",
+      "f",
+      "o",
+      "r",
+      "m",
+      "e",
+      " ",
+      "o",
+      " ",
+      "p",
+      "a",
+      "í",
+      "s",
+      "."
+    ],
+    "highlights": [
+      "Princípio ativo: iobitridol",
+      "Meio de contraste iodado",
+      "Modalidades: tomografia computadorizada e hemodinâmica",
+      "Apresentações em frasco e bolsa ScanBag®",
+      "Comercializado no Brasil como Henetix®"
+    ],
     "specs": [],
     "specialties": [],
     "images": []
   },
   {
     "slug": "optiray",
-    "name": "Optiray",
+    "name": "OptiRay® (ioversol)",
     "brand": "Guerbet",
     "category": "meios-de-contraste",
     "subcategory": null,
-    "legacyUrl": "",
-    "summary": "Meio de contraste iodado Guerbet para tomografia computadorizada, angiografia e procedimentos de hemodinâmica.",
-    "description": [],
-    "highlights": [],
+    "summary": "Meio de contraste iodado à base de ioversol, utilizado em tomografia computadorizada e hemodinâmica.",
+    "description": [
+      "OptiRay® é um meio de contraste iodado cujo princípio ativo é o ioversol, utilizado em exames de tomografia computadorizada e em hemodinâmica. Está disponível desde 1989.",
+      "Desde 1996 também é oferecido em seringa pré-cheia, para injeção manual ou automática, apresentação conhecida como Ultraject® em diversos países."
+    ],
+    "highlights": [
+      "Princípio ativo: ioversol",
+      "Meio de contraste iodado",
+      "Modalidades: tomografia computadorizada e hemodinâmica",
+      "Disponível em seringa pré-cheia"
+    ],
     "specs": [],
     "specialties": [],
     "images": []
+  },
+  {
+    "slug": "dotarem",
+    "name": "Dotarem® (ácido gadotérico)",
+    "brand": "Guerbet",
+    "category": "meios-de-contraste",
+    "subcategory": null,
+    "summary": "Meio de contraste macrocíclico à base de gadolínio (ácido gadotérico), utilizado em exames de ressonância magnética.",
+    "description": [
+      "Dotarem® é um meio de contraste à base de gadolínio, de estrutura macrocíclica, cujo princípio ativo é o ácido gadotérico (gadoterato de meglumina). É utilizado em exames de ressonância magnética com contraste.",
+      "Foi lançado na França em 1989 e, segundo a Guerbet, é comercializado em mais de 70 países."
+    ],
+    "highlights": [
+      "Princípio ativo: ácido gadotérico (gadoterato de meglumina)",
+      "Meio de contraste macrocíclico à base de gadolínio",
+      "Modalidade: ressonância magnética",
+      "Comercializado em mais de 70 países"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://brazil.guerbet.com/sites/default/files/styles/hero_slider_mobile_360/public/media/iw0a10qv/b1_dotarem.jpg.webp?itok=RCQko7r1&gbt=e51df295"
+    ]
+  },
+  {
+    "slug": "lipiodol-ultra-fluido",
+    "name": "Lipiodol® Ultra Fluido",
+    "brand": "Guerbet",
+    "category": "meios-de-contraste",
+    "subcategory": null,
+    "summary": "Agente de contraste iodado à base de ésteres etílicos de ácidos graxos do óleo de papoula, usado em radiologia intervencionista e saúde da mulher.",
+    "description": [
+      "Lipiodol® Ultra Fluido é um agente de contraste iodado composto por ésteres etílicos iodados dos ácidos graxos do óleo de papoula. É empregado principalmente em radiologia intervencionista e na área de saúde da mulher.",
+      "Desenvolvido por Marcel Guerbet em 1901, é considerado o primeiro agente de contraste iodado lançado no mundo. No Brasil, a apresentação informada pela Guerbet é a ampola de 10 mL."
+    ],
+    "highlights": [
+      "Princípio ativo: ésteres etílicos iodados do óleo de papoula",
+      "Agente de contraste iodado de base oleosa",
+      "Uso em radiologia intervencionista e saúde da mulher",
+      "Apresentação em ampola de 10 mL"
+    ],
+    "specs": [],
+    "specialties": [],
+    "images": [
+      "https://brazil.guerbet.com/sites/default/files/styles/hero_slider_mobile_360/public/media/2wzn04ut/b1_lipiodol.jpg.webp?itok=shElvq20&gbt=e51df295"
+    ]
   }
 ]

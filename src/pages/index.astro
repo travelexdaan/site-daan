@@ -16,7 +16,7 @@ const firstWithImage = (cat: string) => products.find((p) => p.category === cat 
 const brandOf = (c: (typeof tree)[number]) => brands.find((b) => b.slug === c.brand) ?? brands.find((b) => b.lines.includes(c.slug));
 
 // Carrossel do topo: um equipamento de cada linha principal.
-const slides = ['epiq-elite', 'ingenia-ambition', 'azurion-7', 'incisive-ct', 'zenition-50']
+const slides = ['epiq-elite', 'aerodr-maxmove', 'ingenia-ambition', 'optivantage-multi-uso', 'delicata-dr', 'azurion-7']
   .map((s) => products.find((p) => p.slug === s && p.images[0]))
   .filter((p): p is NonNullable<typeof p> => Boolean(p));
 const firstPerLine = tree.map((c) => firstWithImage(c.slug)).filter((p): p is NonNullable<typeof p> => Boolean(p));
