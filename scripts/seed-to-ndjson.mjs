@@ -10,6 +10,7 @@ const categories = read('categories.json');
 const specialties = read('specialties.json');
 const posts = read('posts.json');
 const pages = read('pages.json');
+const brandSeed = read('brands.json');
 
 let k = 0;
 const key = () => `k${(k++).toString(36)}`;
@@ -59,12 +60,17 @@ function toPortableText(md) {
 }
 
 const docs = [];
-const brands = [...new Set(products.map((p) => p.brand).filter(Boolean))];
-const partnerLogo = (name) => pages.site?.partners?.find((p) => p.name === name)?.logo;
-brands.forEach((b) => docs.push({ _id: `brand-${b.toLowerCase()}`, _type: 'brand', name: b, logo: img(partnerLogo(b)) }));
+const brandId = (name) => `brand-${brandSeed.find((b) => b.name === name)?.slug ?? name.toLowerCase().replace(/\s+/g, '-')}`;
+const oldLogo = { Philips: 'https://daanimagem.com.br/wp-content/uploads/2024/06/philips-img.webp', Carestream: 'https://daanimagem.com.br/wp-content/uploads/2024/06/carestream-img.webp' };
+brandSeed.forEach((b, i) =>
+  docs.push({
+    _id: `brand-${b.slug}`, _type: 'brand', name: b.name, slug: slug(b.slug), featured: b.featured !== false, description: b.description, order: i,
+    lines: b.lines.map((l) => ({ _key: key(), ...ref(`category-${l}`) })), logo: img(oldLogo[b.name]),
+  }),
+);
 
 categories.forEach((c, i) =>
-  docs.push({ _id: catId(c), _type: 'category', name: c.name, slug: slug(c.slug), parent: c.parent ? ref(`category-${c.parent}`) : undefined, intro: c.intro || undefined, order: i }),
+  docs.push({ _id: catId(c), _type: 'category', name: c.name, slug: slug(c.slug), parent: c.parent ? ref(`category-${c.parent}`) : undefined, brand: c.brand ? ref(`brand-${c.brand}`) : undefined, intro: c.intro || undefined, order: i }),
 );
 
 specialties.forEach((s) => docs.push({ _id: `specialty-${s.slug}`, _type: 'specialty', name: s.name, slug: slug(s.slug), intro: s.intro, image: img(s.image) }));
@@ -84,7 +90,8 @@ products.forEach((p, i) => {
     _type: 'product',
     name: p.name,
     slug: slug(p.slug),
-    brand: ref(`brand-${p.brand.toLowerCase()}`),
+    brand: ref(brandId(p.brand)),
+    hidden: p.hidden ? true : undefined,
     category: ref(cat),
     specialties: [...specs].map((s) => ({ _key: key(), ...ref(`specialty-${s}`) })),
     summary: p.summary,
@@ -120,7 +127,7 @@ docs.push({
   instagram: s.instagram,
   linkedin: s.linkedin,
   gtm: s.gtm,
-  partners: (s.partners ?? []).map((p) => ({ _key: key(), name: p.name, logo: img(p.logo) })),
+  partners: brandSeed.filter((b) => b.featured !== false).map((b) => ({ _key: key(), name: b.name, logo: img(oldLogo[b.name]) })),
 });
 
 const clean = (o) => JSON.parse(JSON.stringify(o)); // remove undefined

@@ -4,6 +4,7 @@
     "name": "Ultrassom",
     "parent": null,
     "intro": "",
+    "brand": "philips",
     "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/"
   },
   {
@@ -11,6 +12,7 @@
     "name": "Ressonância",
     "parent": null,
     "intro": "",
+    "brand": "philips",
     "legacyUrl": "https://daanimagem.com.br/equipamentos/ressonancia/"
   },
   {
@@ -18,6 +20,7 @@
     "name": "Tomografia",
     "parent": null,
     "intro": "",
+    "brand": "philips",
     "legacyUrl": "https://daanimagem.com.br/equipamentos/tomografia/"
   },
   {
@@ -25,6 +28,7 @@
     "name": "Hemodinâmica",
     "parent": null,
     "intro": "",
+    "brand": "philips",
     "legacyUrl": "https://daanimagem.com.br/equipamentos/hemodinamica/"
   },
   {
@@ -32,20 +36,47 @@
     "name": "Arco Cirúrgico",
     "parent": null,
     "intro": "",
+    "brand": "philips",
     "legacyUrl": "https://daanimagem.com.br/equipamentos/arco-cirurgico/"
   },
   {
     "slug": "radiografia",
     "name": "Radiografia",
     "parent": null,
-    "intro": "",
+    "intro": "Raio-X digital, equipamentos portáteis e placas detectoras Konica Minolta, além de impressoras e filmes radiológicos Carestream.",
+    "brand": "konica-minolta",
     "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/"
+  },
+  {
+    "slug": "mamografia",
+    "name": "Mamografia",
+    "parent": null,
+    "intro": "Soluções de mamografia digital Konica Minolta para rastreamento e diagnóstico do câncer de mama.",
+    "brand": "konica-minolta",
+    "legacyUrl": ""
+  },
+  {
+    "slug": "injetoras",
+    "name": "Injetoras de contraste",
+    "parent": null,
+    "intro": "Injetoras de contraste Guerbet para ressonância magnética, tomografia e hemodinâmica, com precisão no volume e no fluxo de injeção.",
+    "brand": "guerbet",
+    "legacyUrl": ""
+  },
+  {
+    "slug": "meios-de-contraste",
+    "name": "Meios de contraste",
+    "parent": null,
+    "intro": "Meios de contraste Guerbet para tomografia, ressonância magnética e procedimentos intervencionistas.",
+    "brand": "guerbet",
+    "legacyUrl": ""
   },
   {
     "slug": "estacionarios",
     "name": "Estacionários",
     "parent": "ultrassom",
     "intro": "",
+    "brand": "philips",
     "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/estacionarios/"
   },
   {
@@ -53,6 +84,7 @@
     "name": "Portáteis",
     "parent": "ultrassom",
     "intro": "",
+    "brand": "philips",
     "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/portateis/"
   },
   {
@@ -60,13 +92,79 @@
     "name": "Transdutores",
     "parent": "ultrassom",
     "intro": "Os transdutores de ultrassom da Philips oferecem soluções inteligentes e inovadoras para melhorar o atendimento ao paciente e os resultados. Além de intuitivos, são potentes, versáteis e capazes de garantir mais precisão e confiabilidade. Com um grande número de elementos que capturam uma alta faixa de frequência, há um aumento da cobertura, do foco da área a ser examinada. Leves e ergonômicos, o vasto portfólio de transdutores está disponível em várias configurações, permitindo uma melhor penetração com menos artefatos. Acesse o link do WhatsApp e fale com nosso time de especialistas e conheça mais sobre nossos transdutores.",
+    "brand": "philips",
     "legacyUrl": "https://daanimagem.com.br/equipamentos/ultrassom/transdutores/"
+  },
+  {
+    "slug": "raio-x",
+    "name": "Raio-X",
+    "parent": "radiografia",
+    "intro": "Sistemas de raio-X digital Konica Minolta para salas de radiologia, com detectores DR e software de processamento de imagem.",
+    "brand": "konica-minolta",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/raio-x/"
+  },
+  {
+    "slug": "raio-x-portatil",
+    "name": "Raio-X portátil",
+    "parent": "radiografia",
+    "intro": "Equipamentos de raio-X portáteis Konica Minolta para exames à beira do leito, em UTIs e no centro cirúrgico.",
+    "brand": "konica-minolta",
+    "legacyUrl": ""
+  },
+  {
+    "slug": "detectores",
+    "name": "Placas detectoras",
+    "parent": "radiografia",
+    "intro": "Placas detectoras digitais (DR) Konica Minolta para modernizar salas de raio-X e agilizar o fluxo de exames.",
+    "brand": "konica-minolta",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/detectores/"
+  },
+  {
+    "slug": "veterinaria",
+    "name": "Placas veterinárias",
+    "parent": "radiografia",
+    "intro": "Placas detectoras e soluções de radiologia digital Konica Minolta para clínicas e hospitais veterinários.",
+    "brand": "konica-minolta",
+    "legacyUrl": ""
+  },
+  {
+    "slug": "impressao",
+    "name": "Impressoras e filmes",
+    "parent": "radiografia",
+    "intro": "Impressoras laser DryView e filmes radiológicos Carestream para imprimir exames com qualidade diagnóstica.",
+    "brand": "carestream",
+    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/impressao/"
+  },
+  {
+    "slug": "injetoras-ressonancia",
+    "name": "Injetoras de RM",
+    "parent": "injetoras",
+    "intro": "Injetoras de contraste Guerbet para exames de ressonância magnética.",
+    "brand": "guerbet",
+    "legacyUrl": ""
+  },
+  {
+    "slug": "injetoras-tomografia",
+    "name": "Injetoras de tomografia",
+    "parent": "injetoras",
+    "intro": "Injetoras de contraste Guerbet para exames de tomografia computadorizada.",
+    "brand": "guerbet",
+    "legacyUrl": ""
+  },
+  {
+    "slug": "injetoras-hemodinamica",
+    "name": "Injetoras de hemodinâmica",
+    "parent": "injetoras",
+    "intro": "Injetoras de contraste Guerbet para procedimentos de hemodinâmica e angiografia.",
+    "brand": "guerbet",
+    "legacyUrl": ""
   },
   {
     "slug": "cr",
     "name": "CR",
     "parent": "radiografia",
     "intro": "",
+    "brand": null,
     "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/cr/"
   },
   {
@@ -74,27 +172,7 @@
     "name": "DR",
     "parent": "radiografia",
     "intro": "",
+    "brand": null,
     "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/dr/"
-  },
-  {
-    "slug": "detectores",
-    "name": "Detectores",
-    "parent": "radiografia",
-    "intro": "",
-    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/detectores/"
-  },
-  {
-    "slug": "raio-x",
-    "name": "Raio-X",
-    "parent": "radiografia",
-    "intro": "",
-    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/raio-x/"
-  },
-  {
-    "slug": "impressao",
-    "name": "Impressão",
-    "parent": "radiografia",
-    "intro": "",
-    "legacyUrl": "https://daanimagem.com.br/equipamentos/radiografia/impressao/"
   }
 ]

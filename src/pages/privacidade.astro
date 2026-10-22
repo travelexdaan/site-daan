@@ -1,10 +1,11 @@
 ---
+import PageHero from '../components/PageHero.astro';
 import Base from '../layouts/Base.astro';
 import { getSite } from '../lib/data';
 const site = await getSite();
 ---
 <Base title="Política de Privacidade">
-  <section class="page-hero"><div class="container"><nav class="breadcrumb"><a href="/">Início</a> / Privacidade</nav><h1>Política de Privacidade</h1></div></section>
+  <PageHero title="Política de Privacidade" />
   <section class="section">
     <div class="container prose">
       <p><em>Modelo inicial. Revise com o jurídico antes de publicar.</em></p>
@@ -13,7 +14,7 @@ const site = await getSite();
       <h2>Finalidade</h2>
       <p>Usamos esses dados apenas para responder às suas solicitações, enviar propostas comerciais e melhorar o site, conforme a Lei Geral de Proteção de Dados (Lei 13.709/2018).</p>
       <h2>Compartilhamento</h2>
-      <p>Não vendemos seus dados. Eles podem ser compartilhados com fabricantes representados (Philips, Carestream) quando necessário para atender à sua solicitação.</p>
+      <p>Não vendemos seus dados. Eles podem ser compartilhados com fabricantes representados (Philips, Konica Minolta, Guerbet) quando necessário para atender à sua solicitação.</p>
       <h2>Seus direitos</h2>
       <p>Você pode solicitar acesso, correção ou exclusão dos seus dados pelo e-mail <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
     </div>

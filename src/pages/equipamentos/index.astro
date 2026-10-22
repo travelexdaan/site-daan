@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import CtaBand from '../../components/CtaBand.astro';
+import PageHero from '../../components/PageHero.astro';
 import { getProducts, getCategoryTree, getSpecialties } from '../../lib/data';
 
 const products = await getProducts();
@@ -11,14 +12,8 @@ const brands = [...new Set(products.map((p) => p.brand).filter(Boolean))].sort()
 const catName = Object.fromEntries(tree.map((c) => [c.slug, c.name]));
 const ordered = tree.flatMap((c) => products.filter((p) => p.category === c.slug));
 ---
-<Base title="Equipamentos" description="Catálogo de equipamentos de diagnóstico por imagem Philips e Carestream: ultrassom, ressonância, tomografia, hemodinâmica, arco cirúrgico e radiografia.">
-  <section class="page-hero">
-    <div class="container">
-      <nav class="breadcrumb"><a href="/">Início</a> / Equipamentos</nav>
-      <h1>Equipamentos</h1>
-      <p class="lead">Todo o portfólio Philips e Carestream que a Daan Imagem oferece para clínicas e hospitais.</p>
-    </div>
-  </section>
+<Base title="Equipamentos" description="Catálogo de equipamentos de diagnóstico por imagem Philips, Konica Minolta e Guerbet: ultrassom, ressonância, tomografia, hemodinâmica, arco cirúrgico e radiografia.">
+  <PageHero title="Equipamentos" eyebrow="Catálogo" lead="Todo o portfólio Philips, Konica Minolta e Guerbet que a Daan Imagem oferece para clínicas e hospitais do Paraná." />
   <section class="section">
     <div class="container">
       <div class="filters">
@@ -48,7 +43,7 @@ const ordered = tree.flatMap((c) => products.filter((p) => p.category === c.slug
       <p class="muted empty" hidden>Nenhum equipamento encontrado com esses filtros.</p>
     </div>
   </section>
-  <CtaBand title="Não encontrou o que procura?" text="Trabalhamos com toda a linha Philips e Carestream. Fale com a gente." />
+  <CtaBand title="Não encontrou o que procura?" text="Trabalhamos com toda a linha Philips, Konica Minolta e Guerbet. Fale com a gente." />
 </Base>
 
 <script>
@@ -91,9 +86,10 @@ const ordered = tree.flatMap((c) => products.filter((p) => p.category === c.slug
 </script>
 
 <style>
-  .filters { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+  .filters { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
   .selects { display: flex; gap: 12px; flex-wrap: wrap; }
   .selects label { display: grid; gap: 4px; font-size: .82rem; font-weight: 600; color: var(--muted); }
-  .selects select { font: inherit; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; min-width: 180px; }
+  .selects label { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .08em; font-size: .7rem; }
+  .selects select { font: inherit; font-family: var(--font-body); text-transform: none; letter-spacing: 0; font-size: .95rem; padding: 10px 14px; border: 1px solid var(--line); border-radius: 999px; min-width: 190px; background: #fff; color: var(--text); }
   .count { margin-bottom: 20px; }
 </style>

@@ -1,4 +1,5 @@
 ---
+import PageHero from '../components/PageHero.astro';
 import Base from '../layouts/Base.astro';
 import QuoteForm from '../components/QuoteForm.astro';
 import { getSite, whatsappLink } from '../lib/data';
@@ -6,13 +7,7 @@ const site = await getSite();
 const map = `https://www.google.com/maps?q=${encodeURIComponent(site.address)}&output=embed`;
 ---
 <Base title="Contato" description="Fale com a Daan Imagem: telefone, WhatsApp, e-mail e endereço em Curitiba/PR.">
-  <section class="page-hero">
-    <div class="container">
-      <nav class="breadcrumb"><a href="/">Início</a> / Contato</nav>
-      <h1>Contato</h1>
-      <p class="lead">Atendemos clínicas e hospitais em todo o Paraná.</p>
-    </div>
-  </section>
+  <PageHero title="Contato" eyebrow="Fale com a Daan" lead="Atendemos clínicas e hospitais em todo o Paraná." />
   <section class="section" id="cotacao">
     <div class="container two">
       <div class="channels">

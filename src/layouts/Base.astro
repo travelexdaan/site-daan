@@ -1,21 +1,24 @@
 ---
 import '../styles/global.css';
-import { getSite, getCategoryTree, getSpecialties, whatsappLink } from '../lib/data';
+import { getSite, getCategoryTree, getSpecialties, getBrands, whatsappLink } from '../lib/data';
 
 interface Props {
   title: string;
   description?: string;
   image?: string | null;
 }
-const { title, description = 'Equipamentos de diagnóstico por imagem Philips e Carestream para clínicas e hospitais no Paraná. Venda, consultoria e pós-venda.', image } = Astro.props;
+const { title, description = 'Equipamentos de diagnóstico por imagem Philips, Konica Minolta e Guerbet para clínicas e hospitais no Paraná. Venda, consultoria e pós-venda.', image } = Astro.props;
 const site = await getSite();
 const tree = await getCategoryTree();
 const specialties = await getSpecialties();
-const fullTitle = title === 'Daan Imagem' ? title : `${title} | Daan Imagem`;
+const brands = await getBrands();
+const fullTitle = title === 'Daan Imagem' ? 'Daan Imagem | Diagnóstico por imagem no Paraná' : `${title} | Daan Imagem`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const path = Astro.url.pathname;
 const isActive = (prefix: string) => (prefix === '/' ? path === '/' : path.startsWith(prefix));
 const year = new Date().getFullYear();
+const tel = (n: string) => `tel:+55${n.replace(/\D/g, '')}`;
+const brandList = brands.filter((b) => b.featured).map((b) => b.name).join(', ').replace(/, ([^,]*)$/, ' e $1');
 ---
 <!doctype html>
 <html lang="pt-BR">
@@ -26,14 +29,16 @@ const year = new Date().getFullYear();
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#07162b" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     {image && <meta property="og:image" content={image} />}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
     {site.gtm && (
       <script is:inline define:vars={{ gtm: site.gtm }}>
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',gtm);
@@ -51,29 +56,16 @@ const year = new Date().getFullYear();
     })} />
   </head>
   <body>
-    <div class="topbar">
-      <div class="container topbar-inner">
-        <span>{site.hours}</span>
-        <span class="topbar-links">
-          <a href={`tel:+55${site.phone.replace(/\D/g, '')}`}>{site.phone}</a>
-          <a href={`mailto:${site.email}`}>{site.email}</a>
-        </span>
-      </div>
-    </div>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container header-inner">
-        <a href="/" class="logo" aria-label="Daan Imagem, página inicial"><img src={site.logo} alt="Daan Imagem" width="180" height="40" /></a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
-          <span></span><span></span><span></span>
-        </button>
+        <a href="/" class="logo" aria-label="Daan Imagem, página inicial"><img src={site.logo} alt="Daan Imagem" width="170" height="38" /></a>
         <nav id="nav" class="nav" aria-label="Principal">
           <ul>
-            <li><a href="/sobre-nos/" class:list={{ active: isActive('/sobre-nos') }}>Sobre</a></li>
             <li class="has-sub">
               <a href="/equipamentos/" class:list={{ active: isActive('/equipamentos') }}>Equipamentos</a>
               <div class="sub mega">
                 {tree.map((c) => (
-                  <div>
+                  <div class="mega-col">
                     <a class="sub-title" href={`/equipamentos/${c.slug}/`}>{c.name}</a>
                     {c.children.map((s) => <a href={`/equipamentos/${c.slug}/${s.slug}/`}>{s.name}</a>)}
                   </div>
@@ -86,12 +78,22 @@ const year = new Date().getFullYear();
                 {specialties.map((s) => <a href={`/especialidades/${s.slug}/`}>{s.name}</a>)}
               </div>
             </li>
+            <li class="has-sub">
+              <a href="/marcas/" class:list={{ active: isActive('/marcas') }}>Marcas</a>
+              <div class="sub">
+                {brands.map((b) => <a href={`/marcas/${b.slug}/`}>{b.name}</a>)}
+              </div>
+            </li>
             <li><a href="/pos-venda/" class:list={{ active: isActive('/pos-venda') }}>Pós-venda</a></li>
+            <li><a href="/sobre-nos/" class:list={{ active: isActive('/sobre-nos') }}>Sobre</a></li>
             <li><a href="/blog/" class:list={{ active: isActive('/blog') }}>Blog</a></li>
             <li><a href="/contato/" class:list={{ active: isActive('/contato') }}>Contato</a></li>
           </ul>
-          <a class="btn btn-primary nav-cta" href="/contato/#cotacao">Solicitar cotação</a>
+          <a class="btn btn-cyan nav-cta" href="/contato/#cotacao">Solicitar cotação</a>
         </nav>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
       </div>
     </header>
 
@@ -100,38 +102,42 @@ const year = new Date().getFullYear();
     </main>
 
     <footer class="footer">
-      <div class="container footer-grid">
-        <div>
-          <img src={site.logo} alt="Daan Imagem" width="180" height="40" class="footer-logo" />
-          <p>Representante autorizado Philips e Carestream em diagnóstico por imagem no Paraná.</p>
-          <div class="social">
-            {site.instagram && <a href={site.instagram} target="_blank" rel="noopener">Instagram</a>}
-            {site.linkedin && <a href={site.linkedin} target="_blank" rel="noopener">LinkedIn</a>}
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img src={site.logo} alt="Daan Imagem" width="170" height="38" class="footer-logo" />
+            <p>Representante autorizado {brandList} em diagnóstico por imagem no Paraná.</p>
+            <div class="social">
+              {site.instagram && <a href={site.instagram} target="_blank" rel="noopener">Instagram ↗</a>}
+              {site.linkedin && <a href={site.linkedin} target="_blank" rel="noopener">LinkedIn ↗</a>}
+            </div>
+          </div>
+          <div>
+            <h4>Equipamentos</h4>
+            {tree.map((c) => <a href={`/equipamentos/${c.slug}/`}>{c.name}</a>)}
+          </div>
+          <div>
+            <h4>Daan</h4>
+            <a href="/sobre-nos/">Sobre nós</a>
+            <a href="/marcas/">Marcas</a>
+            <a href="/especialidades/">Especialidades</a>
+            <a href="/pos-venda/">Pós-venda</a>
+            <a href="/blog/">Blog</a>
+          </div>
+          <div class="footer-contact">
+            <h4>Contato</h4>
+            <a href={whatsappLink(site)} target="_blank" rel="noopener">WhatsApp {site.phone}</a>
+            <a href={tel(site.mobile)}>{site.mobile}</a>
+            <a href={`mailto:${site.email}`}>{site.email}</a>
+            <p>{site.address}</p>
+            <p>{site.hours}</p>
           </div>
         </div>
-        <div>
-          <h4>Equipamentos</h4>
-          {tree.map((c) => <a href={`/equipamentos/${c.slug}/`}>{c.name}</a>)}
-        </div>
-        <div>
-          <h4>Institucional</h4>
-          <a href="/sobre-nos/">Sobre nós</a>
-          <a href="/especialidades/">Especialidades</a>
-          <a href="/pos-venda/">Pós-venda</a>
-          <a href="/blog/">Blog</a>
-          <a href="/privacidade/">Privacidade</a>
-        </div>
-        <div>
-          <h4>Contato</h4>
-          <a href={`tel:+55${site.phone.replace(/\D/g, '')}`}>{site.phone}</a>
-          <a href={whatsappLink(site)} target="_blank" rel="noopener">WhatsApp {site.phone}</a>
-          <a href={`tel:+55${site.mobile.replace(/\D/g, '')}`}>{site.mobile}</a>
-          <a href={`mailto:${site.email}`}>{site.email}</a>
-          <p>{site.address}</p>
-          <p>{site.hours}</p>
+        <div class="footer-bottom">
+          <span>© {year} Daan Imagem. Todos os direitos reservados.</span>
+          <a href="/privacidade/">Política de privacidade</a>
         </div>
       </div>
-      <div class="container footer-bottom">© {year} Daan Imagem. Todos os direitos reservados.</div>
     </footer>
 
     <a class="whats-float" href={whatsappLink(site, 'Olá! Vim pelo site e gostaria de falar com a equipe comercial.')} target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
@@ -139,6 +145,10 @@ const year = new Date().getFullYear();
     </a>
 
     <script>
+      const header = document.getElementById('header');
+      const onScroll = () => header?.classList.toggle('scrolled', window.scrollY > 24);
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
       const toggle = document.querySelector('.menu-toggle');
       const nav = document.getElementById('nav');
       toggle?.addEventListener('click', () => {
@@ -152,47 +162,59 @@ const year = new Date().getFullYear();
 </html>
 
 <style is:global>
-  .topbar { background: var(--navy); color: rgba(255,255,255,.85); font-size: .82rem; }
-  .topbar-inner { display: flex; justify-content: space-between; gap: 16px; padding-top: 8px; padding-bottom: 8px; }
-  .topbar a { color: #fff; text-decoration: none; margin-left: 18px; }
-  .header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-  .header-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
-  .logo img { height: 40px; width: auto; }
-  .nav { display: flex; align-items: center; gap: 24px; }
-  .nav ul { list-style: none; display: flex; gap: 4px; margin: 0; padding: 0; }
+  .header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; transition: background 0.3s, box-shadow 0.3s; }
+  .header::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(7, 22, 43, 0.7), rgba(7, 22, 43, 0)); pointer-events: none; transition: opacity 0.3s; }
+  .header.scrolled { background: rgba(7, 22, 43, 0.88); backdrop-filter: saturate(140%) blur(14px); -webkit-backdrop-filter: saturate(140%) blur(14px); box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08); }
+  .header.scrolled::before { opacity: 0; }
+  .header-inner { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 84px; }
+  .logo img { height: 36px; width: auto; filter: brightness(0) invert(1); }
+  .nav { display: flex; align-items: center; gap: 16px; }
+  .nav ul { list-style: none; display: flex; gap: 2px; margin: 0; padding: 0; }
   .nav li { position: relative; }
-  .nav > ul > li > a { display: block; padding: 10px 12px; color: var(--ink); text-decoration: none; font-weight: 500; border-radius: 8px; }
-  .nav > ul > li > a:hover, .nav > ul > li > a.active { color: var(--blue); background: var(--bg-soft); }
-  .sub { position: absolute; top: 100%; left: 0; min-width: 240px; background: #fff; border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 10px; display: none; }
-  .sub a { display: block; padding: 7px 10px; color: var(--ink); text-decoration: none; border-radius: 6px; font-size: .93rem; }
+  .nav > ul > li > a { display: block; padding: 10px 12px; color: rgba(255, 255, 255, 0.82); text-decoration: none; font-weight: 500; font-size: 0.95rem; border-radius: 999px; transition: color 0.2s, background 0.2s; }
+  .nav > ul > li > a:hover, .nav > ul > li > a.active { color: #fff; background: rgba(255, 255, 255, 0.08); }
+  .nav-cta { padding: 11px 20px; font-size: 0.93rem; }
+  .sub {
+    position: absolute; top: calc(100% + 10px); left: 0; min-width: 240px; background: #fff; border-radius: 16px; box-shadow: var(--shadow-lg);
+    padding: 10px; opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+  }
+  .sub::before { content: ''; position: absolute; top: -12px; left: 0; right: 0; height: 12px; }
+  .sub a { display: block; padding: 8px 12px; color: var(--text); text-decoration: none; border-radius: 8px; font-size: 0.93rem; }
   .sub a:hover { background: var(--bg-soft); color: var(--blue); }
-  .sub.mega { display: none; grid-template-columns: repeat(3, minmax(180px, 1fr)); gap: 8px 16px; min-width: 640px; left: -160px; padding: 18px; }
-  .sub .sub-title { font-weight: 700; color: var(--navy); }
-  .has-sub:hover > .sub, .has-sub:focus-within > .sub { display: block; }
-  .has-sub:hover > .sub.mega, .has-sub:focus-within > .sub.mega { display: grid; }
-  .menu-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; }
-  .menu-toggle span { display: block; width: 24px; height: 2px; background: var(--navy); margin: 5px 0; }
+  .sub.mega { display: grid; grid-template-columns: repeat(4, minmax(150px, 1fr)); gap: 6px 12px; min-width: 720px; left: -40px; padding: 20px; }
+  .sub .sub-title { font-family: var(--font-display); font-weight: 600; color: var(--ink); }
+  .has-sub:hover > .sub, .has-sub:focus-within > .sub { opacity: 1; visibility: visible; transform: none; }
+  .menu-toggle { display: none; background: rgba(255, 255, 255, 0.1); border: 0; width: 46px; height: 46px; border-radius: 50%; cursor: pointer; padding: 0 13px; }
+  .menu-toggle span { display: block; height: 2px; background: #fff; margin: 6px 0; transition: transform 0.2s; }
+  .menu-toggle[aria-expanded='true'] span:first-child { transform: translateY(4px) rotate(45deg); }
+  .menu-toggle[aria-expanded='true'] span:last-child { transform: translateY(-4px) rotate(-45deg); }
 
-  .footer { background: var(--navy); color: rgba(255,255,255,.75); margin-top: 0; padding-top: 56px; font-size: .93rem; }
-  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.3fr; gap: 32px; }
-  .footer h4 { color: #fff; font-size: 1rem; margin-bottom: 12px; }
-  .footer a { display: block; color: rgba(255,255,255,.8); text-decoration: none; padding: 3px 0; }
+  .footer { background: var(--ink); color: rgba(255, 255, 255, 0.62); padding-top: 88px; font-size: 0.95rem; }
+  .footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.4fr; gap: 40px; }
+  .footer h4 { color: #fff; font-size: 0.95rem; margin-bottom: 16px; }
+  .footer a { display: block; color: rgba(255, 255, 255, 0.72); text-decoration: none; padding: 4px 0; }
   .footer a:hover { color: #fff; }
-  .footer-logo { filter: brightness(0) invert(1); height: 36px; width: auto; margin-bottom: 14px; }
-  .social { display: flex; gap: 16px; }
-  .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); margin-top: 40px; padding-top: 18px; padding-bottom: 24px; font-size: .82rem; }
+  .footer p { margin: 8px 0 0; }
+  .footer-brand p { max-width: 320px; margin: 18px 0; }
+  .footer-logo { filter: brightness(0) invert(1); height: 34px; width: auto; }
+  .social { display: flex; gap: 20px; }
+  .footer-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--line-dark); margin-top: 64px; padding-block: 24px 28px; font-size: 0.84rem; }
+  .footer-bottom a { padding: 0; }
 
-  .whats-float { position: fixed; right: 20px; bottom: 20px; z-index: 60; width: 58px; height: 58px; border-radius: 50%; background: var(--green); color: #fff; display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+  .whats-float { position: fixed; right: 22px; bottom: 22px; z-index: 60; width: 58px; height: 58px; border-radius: 50%; background: var(--green); color: #fff; display: grid; place-items: center; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); transition: transform 0.2s; }
+  .whats-float:hover { transform: scale(1.06); }
 
-  @media (max-width: 960px) {
-    .topbar { display: none; }
+  @media (max-width: 1100px) {
     .menu-toggle { display: block; }
-    .nav { position: fixed; inset: 76px 0 0 0; background: #fff; flex-direction: column; align-items: stretch; padding: 20px; gap: 16px; overflow-y: auto; display: none; }
+    .header-inner { height: 72px; }
+    .nav { position: fixed; inset: 72px 0 0 0; background: var(--ink); flex-direction: column; align-items: stretch; padding: 24px; gap: 20px; overflow-y: auto; display: none; }
     .nav.open { display: flex; }
     .nav ul { flex-direction: column; }
-    .sub, .sub.mega { position: static; display: none !important; }
-    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .nav > ul > li > a { font-size: 1.15rem; padding: 14px 12px; border-radius: 12px; }
+    .sub, .sub.mega { display: none !important; }
+    body.nav-open .header { background: var(--ink); }
     body.nav-open { overflow: hidden; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
   }
-  @media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) { .footer-top { grid-template-columns: 1fr; } }
 </style>

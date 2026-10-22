@@ -1062,7 +1062,8 @@
     "specialties": [],
     "images": [
       "https://daanimagem.com.br/wp-content/uploads/2024/06/vitaflex.webp"
-    ]
+    ],
+    "hidden": true
   },
   {
     "slug": "classic-cr",
@@ -1091,7 +1092,8 @@
     "specialties": [],
     "images": [
       "https://daanimagem.com.br/wp-content/uploads/2024/06/classiccr.webp"
-    ]
+    ],
+    "hidden": true
   },
   {
     "slug": "dr-retrofit",
@@ -1117,7 +1119,8 @@
     "specialties": [],
     "images": [
       "https://daanimagem.com.br/wp-content/uploads/2024/06/retrofit.webp"
-    ]
+    ],
+    "hidden": true
   },
   {
     "slug": "drx",
@@ -1218,7 +1221,8 @@
       "https://daanimagem.com.br/wp-content/uploads/2024/06/DRX-LC.webp",
       "https://daanimagem.com.br/wp-content/uploads/2024/06/DRX-Plus-1.webp"
     ],
-    "notes": "Página reúne três modelos (DRX 2530C, DRX-LC, DRX Plus); bullets de cada modelo estão em specs por grupo. highlights = benefícios do DRX-LC listados na página. Considerar dividir em produtos separados."
+    "notes": "Página reúne três modelos (DRX 2530C, DRX-LC, DRX Plus); bullets de cada modelo estão em specs por grupo. highlights = benefícios do DRX-LC listados na página. Considerar dividir em produtos separados.",
+    "hidden": true
   },
   {
     "slug": "detector-lux-35",
@@ -1246,7 +1250,8 @@
     "specialties": [],
     "images": [
       "https://daanimagem.com.br/wp-content/uploads/2024/06/lux35.webp"
-    ]
+    ],
+    "hidden": true
   },
   {
     "slug": "detectores-focus",
@@ -1293,7 +1298,8 @@
     "specialties": [],
     "images": [
       "https://daanimagem.com.br/wp-content/uploads/2024/06/focus.webp"
-    ]
+    ],
+    "hidden": true
   },
   {
     "slug": "raiox-horizon",
@@ -1313,7 +1319,8 @@
     "specialties": [],
     "images": [
       "https://daanimagem.com.br/wp-content/uploads/2024/06/horizon.webp"
-    ]
+    ],
+    "hidden": true
   },
   {
     "slug": "drx-revolution",
@@ -1337,7 +1344,8 @@
     "specialties": [],
     "images": [
       "https://daanimagem.com.br/wp-content/uploads/2024/06/drxrevolution.webp"
-    ]
+    ],
+    "hidden": true
   },
   {
     "slug": "impressora-dryview",
@@ -1424,5 +1432,33 @@
     "images": [
       "https://daanimagem.com.br/wp-content/uploads/2024/06/filme-impressao.webp"
     ]
+  },
+  {
+    "slug": "xenetix",
+    "name": "Xenetix",
+    "brand": "Guerbet",
+    "category": "meios-de-contraste",
+    "subcategory": null,
+    "legacyUrl": "",
+    "summary": "Meio de contraste iodado Guerbet para exames de tomografia computadorizada e radiologia.",
+    "description": [],
+    "highlights": [],
+    "specs": [],
+    "specialties": [],
+    "images": []
+  },
+  {
+    "slug": "optiray",
+    "name": "Optiray",
+    "brand": "Guerbet",
+    "category": "meios-de-contraste",
+    "subcategory": null,
+    "legacyUrl": "",
+    "summary": "Meio de contraste iodado Guerbet para tomografia computadorizada, angiografia e procedimentos de hemodinâmica.",
+    "description": [],
+    "highlights": [],
+    "specs": [],
+    "specialties": [],
+    "images": []
   }
 ]

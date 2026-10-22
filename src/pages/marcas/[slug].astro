@@ -1,26 +1,44 @@
 ---
 import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import CtaBand from '../../components/CtaBand.astro';
-import { getProducts, getCategories } from '../../lib/data';
+import { getProducts, getCategories, getBrands, getSite, whatsappLink, type Brand } from '../../lib/data';
 export async function getStaticPaths() {
-  const brands = [...new Set((await getProducts()).map((p) => p.brand).filter(Boolean))];
-  return brands.map((b) => ({ params: { slug: b.toLowerCase() }, props: { brand: b } }));
+  return (await getBrands()).map((b) => ({ params: { slug: b.slug }, props: { brand: b } }));
 }
-const { brand } = Astro.props as { brand: string };
-const products = (await getProducts()).filter((p) => p.brand === brand);
-const catName = Object.fromEntries((await getCategories()).map((c) => [c.slug, c.name]));
+const { brand } = Astro.props as { brand: Brand };
+const products = (await getProducts()).filter((p) => p.brand === brand.name);
+const cats = await getCategories();
+const site = await getSite();
+const catName = Object.fromEntries(cats.filter((c) => !c.parent).map((c) => [c.slug, c.name]));
 ---
-<Base title={brand} description={`Equipamentos ${brand} com a Daan Imagem, representante autorizado no Paraná.`}>
-  <section class="page-hero">
-    <div class="container">
-      <nav class="breadcrumb"><a href="/">Início</a> / Marcas / {brand}</nav>
-      <h1>{brand}</h1>
-      <p class="lead">A Daan Imagem é representante autorizado {brand} no Paraná.</p>
-    </div>
-  </section>
+<Base title={brand.name} description={`${brand.name} com a Daan Imagem, representante autorizado no Paraná. ${brand.description}`.slice(0, 160)}>
+  <PageHero title={brand.name} crumbs={[{ href: '/marcas/', label: 'Marcas' }]} eyebrow="Representante autorizado no Paraná" lead={brand.description}>
+    <div class="chips lines">{brand.lines.map((l) => catName[l] && <a class="chip" href={`/equipamentos/${l}/`}>{catName[l]}</a>)}</div>
+  </PageHero>
   <section class="section">
-    <div class="container grid grid-3">{products.map((p) => <ProductCard product={p} categoryName={catName[p.category]} />)}</div>
+    <div class="container">
+      {products.length > 0 ? (
+        <div class="grid grid-3">{products.map((p) => <ProductCard product={p} categoryName={catName[p.category]} />)}</div>
+      ) : (
+        <div class="empty-line">
+          <h2>Portfólio {brand.name} sob consulta</h2>
+          <p class="lead">Fale com o nosso time para conhecer os produtos {brand.name} disponíveis e receber uma proposta.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="/contato/#cotacao">Solicitar informações <span class="arrow">→</span></a>
+            <a class="btn btn-whats" href={whatsappLink(site, `Olá! Gostaria de conhecer os produtos ${brand.name}.`)} target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      )}
+    </div>
   </section>
   <CtaBand />
 </Base>
+<style>
+  .lines { margin-top: 28px; }
+  .lines .chip { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.2); color: #fff; }
+  .empty-line { border: 1px dashed var(--line); border-radius: 24px; padding: 56px; background: var(--bg-soft); }
+  .empty-line .lead { margin-bottom: 28px; }
+  @media (max-width: 760px) { .empty-line { padding: 32px 22px; } }
+</style>

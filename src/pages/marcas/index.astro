@@ -1,0 +1,41 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { getBrands, getProducts, getCategories } from '../../lib/data';
+const brands = await getBrands();
+const products = await getProducts();
+const cats = await getCategories();
+const catName = Object.fromEntries(cats.filter((c) => !c.parent).map((c) => [c.slug, c.name]));
+---
+<Base title="Marcas" description="A Daan Imagem é representante autorizado Philips, Konica Minolta e Guerbet no Paraná.">
+  <PageHero title="Marcas que representamos" eyebrow="Representante autorizado" lead="Trabalhamos com fabricantes líderes em diagnóstico por imagem para oferecer tecnologia de ponta e suporte local no Paraná." />
+  <section class="section">
+    <div class="container brand-list">
+      {brands.map((b) => {
+        const count = products.filter((p) => p.brand === b.name).length;
+        return (
+          <a class="brand-row" href={`/marcas/${b.slug}/`}>
+            <div class="brand-name">{b.logo ? <img src={b.logo} alt={b.name} /> : <span>{b.name}</span>}</div>
+            <div>
+              <p>{b.description}</p>
+              <div class="chips">{b.lines.map((l) => catName[l] && <span class="chip">{catName[l]}</span>)}</div>
+            </div>
+            <span class="link-arrow">{count > 0 ? `${count} equipamentos` : 'Saiba mais'} →</span>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+  <CtaBand />
+</Base>
+<style>
+  .brand-list { display: grid; }
+  .brand-row { display: grid; grid-template-columns: 280px 1fr auto; gap: 40px; align-items: center; padding: 40px 0; border-bottom: 1px solid var(--line); text-decoration: none; color: inherit; }
+  .brand-row:first-child { border-top: 1px solid var(--line); }
+  .brand-name span { font-family: var(--font-display); font-size: 2rem; font-weight: 600; color: var(--ink); letter-spacing: -.02em; }
+  .brand-name img { max-height: 48px; width: auto; }
+  .brand-row p { color: var(--muted); max-width: 620px; }
+  .brand-row:hover .brand-name span { color: var(--blue); }
+  @media (max-width: 860px) { .brand-row { grid-template-columns: 1fr; gap: 14px; } }
+</style>

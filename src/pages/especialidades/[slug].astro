@@ -1,4 +1,5 @@
 ---
+import PageHero from '../../components/PageHero.astro';
 import Base from '../../layouts/Base.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import CtaBand from '../../components/CtaBand.astro';
@@ -12,12 +13,7 @@ const catName = Object.fromEntries((await getCategories()).map((c) => [c.slug, c
 const paragraphs = s.intro.split(/\n\n+/).filter(Boolean);
 ---
 <Base title={s.name} description={paragraphs[0]?.slice(0, 160)} image={s.image}>
-  <section class="page-hero">
-    <div class="container">
-      <nav class="breadcrumb"><a href="/">Início</a> / <a href="/especialidades/">Especialidades</a> / {s.name}</nav>
-      <h1>{s.name}</h1>
-    </div>
-  </section>
+  <PageHero title={s.name} crumbs={[{ href: '/especialidades/', label: 'Especialidades' }]} eyebrow="Especialidade" />
   <section class="section">
     <div class="container intro">
       <div class="prose">{paragraphs.map((p) => <p>{p}</p>)}</div>

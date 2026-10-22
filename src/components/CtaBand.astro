@@ -1,20 +1,25 @@
 ---
 import { getSite, whatsappLink } from '../lib/data';
 interface Props { title?: string; text?: string; message?: string }
-const { title = 'Vamos encontrar o equipamento certo para sua clínica?', text = 'Fale com nosso time comercial e receba uma proposta sob medida.', message } = Astro.props;
+const { title = 'Vamos encontrar o equipamento certo para a sua instituição?', text = 'Fale com o nosso time comercial e receba uma proposta sob medida, com condições de pagamento e suporte técnico.', message } = Astro.props;
 const site = await getSite();
 ---
-<section class="section">
+<section class="section cta-section">
   <div class="container">
     <div class="cta-band">
       <div>
+        <p class="eyebrow">Atendimento comercial</p>
         <h2>{title}</h2>
         <p>{text}</p>
       </div>
       <div class="btn-row">
-        <a class="btn btn-light" href="/contato/#cotacao">Solicitar cotação</a>
-        <a class="btn btn-whats" href={whatsappLink(site, message ?? 'Olá! Vim pelo site e gostaria de uma cotação.')} target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-cyan" href="/contato/#cotacao">Solicitar cotação <span class="arrow">→</span></a>
+        <a class="btn btn-ghost-light" href={whatsappLink(site, message ?? 'Olá! Vim pelo site e gostaria de uma cotação.')} target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
   </div>
 </section>
+<style>
+  .cta-section { padding-block: 40px 104px; }
+  .eyebrow { color: var(--cyan); }
+</style>

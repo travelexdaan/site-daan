@@ -6,8 +6,9 @@
 import Base from '../../layouts/Base.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import CtaBand from '../../components/CtaBand.astro';
+import PageHero from '../../components/PageHero.astro';
 import QuoteForm from '../../components/QuoteForm.astro';
-import { getProducts, getCategories, getSpecialties, getSite, productUrl, whatsappLink, type Product, type Category } from '../../lib/data';
+import { getProducts, getCategories, getSpecialties, getSite, getBrands, getCategoryTree, productUrl, whatsappLink, type Product, type Category } from '../../lib/data';
 
 export async function getStaticPaths() {
   const products = await getProducts();
@@ -27,15 +28,17 @@ const { kind, category, product } = Astro.props;
 const products = await getProducts();
 const cats = await getCategories();
 const specialties = await getSpecialties();
+const brands = await getBrands();
 const site = await getSite();
-const byslug = (s: string | null | undefined) => cats.find((c) => c.slug === s);
+const byslug = (s: string | null | undefined) => cats.find((c) => c.slug === s && !c.parent);
 
 let title = '';
 let list: Product[] = [];
-let crumbs: { href: string; label: string }[] = [{ href: '/equipamentos/', label: 'Equipamentos' }];
+const crumbs: { href: string; label: string }[] = [{ href: '/equipamentos/', label: 'Equipamentos' }];
 let children: Category[] = [];
 let related: Product[] = [];
 let productSpecialties: typeof specialties = [];
+let lineBrand = undefined as (typeof brands)[number] | undefined;
 
 if (kind === 'category' && category) {
   title = category.name;
@@ -44,7 +47,8 @@ if (kind === 'category' && category) {
   list = parent
     ? products.filter((p) => p.category === parent.slug && p.subcategory === category.slug)
     : products.filter((p) => p.category === category.slug);
-  children = parent ? [] : cats.filter((c) => c.parent === category.slug);
+  children = parent ? [] : (await getCategoryTree()).find((c) => c.slug === category.slug)?.children ?? [];
+  lineBrand = brands.find((b) => b.slug === category.brand) ?? brands.find((b) => b.lines.includes(parent?.slug ?? category.slug));
 } else if (product) {
   title = product.name;
   const cat = byslug(product.category);
@@ -54,30 +58,37 @@ if (kind === 'category' && category) {
   related = products
     .filter((p) => p.slug !== product.slug && p.category === product.category && (p.subcategory === product.subcategory || !product.subcategory))
     .slice(0, 3);
+  if (related.length < 3) related = related.concat(products.filter((p) => p.category === product.category && p.slug !== product.slug && !related.includes(p)).slice(0, 3 - related.length));
   productSpecialties = specialties.filter((s) => product.specialties.includes(s.slug) || s.productSlugs.includes(product.slug));
 }
 const catName = Object.fromEntries(cats.map((c) => [c.slug, c.name]));
+const images = product ? [...new Set(product.images)] : [];
 ---
 {kind === 'category' && category && (
-  <Base title={title} description={category.intro?.slice(0, 160) || `Equipamentos de ${title} Philips e Carestream com a Daan Imagem.`}>
-    <section class="page-hero">
-      <div class="container">
-        <nav class="breadcrumb"><a href="/">Início</a> / {crumbs.map((c) => <><a href={c.href}>{c.label}</a> / </>)}{title}</nav>
-        <h1>{title}</h1>
-        {category.intro && <p class="lead">{category.intro}</p>}
-      </div>
-    </section>
+  <Base title={title} description={category.intro?.slice(0, 160) || `Equipamentos de ${title} com a Daan Imagem, no Paraná.`}>
+    <PageHero title={title} crumbs={crumbs} eyebrow={lineBrand ? lineBrand.name : 'Linha de equipamentos'} lead={category.intro || undefined}>
+      {children.length > 0 && (
+        <div class="chips sub-chips">
+          {children.map((c) => <a class="chip" href={`/equipamentos/${category.slug}/${c.slug}/`}>{c.name}</a>)}
+        </div>
+      )}
+    </PageHero>
     <section class="section">
       <div class="container">
-        {children.length > 0 && (
-          <div class="chips" style="margin-bottom:28px">
-            {children.map((c) => <a class="chip" href={`/equipamentos/${category.slug}/${c.slug}/`}>{c.name}</a>)}
-          </div>
-        )}
         {list.length > 0 ? (
-          <div class="grid grid-3">{list.map((p) => <ProductCard product={p} categoryName={p.subcategory ? catName[p.subcategory] : p.brand} />)}</div>
+          <div class="grid grid-3">{list.map((p) => <ProductCard product={p} categoryName={p.subcategory ? catName[p.subcategory] : catName[p.category]} />)}</div>
         ) : (
-          <p class="muted">Em breve. Fale com a nossa equipe para conhecer as opções desta linha.</p>
+          <div class="empty-line">
+            <div>
+              <p class="eyebrow">{lineBrand?.name ?? 'Em breve'}</p>
+              <h2>Portfólio sob consulta</h2>
+              <p class="lead">{lineBrand?.description ?? 'Estamos atualizando esta linha.'} Fale com o nosso time para conhecer os modelos disponíveis e receber uma proposta.</p>
+              <div class="btn-row">
+                <a class="btn btn-primary" href="/contato/#cotacao">Solicitar informações <span class="arrow">→</span></a>
+                <a class="btn btn-whats" href={whatsappLink(site, `Olá! Gostaria de conhecer a linha de ${title}.`)} target="_blank" rel="noopener">WhatsApp</a>
+              </div>
+            </div>
+          </div>
         )}
       </div>
     </section>
@@ -86,37 +97,50 @@ const catName = Object.fromEntries(cats.map((c) => [c.slug, c.name]));
 )}
 
 {kind === 'product' && product && (
-  <Base title={`${product.name}${product.brand ? ' ' + product.brand : ''}`} description={product.summary?.slice(0, 160)} image={product.images[0]}>
-    <section class="section product">
+  <Base title={`${product.name}${product.brand ? ' ' + product.brand : ''}`} description={product.summary?.slice(0, 160)} image={images[0]}>
+    <section class="product-top">
       <div class="container">
-        <nav class="breadcrumb"><a href="/">Início</a> / {crumbs.map((c) => <><a href={c.href}>{c.label}</a> / </>)}{title}</nav>
+        <nav class="breadcrumb" aria-label="Você está em">
+          <a href="/">Início</a>
+          {crumbs.map((c) => <><span class="sep">/</span><a href={c.href}>{c.label}</a></>)}
+          <span class="sep">/</span><span aria-current="page">{title}</span>
+        </nav>
         <div class="product-grid">
           <div class="gallery">
-            <div class="gallery-main">
-              {product.images[0] ? <img id="main-img" src={product.images[0]} alt={product.name} /> : <span class="muted">{product.brand}</span>}
+            <div class="gallery-main viewfinder">
+              {images[0] ? <img id="main-img" src={images[0]} alt={product.name} /> : <span class="placeholder">{product.brand}</span>}
+              <span class="readout mono">{catName[product.category]}{product.subcategory ? ` · ${catName[product.subcategory] ?? ''}` : ''}</span>
             </div>
-            {product.images.length > 1 && (
+            {images.length > 1 && (
               <div class="thumbs">
-                {product.images.slice(0, 10).map((src, i) => (
-                  <button type="button" class="thumb" data-src={src} aria-label={`Imagem ${i + 1}`}><img src={src} alt="" loading="lazy" /></button>
+                {images.slice(0, 10).map((src, i) => (
+                  <button type="button" class:list={['thumb', { active: i === 0 }]} data-src={src} aria-label={`Ver imagem ${i + 1}`}><img src={src} alt="" loading="lazy" /></button>
                 ))}
               </div>
             )}
           </div>
           <div class="info">
-            <span class="tag">{product.brand}</span>
+            <span class="eyebrow">{product.brand}</span>
             <h1>{product.name}</h1>
             {product.summary && <p class="lead">{product.summary}</p>}
             {productSpecialties.length > 0 && (
-              <div class="chips specs-chips">
-                {productSpecialties.map((s) => <a class="chip" href={`/especialidades/${s.slug}/`}>{s.name}</a>)}
+              <div class="info-block">
+                <span class="mono">Especialidades</span>
+                <div class="chips">
+                  {productSpecialties.map((s) => <a class="chip" href={`/especialidades/${s.slug}/`}>{s.name}</a>)}
+                </div>
               </div>
             )}
             <div class="btn-row">
-              <a class="btn btn-primary" href="#cotacao">Solicitar cotação</a>
+              <a class="btn btn-primary" href="#cotacao">Solicitar cotação <span class="arrow">→</span></a>
               <a class="btn btn-whats" href={whatsappLink(site, `Olá! Gostaria de uma cotação do ${product.name}.`)} target="_blank" rel="noopener">WhatsApp</a>
-              {product.catalogPdf && <a class="btn btn-ghost" href={product.catalogPdf} target="_blank" rel="noopener">Baixar catálogo (PDF)</a>}
             </div>
+            {product.catalogPdf && <a class="link-arrow pdf" href={product.catalogPdf} target="_blank" rel="noopener">Baixar catálogo em PDF ↓</a>}
+            <ul class="assurances">
+              <li>Representante autorizado {product.brand}</li>
+              <li>Instalação e treinamento de aplicação</li>
+              <li>Suporte pós-venda no Paraná</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -127,13 +151,14 @@ const catName = Object.fromEntries(cats.map((c) => [c.slug, c.name]));
         <div class="container detail-grid">
           {product.description.length > 0 && (
             <div class="prose">
+              <p class="eyebrow">Visão geral</p>
               <h2>Sobre o {product.name}</h2>
               {product.description.map((p) => <p>{p}</p>)}
             </div>
           )}
           {product.highlights.length > 0 && (
-            <div>
-              <h2>Destaques</h2>
+            <div class="highlights-card">
+              <h3>Destaques</h3>
               <ul class="check-list">{product.highlights.map((h) => <li>{h}</li>)}</ul>
             </div>
           )}
@@ -144,8 +169,9 @@ const catName = Object.fromEntries(cats.map((c) => [c.slug, c.name]));
     {product.specs.length > 0 && (
       <section class="section">
         <div class="container">
+          <p class="eyebrow">Ficha técnica</p>
           <h2>Especificações e aplicações</h2>
-          <div class="grid grid-2 specs">
+          <div class="specs">
             {product.specs.map((g) => (
               <div class="spec-group">
                 <h3>{g.group}</h3>
@@ -157,22 +183,29 @@ const catName = Object.fromEntries(cats.map((c) => [c.slug, c.name]));
       </section>
     )}
 
-    <section class="section section-soft" id="cotacao">
+    <section class="section section-dark" id="cotacao">
       <div class="container quote">
         <div>
           <p class="eyebrow">Cotação</p>
           <h2>Receba uma proposta do {product.name}</h2>
-          <p class="muted">Nossa equipe comercial retorna em até 1 dia útil com condições, prazos e opções de configuração.</p>
+          <p class="lead">Nossa equipe comercial retorna com condições, prazos e opções de configuração para a sua instituição.</p>
+          <a class="btn btn-ghost-light" href={whatsappLink(site, `Olá! Gostaria de uma cotação do ${product.name}.`)} target="_blank" rel="noopener">Prefiro falar pelo WhatsApp</a>
         </div>
-        <QuoteForm product={product.name} />
+        <div class="form-card"><QuoteForm product={product.name} /></div>
       </div>
     </section>
 
     {related.length > 0 && (
       <section class="section">
         <div class="container">
-          <h2>Veja também</h2>
-          <div class="grid grid-3" style="margin-top:20px">{related.map((p) => <ProductCard product={p} categoryName={catName[p.category]} />)}</div>
+          <div class="head-row">
+            <div>
+              <p class="eyebrow">Veja também</p>
+              <h2>Outros equipamentos de {catName[product.category]}</h2>
+            </div>
+            <a class="link-arrow" href={`/equipamentos/${product.category}/`}>Ver linha completa →</a>
+          </div>
+          <div class="grid grid-3">{related.map((p) => <ProductCard product={p} categoryName={catName[p.category]} />)}</div>
         </div>
       </section>
     )}
@@ -183,7 +216,7 @@ const catName = Object.fromEntries(cats.map((c) => [c.slug, c.name]));
       name: product.name,
       brand: { '@type': 'Brand', name: product.brand },
       description: product.summary,
-      image: product.images.slice(0, 3),
+      image: images.slice(0, 3),
     })} />
   </Base>
 )}
@@ -191,26 +224,66 @@ const catName = Object.fromEntries(cats.map((c) => [c.slug, c.name]));
 <script>
   const main = document.getElementById('main-img') as HTMLImageElement | null;
   document.querySelectorAll<HTMLButtonElement>('.thumb').forEach((b) =>
-    b.addEventListener('click', () => { if (main && b.dataset.src) main.src = b.dataset.src; }),
+    b.addEventListener('click', () => {
+      if (main && b.dataset.src) main.src = b.dataset.src;
+      document.querySelectorAll('.thumb').forEach((t) => t.classList.toggle('active', t === b));
+    }),
   );
 </script>
 
 <style>
-  .product-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: start; }
-  .gallery-main { background: var(--bg-soft); border-radius: 20px; aspect-ratio: 4 / 3; display: grid; place-items: center; overflow: hidden; }
-  .gallery-main img { width: 100%; height: 100%; object-fit: contain; padding: 24px; }
-  .thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: 10px; margin-top: 12px; }
-  .thumb { border: 1px solid var(--line); background: #fff; border-radius: 10px; padding: 4px; cursor: pointer; aspect-ratio: 1; }
-  .thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
-  .info h1 { margin: 10px 0 12px; }
-  .info .lead { margin-bottom: 20px; }
-  .specs-chips { margin-bottom: 24px; }
-  .detail-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; }
-  .check-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
-  .check-list li { padding-left: 30px; position: relative; }
-  .check-list li::before { content: '✓'; position: absolute; left: 0; color: var(--teal); font-weight: 800; }
-  .spec-group { border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
-  .spec-group ul { margin: 0; padding-left: 1.1em; color: var(--muted); }
-  .quote { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 48px; }
-  @media (max-width: 860px) { .product-grid, .detail-grid, .quote { grid-template-columns: 1fr; gap: 28px; } }
+  .sub-chips { margin-top: 28px; }
+  .sub-chips .chip { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.2); color: #fff; }
+  .sub-chips .chip:hover { border-color: #fff; }
+  .empty-line { border: 1px dashed var(--line); border-radius: 24px; padding: 56px; background: var(--bg-soft); }
+  .empty-line .lead { margin-bottom: 28px; }
+
+  .product-top { position: relative; overflow: hidden; background: var(--ink); color: rgba(255,255,255,.75); padding-block: 130px 96px; }
+  .product-top::before { content: ''; position: absolute; inset: 0; background: radial-gradient(600px 400px at 15% 40%, rgba(26,95,208,.35), transparent 70%), radial-gradient(500px 300px at 90% 10%, rgba(43,196,228,.18), transparent 70%); }
+  .product-top .container { position: relative; }
+  .info h1 { color: #fff; }
+  .info .lead { color: rgba(255,255,255,.72); }
+  .info-block .mono { color: rgba(255,255,255,.5) !important; }
+  .info .chip { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.2); color: #fff; }
+  .info .chip:hover { border-color: #fff; }
+  .info .assurances { border-top-color: var(--line-dark); color: rgba(255,255,255,.65); }
+  .info .eyebrow { color: var(--cyan); }
+  .info .pdf { color: var(--cyan); }
+  .thumb { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.14); }
+  .thumb.active, .thumb:hover { border-color: var(--cyan); }
+  .product-top .breadcrumb, .product-top .breadcrumb a { color: rgba(255,255,255,.6); }
+  .product-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: start; }
+  .gallery { min-width: 0; }
+  .gallery-main { position: relative; background: radial-gradient(110% 90% at 50% 100%, #e3ecf8 0%, #f6f9fc 60%, #fff 100%); border-radius: 28px; aspect-ratio: 4 / 3; max-width: 100%; display: grid; place-items: center; overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--line); }
+  .gallery-main img { width: 100%; height: 100%; object-fit: contain; padding: 40px; }
+  .gallery-main .placeholder { font-family: var(--font-display); font-size: 2rem; color: var(--ink-3); opacity: .35; }
+  .gallery-main .readout { position: absolute; top: 18px; left: 46px; color: var(--blue); font-size: .68rem; }
+  .thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 10px; margin-top: 14px; }
+  .thumb { border: 1px solid var(--line); background: #fff; border-radius: 12px; padding: 4px; cursor: pointer; aspect-ratio: 1; transition: border-color .2s; }
+  .thumb.active, .thumb:hover { border-color: var(--blue); }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+  .info { padding-top: 24px; min-width: 0; }
+  .info h1 { font-size: clamp(2.2rem, 4vw, 3.4rem); margin: 4px 0 16px; }
+  .info .lead { font-size: 1.12rem; margin-bottom: 28px; }
+  .info-block { display: grid; gap: 10px; margin-bottom: 28px; }
+  .info-block .mono { color: var(--muted); font-size: .7rem; }
+  .pdf { margin-top: 20px; }
+  .assurances { list-style: none; padding: 24px 0 0; margin: 32px 0 0; border-top: 1px solid var(--line); display: grid; gap: 10px; color: var(--muted); font-size: .95rem; }
+  .assurances li::before { content: '—'; color: var(--cyan); margin-right: 10px; }
+  .detail-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: start; }
+  .highlights-card { background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 32px; }
+  .highlights-card h3 { margin-bottom: 20px; }
+  .highlights-card .check-list li { font-size: .97rem; }
+  .specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px; margin-top: 32px; }
+  .spec-group { border-top: 2px solid var(--ink); padding-top: 20px; }
+  .spec-group ul { margin: 0; padding: 0; list-style: none; }
+  .spec-group li { padding: 12px 0; border-bottom: 1px solid var(--line); color: #2c3d55; font-size: .97rem; }
+  .quote { display: grid; grid-template-columns: .85fr 1.15fr; gap: 64px; align-items: start; }
+  .quote .lead { margin-bottom: 28px; }
+  @media (max-width: 960px) {
+    .product-top { padding-block: 104px 64px; }
+    .product-grid, .detail-grid, .quote { grid-template-columns: 1fr; gap: 32px; }
+    .info { padding-top: 0; }
+    .empty-line { padding: 32px 22px; }
+  }
 </style>

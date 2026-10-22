@@ -1,4 +1,5 @@
 ---
+import PageHero from '../components/PageHero.astro';
 import Base from '../layouts/Base.astro';
 import QuoteForm from '../components/QuoteForm.astro';
 import { getRichPage, getSite, whatsappLink } from '../lib/data';
@@ -11,14 +12,8 @@ const services = [
   { t: 'Atualizações', d: 'Upgrades de software e de configuração para o seu equipamento.' },
 ];
 ---
-<Base title="Pós-venda" description="Assistência técnica, aplicação e suporte pós-venda Daan Imagem para equipamentos Philips e Carestream." image={page.images[0]}>
-  <section class="page-hero">
-    <div class="container">
-      <nav class="breadcrumb"><a href="/">Início</a> / Pós-venda</nav>
-      <h1>{page.title}</h1>
-      <p class="lead">Seu equipamento funcionando com o suporte de quem conhece.</p>
-    </div>
-  </section>
+<Base title="Pós-venda" description="Assistência técnica, aplicação e suporte pós-venda Daan Imagem para equipamentos Philips, Konica Minolta e Guerbet." image={page.images[0]}>
+  <PageHero title={page.title} eyebrow="Suporte" lead="Seu equipamento funcionando com o suporte de quem conhece." />
   <section class="section">
     <div class="container">
       <div class="prose" set:html={page.bodyHtml} />

@@ -1,7 +1,7 @@
 {
   "home": {
     "heroTitle": "Soluções inteligentes e precisas em diagnósticos de imagem para clínicas e hospitais.",
-    "heroSubtitle": "Representante autorizado Philips e Carestream no Paraná, com consultoria na escolha do equipamento e suporte completo no pós-venda.",
+    "heroSubtitle": "Representante autorizado Philips, Konica Minolta e Guerbet no Paraná. Consultoria na escolha do equipamento, negociação e suporte completo no pós-venda.",
     "aboutText": "Nós somos uma referência no mercado de diagnóstico por imagem no Paraná, reconhecida pelo profissionalismo e excelência em suas relações comerciais. Com uma equipe técnica especializada, oferecemos suporte completo, desde a escolha de equipamentos e softwares até a melhor solução de negociação para nossos clientes.",
     "aboutImage": "https://daanimagem.com.br/wp-content/uploads/2024/06/img-sec-sobre-daan.webp",
     "differentialsText": "A Daan Serviços é uma representante oficial da Philips e da Carestream e conta com um time técnico experiente, capaz de oferecer o melhor e mais completo serviço de instalação e suporte técnico para nossos clientes.",
@@ -149,11 +149,19 @@
     "partners": [
       {
         "name": "Philips",
-        "logo": "https://daanimagem.com.br/wp-content/uploads/2024/06/philips-img.webp"
+        "logo": null
+      },
+      {
+        "name": "Konica Minolta",
+        "logo": null
+      },
+      {
+        "name": "Guerbet",
+        "logo": null
       },
       {
         "name": "Carestream",
-        "logo": "https://daanimagem.com.br/wp-content/uploads/2024/06/carestream-img.webp"
+        "logo": null
       }
     ],
     "notes": "WhatsApp links use both web.whatsapp.com and api.whatsapp.com with phone=554130458990 (the landline). GTM confirmed in page. Partner logos inferred from filenames philips-img.webp / carestream-img.webp; a combined philips-carestream-logos.webp is in the hero. Posts also mention Bayer (Daan Serviços award), not listed as a partner on site."

@@ -31,6 +31,7 @@ export const product = defineType({
     defineField({ name: 'brand', title: 'Marca', type: 'reference', to: [{ type: 'brand' }], validation: (r) => r.required(), group: 'main' }),
     defineField({ name: 'category', title: 'Linha / subcategoria', type: 'reference', to: [{ type: 'category' }], validation: (r) => r.required(), group: 'main', description: 'Ex.: Ultrassom › Estacionários' }),
     defineField({ name: 'specialties', title: 'Especialidades', type: 'array', of: [{ type: 'reference', to: [{ type: 'specialty' }] }], group: 'main' }),
+    defineField({ name: 'hidden', title: 'Ocultar do site', type: 'boolean', initialValue: false, group: 'main', description: 'Marque para tirar o equipamento do site sem apagar o cadastro.' }),
     defineField({ name: 'summary', title: 'Resumo (1 frase)', type: 'text', rows: 2, validation: (r) => r.max(220), group: 'main', description: 'Aparece nos cards e no Google.' }),
     { ...order, group: 'main' },
     defineField({ name: 'description', title: 'Descrição', type: 'array', of: [{ type: 'text', rows: 4 }], group: 'content', description: 'Um item por parágrafo.' }),
@@ -68,6 +69,7 @@ export const category = defineType({
     defineField({ name: 'name', title: 'Nome', type: 'string', validation: (r) => r.required() }),
     slug(),
     defineField({ name: 'parent', title: 'Linha principal', type: 'reference', to: [{ type: 'category' }], description: 'Preencha só para subcategorias (ex.: Estacionários dentro de Ultrassom).' }),
+    defineField({ name: 'brand', title: 'Marca da linha', type: 'reference', to: [{ type: 'brand' }], description: 'Subcategorias sem marca e sem equipamentos não aparecem no menu.' }),
     defineField({ name: 'intro', title: 'Texto de apresentação', type: 'text', rows: 4 }),
     order,
   ],
@@ -93,7 +95,12 @@ export const brand = defineType({
   type: 'document',
   fields: [
     defineField({ name: 'name', title: 'Nome', type: 'string', validation: (r) => r.required() }),
+    slug(),
+    defineField({ name: 'featured', title: 'Mostrar na faixa "Representante autorizado"', type: 'boolean', initialValue: true }),
+    defineField({ name: 'description', title: 'Apresentação', type: 'text', rows: 4 }),
+    defineField({ name: 'lines', title: 'Linhas desta marca', type: 'array', of: [{ type: 'reference', to: [{ type: 'category' }] }] }),
     defineField({ name: 'logo', title: 'Logo', type: 'image' }),
+    order,
   ],
 });
 

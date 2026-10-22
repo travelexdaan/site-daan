@@ -1,16 +1,11 @@
 ---
+import PageHero from '../../components/PageHero.astro';
 import Base from '../../layouts/Base.astro';
 import { getPosts, formatDate } from '../../lib/data';
 const posts = await getPosts();
 ---
-<Base title="Blog" description="Notícias, lançamentos e eventos da Daan Imagem, Philips e Carestream.">
-  <section class="page-hero">
-    <div class="container">
-      <nav class="breadcrumb"><a href="/">Início</a> / Blog</nav>
-      <h1>Blog</h1>
-      <p class="lead">Lançamentos, eventos e conteúdo sobre diagnóstico por imagem.</p>
-    </div>
-  </section>
+<Base title="Blog" description="Notícias, lançamentos e eventos da Daan Imagem, Philips, Konica Minolta e Guerbet.">
+  <PageHero title="Blog" eyebrow="Novidades" lead="Lançamentos, eventos e conteúdo sobre diagnóstico por imagem." />
   <section class="section">
     <div class="container grid grid-3">
       {posts.map((p) => (

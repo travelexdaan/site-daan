@@ -16,7 +16,7 @@ Novo site da Daan Imagem (daanimagem.com.br), feito em **Astro** com conteúdo e
 | `/equipamentos/<linha>/[<sub>/]` | Página da linha ou subcategoria (mesmos endereços do site antigo) |
 | `/equipamentos/<linha>/[<sub>/]<produto>/` | Produto: galeria, destaques, especificações, formulário de cotação, relacionados |
 | `/especialidades/` e `/especialidades/<slug>/` | Especialidades e os equipamentos indicados |
-| `/marcas/philips/`, `/marcas/carestream/` | Equipamentos por marca |
+| `/marcas/` e `/marcas/<marca>/` | Philips, Konica Minolta, Guerbet e Carestream |
 | `/pos-venda/` | Pós-venda com formulário de chamado |
 | `/sobre-nos/`, `/contato/`, `/blog/`, `/privacidade/` | Institucionais |
 
@@ -72,3 +72,5 @@ Entre no painel, abra a seção desejada, altere e clique em **Publish**. O site
 - **Posts do blog:** todos estão com a data de 03/06/2024, que parece ser a data da migração.
 - **E-mail:** o site antigo mostra comercial@ e comercial1@. O novo usa comercial@.
 - **Radiologia:** não tem equipamentos vinculados.
+- **Carestream:** só as impressoras DryView e os filmes continuam no site. Os outros 8 itens Carestream estão com *Ocultar do site* marcado.
+- **Konica Minolta e Guerbet:** as linhas (Raio-X, Raio-X portátil, Mamografia, Placas detectoras, Placas veterinárias, Injetoras e Meios de contraste) estão criadas e mostram "sob consulta" até receberem produtos pelo painel. Xenetix e Optiray já estão cadastrados, mas ainda sem fotos.

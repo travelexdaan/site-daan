@@ -8,6 +8,8 @@ export async function GET() {
   const posts = await getPosts();
   const lines = [
     ...posts.map((p) => `/${p.slug}/ /blog/${p.slug}/ 301`),
+    // Linhas Carestream que saíram do site: só redireciona se a página não existir mais.
+    '/equipamentos/radiografia/* /equipamentos/radiografia/ 301',
     '/feed/ /blog/ 301',
     '/category/* /blog/ 301',
     '/wp-admin/* / 301',

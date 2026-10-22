@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "philips",
+    "name": "Philips",
+    "description": "Líder mundial em tecnologia para saúde. Pela Daan, clínicas e hospitais do Paraná têm acesso a ultrassom, ressonância magnética, tomografia, hemodinâmica e arcos cirúrgicos Philips.",
+    "lines": [
+      "ultrassom",
+      "ressonancia",
+      "tomografia",
+      "hemodinamica",
+      "arco-cirurgico"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "konica-minolta",
+    "name": "Konica Minolta",
+    "description": "Referência em radiologia digital. Raio-X, raio-X portátil, mamografia e placas detectoras Konica Minolta, inclusive para uso veterinário.",
+    "lines": [
+      "radiografia",
+      "mamografia"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "guerbet",
+    "name": "Guerbet",
+    "description": "Especialista global em imagem médica. Injetoras para ressonância, tomografia e hemodinâmica, além de meios de contraste como Xenetix e Optiray.",
+    "lines": [
+      "injetoras",
+      "meios-de-contraste"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "carestream",
+    "name": "Carestream",
+    "description": "Impressoras laser DryView e filmes radiológicos Carestream para impressão de exames com qualidade diagnóstica.",
+    "lines": [
+      "radiografia"
+    ],
+    "featured": false
+  }
+]

@@ -3,13 +3,17 @@ import { productUrl, type Product } from '../lib/data';
 interface Props { product: Product; categoryName?: string }
 const { product: p, categoryName } = Astro.props;
 ---
-<a class="card" href={productUrl(p)} data-category={p.category} data-brand={p.brand} data-specialties={p.specialties.join(' ')}>
+<a class="card product-card" href={productUrl(p)} data-category={p.category} data-brand={p.brand} data-specialties={p.specialties.join(' ')}>
   <div class="card-media">
-    {p.images[0] ? <img src={p.images[0]} alt={p.name} loading="lazy" /> : <span class="muted">{p.brand}</span>}
+    {p.images[0] ? <img src={p.images[0]} alt={p.name} loading="lazy" /> : <span class="placeholder">{p.brand}</span>}
   </div>
   <div class="card-body">
-    <span class="tag">{categoryName ?? p.brand}</span>
+    <div class="card-meta">
+      <span class="tag">{categoryName ?? ''}</span>
+      <span class="tag tag-brand">{p.brand}</span>
+    </div>
     <h3>{p.name}</h3>
-    {p.summary && <p>{p.summary.length > 120 ? p.summary.slice(0, 117) + '…' : p.summary}</p>}
+    {p.summary && <p>{p.summary.length > 110 ? p.summary.slice(0, 107).trimEnd() + '…' : p.summary}</p>}
+    <span class="card-foot">Ver detalhes →</span>
   </div>
 </a>

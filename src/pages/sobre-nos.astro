@@ -1,4 +1,5 @@
 ---
+import PageHero from '../components/PageHero.astro';
 import Base from '../layouts/Base.astro';
 import CtaBand from '../components/CtaBand.astro';
 import { getRichPage, getHome } from '../lib/data';
@@ -6,12 +7,7 @@ const page = await getRichPage('sobre', 'Sobre a Daan Imagem');
 const home = await getHome();
 ---
 <Base title="Sobre nós" description="Conheça a Daan Imagem, referência em diagnóstico por imagem no Paraná." image={page.images[0]}>
-  <section class="page-hero">
-    <div class="container">
-      <nav class="breadcrumb"><a href="/">Início</a> / Sobre nós</nav>
-      <h1>{page.title}</h1>
-    </div>
-  </section>
+  <PageHero title={page.title} eyebrow="Sobre nós" />
   <section class="section">
     <div class="container two">
       <div class="prose" set:html={page.bodyHtml || `<p>${home.aboutText}</p>`} />

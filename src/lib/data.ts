@@ -21,8 +21,10 @@ export type Product = {
   images: string[];
   catalogPdf?: string | null;
   legacyUrl?: string;
+  hidden?: boolean;
 };
-export type Category = { slug: string; name: string; parent: string | null; intro: string };
+export type Brand = { slug: string; name: string; description: string; lines: string[]; logo: string | null; featured: boolean };
+export type Category = { slug: string; name: string; parent: string | null; intro: string; brand?: string | null };
 export type Specialty = { slug: string; name: string; intro: string; image: string | null; productSlugs: string[] };
 export type Post = { slug: string; title: string; date: string; excerpt: string; bodyHtml: string; coverImage: string | null; legacyUrl?: string };
 export type RichPage = { title: string; bodyHtml: string; images: string[] };
@@ -39,7 +41,7 @@ export type Site = {
   gtm: string;
   partners: { name: string; logo: string | null }[];
 };
-export type Home = { heroTitle: string; heroSubtitle: string; aboutText: string; highlights: string[]; heroImages: string[] };
+export type Home = { heroTitle: string; heroSubtitle: string; aboutText: string; highlights: string[]; heroImages: string[]; aboutImage?: string | null };
 
 const projectId = import.meta.env.SANITY_PROJECT_ID;
 const dataset = import.meta.env.SANITY_DATASET || 'production';
@@ -67,7 +69,7 @@ function once<T>(key: string, fn: () => Promise<T>): Promise<T> {
 export const getProducts = () =>
   once('products', async (): Promise<Product[]> => {
     if (sanity) {
-      return sanity.fetch(`*[_type == "product"] | order(order asc, name asc){
+      return sanity.fetch(`*[_type == "product" && hidden != true] | order(order asc, name asc){
         "slug": slug.current, name, "brand": brand->name,
         "category": category->parent->slug.current, "subcategory": category->slug.current,
         "categoryRoot": category->slug.current, "hasParent": defined(category->parent),
@@ -80,14 +82,16 @@ export const getProducts = () =>
         ),
       );
     }
-    return readSeed<Product[]>('products.json', []).map((p) => ({ ...p, subcategory: p.subcategory ?? null }));
+    return readSeed<Product[]>('products.json', [])
+      .filter((p) => !p.hidden)
+      .map((p) => ({ ...p, subcategory: p.subcategory ?? null }));
   });
 
 export const getCategories = () =>
   once('categories', async (): Promise<Category[]> => {
     if (sanity) {
       return sanity.fetch(`*[_type == "category"] | order(order asc, name asc){
-        "slug": slug.current, name, "parent": parent->slug.current, "intro": coalesce(intro, "")
+        "slug": slug.current, name, "parent": parent->slug.current, "intro": coalesce(intro, ""), "brand": brand->slug.current
       }`);
     }
     return readSeed<Category[]>('categories.json', []).map((c) => ({ ...c, parent: c.parent ?? null, intro: c.intro ?? '' }));
@@ -140,7 +144,8 @@ const defaultSite: Site = {
   gtm: 'GTM-TGGN3V5',
   partners: [
     { name: 'Philips', logo: null },
-    { name: 'Carestream', logo: null },
+    { name: 'Konica Minolta', logo: null },
+    { name: 'Guerbet', logo: null },
   ],
 };
 const seedPages = () => readSeed<Partial<PagesSeed>>('pages.json', {});
@@ -159,13 +164,13 @@ export const getHome = () =>
   once('home', async (): Promise<Home> => {
     const fallback: Home = {
       heroTitle: 'Soluções inteligentes e precisas em diagnósticos de imagem para clínicas e hospitais.',
-      heroSubtitle: 'Representante autorizado Philips e Carestream no Paraná.',
+      heroSubtitle: 'Representante autorizado Philips, Konica Minolta e Guerbet no Paraná.',
       aboutText: 'A Daan Imagem é uma referência no mercado de diagnóstico por imagem no Paraná, reconhecida pelo profissionalismo e excelência em suas relações comerciais.',
       highlights: ['Profissionais altamente qualificados', 'Atendimento em todo estado do Paraná', 'Preços e prazos competitivos'],
       heroImages: [],
     };
     if (sanity) {
-      const h = await sanity.fetch(`*[_id == "home"][0]{heroTitle, heroSubtitle, aboutText, highlights, "heroImages": heroImages[].asset->url}`);
+      const h = await sanity.fetch(`*[_id == "home"][0]{heroTitle, heroSubtitle, aboutText, highlights, "heroImages": heroImages[].asset->url, "aboutImage": aboutImage.asset->url}`);
       return { ...fallback, ...(h ?? {}) };
     }
     const h: Partial<Home> = seedPages().home ?? {};
@@ -175,6 +180,7 @@ export const getHome = () =>
       aboutText: h.aboutText || fallback.aboutText,
       highlights: h.highlights?.length ? h.highlights : fallback.highlights,
       heroImages: h.heroImages ?? [],
+      aboutImage: h.aboutImage ?? null,
     };
   });
 
@@ -187,12 +193,27 @@ export async function getRichPage(id: 'sobre' | 'posVenda' | 'contato', fallback
   return { title: p.title || fallbackTitle, bodyHtml: md(p.body), images: p.images ?? [] };
 }
 
-// Helpers de navegação
+export const getBrands = () =>
+  once('brands', async (): Promise<Brand[]> => {
+    if (sanity) {
+      return sanity.fetch(`*[_type == "brand"] | order(order asc, name asc){
+        "slug": coalesce(slug.current, lower(name)), name, "description": coalesce(description, ""),
+        "lines": coalesce(lines[]->slug.current, []), "logo": logo.asset->url, "featured": featured != false
+      }`);
+    }
+    return readSeed<Brand[]>('brands.json', []).map((b) => ({ ...b, logo: b.logo ?? null, featured: b.featured !== false }));
+  });
+
+// Helpers de navegação. Subcategorias sem equipamentos e sem marca definida ficam fora do menu.
 export async function getCategoryTree() {
   const cats = await getCategories();
+  const products = await getProducts();
   return cats
     .filter((c) => !c.parent)
-    .map((c) => ({ ...c, children: cats.filter((x) => x.parent === c.slug) }));
+    .map((c) => ({
+      ...c,
+      children: cats.filter((x) => x.parent === c.slug && (Boolean(x.brand) || products.some((p) => p.category === c.slug && p.subcategory === x.slug))),
+    }));
 }
 
 export function productUrl(p: Product) {
