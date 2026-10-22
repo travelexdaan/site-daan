@@ -4,3 +4,10 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Endereço sem www redireciona para o principal (www)
+[[redirects]]
+  from = "https://daanimagem.com.br/*"
+  to = "https://www.daanimagem.com.br/:splat"
+  status = 301
+  force = true
