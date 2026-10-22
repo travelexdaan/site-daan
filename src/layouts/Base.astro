@@ -124,7 +124,8 @@ const year = new Date().getFullYear();
         <div>
           <h4>Contato</h4>
           <a href={`tel:+55${site.phone.replace(/\D/g, '')}`}>{site.phone}</a>
-          <a href={whatsappLink(site)} target="_blank" rel="noopener">{site.mobile} (WhatsApp)</a>
+          <a href={whatsappLink(site)} target="_blank" rel="noopener">WhatsApp {site.phone}</a>
+          <a href={`tel:+55${site.mobile.replace(/\D/g, '')}`}>{site.mobile}</a>
           <a href={`mailto:${site.email}`}>{site.email}</a>
           <p>{site.address}</p>
           <p>{site.hours}</p>
