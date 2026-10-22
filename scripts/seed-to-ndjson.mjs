@@ -123,6 +123,7 @@ docs.push({
   whatsapp: s.whatsapp,
   email: 'comercial@daanimagem.com.br',
   address: s.address,
+  address2: s.address2,
   hours: 'Segunda a sexta, das 8h às 18h',
   instagram: s.instagram,
   linkedin: s.linkedin,

@@ -34,6 +34,7 @@ export type Site = {
   whatsapp: string;
   email: string;
   address: string;
+  address2: string;
   hours: string;
   instagram: string;
   linkedin: string;
@@ -136,7 +137,8 @@ const defaultSite: Site = {
   mobile: '(41) 9 9905-0013',
   whatsapp: '554130458990',
   email: 'comercial@daanimagem.com.br',
-  address: 'R. Benjamin Constant, 67 - Sala 1401 - Centro, Curitiba/PR - CEP 80060-020',
+  address: 'R. Benjamin Constant, 67 - Sala 1401 - Centro, Curitiba/PR - CEP: 80060-020',
+  address2: 'R. Julia Wanderley, 554 - Mercês, Curitiba - PR, 80430-030',
   hours: 'Segunda a sexta, das 8h às 18h',
   instagram: 'https://www.instagram.com/daanimagem/',
   linkedin: 'https://www.linkedin.com/company/daan-imagem/',

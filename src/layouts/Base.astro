@@ -142,6 +142,7 @@ const brandList = brands.filter((b) => b.featured).map((b) => b.name).join(', ')
             <a href={tel(site.mobile)}>{site.mobile}</a>
             <a href={`mailto:${site.email}`}>{site.email}</a>
             <p>{site.address}</p>
+            {site.address2 && <p>{site.address2}</p>}
             <p>{site.hours}</p>
           </div>
         </div>

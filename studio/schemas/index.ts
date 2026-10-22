@@ -155,6 +155,7 @@ export const siteSettings = defineType({
     defineField({ name: 'whatsapp', title: 'WhatsApp (só números, com 55 e DDD)', type: 'string', validation: (r) => r.regex(/^\d{12,13}$/) }),
     defineField({ name: 'email', title: 'E-mail', type: 'string' }),
     defineField({ name: 'address', title: 'Endereço', type: 'string' }),
+    defineField({ name: 'address2', title: 'Segundo endereço', type: 'string' }),
     defineField({ name: 'hours', title: 'Horário de atendimento', type: 'string' }),
     defineField({ name: 'instagram', title: 'Instagram (link)', type: 'url' }),
     defineField({ name: 'linkedin', title: 'LinkedIn (link)', type: 'url' }),

@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 import QuoteForm from '../components/QuoteForm.astro';
 import { getSite, whatsappLink } from '../lib/data';
 const site = await getSite();
-const map = `https://www.google.com/maps?q=${encodeURIComponent(site.address)}&output=embed`;
+const maps = [site.address, site.address2].filter(Boolean).map((a) => `https://www.google.com/maps?q=${encodeURIComponent(a)}&output=embed`);
 ---
 <Base title="Contato" description="Fale com a Daan Imagem: telefone, WhatsApp, e-mail e endereço em Curitiba/PR.">
   <PageHero title="Contato" eyebrow="Fale com a Daan" lead="Atendemos clínicas e hospitais em todo o Paraná." />
@@ -16,7 +16,7 @@ const map = `https://www.google.com/maps?q=${encodeURIComponent(site.address)}&o
         <a class="channel" href={`tel:+55${site.phone.replace(/\D/g, '')}`}><strong>Telefone</strong><span>{site.phone}</span></a>
         <a class="channel" href={`tel:+55${site.mobile.replace(/\D/g, '')}`}><strong>Celular</strong><span>{site.mobile}</span></a>
         <a class="channel" href={`mailto:${site.email}`}><strong>E-mail</strong><span>{site.email}</span></a>
-        <div class="channel"><strong>Endereço</strong><span>{site.address}</span><span class="muted">{site.hours}</span></div>
+        <div class="channel"><strong>Endereço</strong><span>{site.address}</span>{site.address2 && <span>{site.address2}</span>}<span class="muted">{site.hours}</span></div>
       </div>
       <div>
         <h2>Solicitar cotação</h2>
@@ -24,13 +24,15 @@ const map = `https://www.google.com/maps?q=${encodeURIComponent(site.address)}&o
       </div>
     </div>
   </section>
-  <iframe title="Mapa" src={map} width="100%" height="380" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="maps">{maps.map((m, i) => <iframe title={`Mapa ${i + 1}`} src={m} width="100%" height="380" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>)}</div>
 </Base>
 <style>
   .two { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; }
   .channels { display: grid; gap: 12px; align-content: start; }
   .channel { display: grid; gap: 2px; padding: 16px 20px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; color: var(--ink); }
-  a.channel:hover { border-color: var(--teal); }
-  .channel strong { color: var(--navy); }
+  a.channel:hover { border-color: var(--green); }
+  .channel strong { color: var(--green-700); }
+  .channel span + span:not(.muted) { margin-top: 6px; }
+  .maps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
   @media (max-width: 860px) { .two { grid-template-columns: 1fr; } }
 </style>
