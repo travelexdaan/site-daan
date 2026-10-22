@@ -80,11 +80,11 @@ const images = product ? [...new Set(product.images)] : [];
         ) : (
           <div class="empty-line">
             <div>
-              <p class="eyebrow">{lineBrand?.name ?? 'Em breve'}</p>
+              <span class="eyebrow">{lineBrand?.name ?? 'Em breve'}</span>
               <h2>Portfólio sob consulta</h2>
               <p class="lead">{lineBrand?.description ?? 'Estamos atualizando esta linha.'} Fale com o nosso time para conhecer os modelos disponíveis e receber uma proposta.</p>
               <div class="btn-row">
-                <a class="btn btn-primary" href="/contato/#cotacao">Solicitar informações <span class="arrow">→</span></a>
+                <a class="btn btn-primary" href="/contato/#cotacao">Solicitar informações </a>
                 <a class="btn btn-whats" href={whatsappLink(site, `Olá! Gostaria de conhecer a linha de ${title}.`)} target="_blank" rel="noopener">WhatsApp</a>
               </div>
             </div>
@@ -132,10 +132,10 @@ const images = product ? [...new Set(product.images)] : [];
               </div>
             )}
             <div class="btn-row">
-              <a class="btn btn-primary" href="#cotacao">Solicitar cotação <span class="arrow">→</span></a>
+              <a class="btn btn-primary" href="#cotacao">Solicitar cotação </a>
               <a class="btn btn-whats" href={whatsappLink(site, `Olá! Gostaria de uma cotação do ${product.name}.`)} target="_blank" rel="noopener">WhatsApp</a>
             </div>
-            {product.catalogPdf && <a class="link-arrow pdf" href={product.catalogPdf} target="_blank" rel="noopener">Baixar catálogo em PDF ↓</a>}
+            {product.catalogPdf && <a class="pdf" href={product.catalogPdf} target="_blank" rel="noopener">Baixar catálogo em PDF ↓</a>}
             <ul class="assurances">
               <li>Representante autorizado {product.brand}</li>
               <li>Instalação e treinamento de aplicação</li>
@@ -151,7 +151,7 @@ const images = product ? [...new Set(product.images)] : [];
         <div class="container detail-grid">
           {product.description.length > 0 && (
             <div class="prose">
-              <p class="eyebrow">Visão geral</p>
+              <span class="eyebrow">Visão geral</span>
               <h2>Sobre o {product.name}</h2>
               {product.description.map((p) => <p>{p}</p>)}
             </div>
@@ -169,7 +169,7 @@ const images = product ? [...new Set(product.images)] : [];
     {product.specs.length > 0 && (
       <section class="section">
         <div class="container">
-          <p class="eyebrow">Ficha técnica</p>
+          <span class="eyebrow">Ficha técnica</span>
           <h2>Especificações e aplicações</h2>
           <div class="specs">
             {product.specs.map((g) => (
@@ -183,13 +183,13 @@ const images = product ? [...new Set(product.images)] : [];
       </section>
     )}
 
-    <section class="section section-dark" id="cotacao">
+    <section class="section section-green" id="cotacao">
       <div class="container quote">
         <div>
-          <p class="eyebrow">Cotação</p>
+          <span class="eyebrow" style="color:#a9e2c6">Cotação</span>
           <h2>Receba uma proposta do {product.name}</h2>
           <p class="lead">Nossa equipe comercial retorna com condições, prazos e opções de configuração para a sua instituição.</p>
-          <a class="btn btn-ghost-light" href={whatsappLink(site, `Olá! Gostaria de uma cotação do ${product.name}.`)} target="_blank" rel="noopener">Prefiro falar pelo WhatsApp</a>
+          <a class="btn btn-outline-white" href={whatsappLink(site, `Olá! Gostaria de uma cotação do ${product.name}.`)} target="_blank" rel="noopener">Prefiro falar pelo WhatsApp</a>
         </div>
         <div class="form-card"><QuoteForm product={product.name} /></div>
       </div>
@@ -200,10 +200,10 @@ const images = product ? [...new Set(product.images)] : [];
         <div class="container">
           <div class="head-row">
             <div>
-              <p class="eyebrow">Veja também</p>
+              <span class="eyebrow">Veja também</span>
               <h2>Outros equipamentos de {catName[product.category]}</h2>
             </div>
-            <a class="link-arrow" href={`/equipamentos/${product.category}/`}>Ver linha completa →</a>
+            <a class="btn btn-outline" href={`/equipamentos/${product.category}/`}>Ver linha completa</a>
           </div>
           <div class="grid grid-3">{related.map((p) => <ProductCard product={p} categoryName={catName[p.category]} />)}</div>
         </div>
@@ -232,58 +232,46 @@ const images = product ? [...new Set(product.images)] : [];
 </script>
 
 <style>
-  .sub-chips { margin-top: 28px; }
-  .sub-chips .chip { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.2); color: #fff; }
-  .sub-chips .chip:hover { border-color: #fff; }
-  .empty-line { border: 1px dashed var(--line); border-radius: 24px; padding: 56px; background: var(--bg-soft); }
+  .sub-chips { margin-top: 24px; }
+  .empty-line { border: 1px solid var(--green-100); border-radius: 16px; padding: 56px; background: var(--green-50); }
   .empty-line .lead { margin-bottom: 28px; }
 
-  .product-top { position: relative; overflow: hidden; background: var(--ink); color: rgba(255,255,255,.75); padding-block: 130px 96px; }
-  .product-top::before { content: ''; position: absolute; inset: 0; background: radial-gradient(600px 400px at 15% 40%, rgba(26,95,208,.35), transparent 70%), radial-gradient(500px 300px at 90% 10%, rgba(43,196,228,.18), transparent 70%); }
-  .product-top .container { position: relative; }
-  .info h1 { color: #fff; }
-  .info .lead { color: rgba(255,255,255,.72); }
-  .info-block .mono { color: rgba(255,255,255,.5) !important; }
-  .info .chip { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.2); color: #fff; }
-  .info .chip:hover { border-color: #fff; }
-  .info .assurances { border-top-color: var(--line-dark); color: rgba(255,255,255,.65); }
-  .info .eyebrow { color: var(--cyan); }
-  .info .pdf { color: var(--cyan); }
-  .thumb { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.14); }
-  .thumb.active, .thumb:hover { border-color: var(--cyan); }
-  .product-top .breadcrumb, .product-top .breadcrumb a { color: rgba(255,255,255,.6); }
+  .product-top { padding-block: 40px 88px; background: linear-gradient(180deg, var(--green-50) 0, var(--green-50) 220px, #fff 220px); }
   .product-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: start; }
   .gallery { min-width: 0; }
-  .gallery-main { position: relative; background: radial-gradient(110% 90% at 50% 100%, #e3ecf8 0%, #f6f9fc 60%, #fff 100%); border-radius: 28px; aspect-ratio: 4 / 3; max-width: 100%; display: grid; place-items: center; overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--line); }
-  .gallery-main img { width: 100%; height: 100%; object-fit: contain; padding: 40px; }
-  .gallery-main .placeholder { font-family: var(--font-display); font-size: 2rem; color: var(--ink-3); opacity: .35; }
-  .gallery-main .readout { position: absolute; top: 18px; left: 46px; color: var(--blue); font-size: .68rem; }
+  .gallery-main { position: relative; background: #fff; border-radius: 16px; aspect-ratio: 4 / 3; max-width: 100%; display: grid; place-items: center; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); }
+  .gallery-main img { width: 100%; height: 100%; object-fit: contain; padding: 36px; mix-blend-mode: multiply; }
+  .gallery-main .placeholder { font-family: var(--font-display); font-size: 2rem; color: var(--green); opacity: .4; }
+  .gallery-main .readout { display: none; }
+  .viewfinder::before, .viewfinder::after { display: none; }
   .thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 10px; margin-top: 14px; }
-  .thumb { border: 1px solid var(--line); background: #fff; border-radius: 12px; padding: 4px; cursor: pointer; aspect-ratio: 1; transition: border-color .2s; }
-  .thumb.active, .thumb:hover { border-color: var(--blue); }
-  .thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
-  .info { padding-top: 24px; min-width: 0; }
-  .info h1 { font-size: clamp(2.2rem, 4vw, 3.4rem); margin: 4px 0 16px; }
-  .info .lead { font-size: 1.12rem; margin-bottom: 28px; }
+  .thumb { border: 1px solid var(--line); background: #fff; border-radius: 10px; padding: 4px; cursor: pointer; aspect-ratio: 1; transition: border-color .2s; }
+  .thumb.active, .thumb:hover { border-color: var(--green); }
+  .thumb img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+  .info { padding-top: 8px; min-width: 0; }
+  .info .eyebrow { margin-bottom: 4px; }
+  .info h1 { font-size: clamp(2.1rem, 3.8vw, 3.1rem); margin: 0 0 16px; }
+  .info .lead { font-size: 1.1rem; margin-bottom: 26px; }
   .info-block { display: grid; gap: 10px; margin-bottom: 28px; }
-  .info-block .mono { color: var(--muted); font-size: .7rem; }
-  .pdf { margin-top: 20px; }
-  .assurances { list-style: none; padding: 24px 0 0; margin: 32px 0 0; border-top: 1px solid var(--line); display: grid; gap: 10px; color: var(--muted); font-size: .95rem; }
-  .assurances li::before { content: '—'; color: var(--cyan); margin-right: 10px; }
+  .info-block .mono { color: var(--muted); font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+  .pdf { margin-top: 20px; display: inline-block; font-weight: 700; }
+  .assurances { list-style: none; padding: 22px 0 0; margin: 30px 0 0; border-top: 1px solid var(--line); display: grid; gap: 10px; color: var(--muted); font-size: .95rem; }
+  .assurances li { padding-left: 28px; position: relative; }
+  .assurances li::before { content: ''; position: absolute; left: 0; top: .45em; width: 14px; height: 14px; border-radius: 50%; background: var(--green-100); box-shadow: inset 0 0 0 4px var(--green); }
   .detail-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: start; }
-  .highlights-card { background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 32px; }
+  .highlights-card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 32px; }
   .highlights-card h3 { margin-bottom: 20px; }
-  .highlights-card .check-list li { font-size: .97rem; }
-  .specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px; margin-top: 32px; }
-  .spec-group { border-top: 2px solid var(--ink); padding-top: 20px; }
+  .specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px; margin-top: 28px; }
+  .spec-group { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .spec-group h3 { background: var(--green); color: #fff; margin: 0; padding: 14px 22px; font-size: 1rem; }
   .spec-group ul { margin: 0; padding: 0; list-style: none; }
-  .spec-group li { padding: 12px 0; border-bottom: 1px solid var(--line); color: #2c3d55; font-size: .97rem; }
+  .spec-group li { padding: 12px 22px; border-top: 1px solid var(--line); font-size: .96rem; }
+  .spec-group li:nth-child(even) { background: var(--bg-soft); }
   .quote { display: grid; grid-template-columns: .85fr 1.15fr; gap: 64px; align-items: start; }
-  .quote .lead { margin-bottom: 28px; }
+  .quote .lead { margin-bottom: 28px; color: rgba(255,255,255,.8); }
   @media (max-width: 960px) {
-    .product-top { padding-block: 104px 64px; }
     .product-grid, .detail-grid, .quote { grid-template-columns: 1fr; gap: 32px; }
-    .info { padding-top: 0; }
+    .product-top { padding-block: 28px 56px; }
     .empty-line { padding: 32px 22px; }
   }
 </style>

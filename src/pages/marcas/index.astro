@@ -21,7 +21,7 @@ const catName = Object.fromEntries(cats.filter((c) => !c.parent).map((c) => [c.s
               <p>{b.description}</p>
               <div class="chips">{b.lines.map((l) => catName[l] && <span class="chip">{catName[l]}</span>)}</div>
             </div>
-            <span class="link-arrow">{count > 0 ? `${count} equipamentos` : 'Saiba mais'} →</span>
+            <span class="link-more">{count > 0 ? `${count} equipamentos` : 'Saiba mais'} →</span>
           </a>
         );
       })}

@@ -9,7 +9,7 @@ const { title, lead, crumbs = [], eyebrow } = Astro.props;
       {crumbs.map((c) => <><span class="sep">/</span><a href={c.href}>{c.label}</a></>)}
       <span class="sep">/</span><span aria-current="page">{title}</span>
     </nav>
-    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    {eyebrow && <span class="eyebrow">{eyebrow}</span>}
     <h1>{title}</h1>
     {lead && <p class="lead">{lead}</p>}
     <slot />

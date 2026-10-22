@@ -26,7 +26,7 @@ const catName = Object.fromEntries(cats.filter((c) => !c.parent).map((c) => [c.s
           <h2>Portfólio {brand.name} sob consulta</h2>
           <p class="lead">Fale com o nosso time para conhecer os produtos {brand.name} disponíveis e receber uma proposta.</p>
           <div class="btn-row">
-            <a class="btn btn-primary" href="/contato/#cotacao">Solicitar informações <span class="arrow">→</span></a>
+            <a class="btn btn-primary" href="/contato/#cotacao">Solicitar informações</a>
             <a class="btn btn-whats" href={whatsappLink(site, `Olá! Gostaria de conhecer os produtos ${brand.name}.`)} target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
@@ -37,8 +37,7 @@ const catName = Object.fromEntries(cats.filter((c) => !c.parent).map((c) => [c.s
 </Base>
 <style>
   .lines { margin-top: 28px; }
-  .lines .chip { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.2); color: #fff; }
-  .empty-line { border: 1px dashed var(--line); border-radius: 24px; padding: 56px; background: var(--bg-soft); }
+  .empty-line { border: 1px solid var(--green-100); border-radius: 16px; padding: 56px; background: var(--green-50); }
   .empty-line .lead { margin-bottom: 28px; }
   @media (max-width: 760px) { .empty-line { padding: 32px 22px; } }
 </style>
