@@ -16,7 +16,7 @@ const firstWithImage = (cat: string) => products.find((p) => p.category === cat 
 const brandOf = (c: (typeof tree)[number]) => brands.find((b) => b.slug === c.brand) ?? brands.find((b) => b.lines.includes(c.slug));
 
 // Carrossel do topo: um equipamento de cada linha principal.
-const slides = ['epiq-elite', 'aerodr-maxmove', 'ingenia-ambition', 'optivantage-multi-uso', 'delicata-dr', 'azurion-7']
+const slides = ['epiq-cvx', 'aerodr-maxmove', 'ingenia-ambition', 'optivantage-multi-uso', 'delicata-dr', 'azurion-7']
   .map((s) => products.find((p) => p.slug === s && p.images[0]))
   .filter((p): p is NonNullable<typeof p> => Boolean(p));
 const firstPerLine = tree.map((c) => firstWithImage(c.slug)).filter((p): p is NonNullable<typeof p> => Boolean(p));
@@ -53,6 +53,8 @@ const featuredBrands = brands.filter((b) => b.featured);
               <span class="slide-caption"><small>{p.brand} · {catName[p.category]}</small><strong>{p.name}</strong></span>
             </a>
           ))}
+          <button type="button" class="arrow prev" data-prev aria-label="Equipamento anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg></button>
+          <button type="button" class="arrow next" data-next aria-label="Próximo equipamento"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg></button>
           <div class="dots" role="tablist" aria-label="Equipamentos em destaque">
             {slides.map((p, i) => <button type="button" role="tab" aria-selected={i === 0 ? 'true' : 'false'} aria-label={p.name} data-dot={i}></button>)}
           </div>
@@ -191,7 +193,10 @@ const featuredBrands = brands.filter((b) => b.featured);
     };
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const start = () => { if (!reduce && slides.length > 1) timer = window.setInterval(() => show(current + 1), 5000); };
-    dots.forEach((d, i) => d.addEventListener('click', () => { window.clearInterval(timer); show(i); start(); }));
+    const go = (n: number) => { window.clearInterval(timer); show(n); start(); };
+    dots.forEach((d, i) => d.addEventListener('click', () => go(i)));
+    slider.querySelector('[data-prev]')?.addEventListener('click', () => go(current - 1));
+    slider.querySelector('[data-next]')?.addEventListener('click', () => go(current + 1));
     slider.addEventListener('mouseenter', () => window.clearInterval(timer));
     slider.addEventListener('mouseleave', () => { window.clearInterval(timer); start(); });
     start();
@@ -213,6 +218,11 @@ const featuredBrands = brands.filter((b) => b.featured);
   .slide.active { opacity: 1; z-index: 1; }
   .slide img { position: absolute; inset: 2% 2% 12%; width: 96%; height: 86%; object-fit: contain; mix-blend-mode: multiply; transform: scale(.96); transition: transform 6s ease; }
   .slide.active img { transform: scale(1.02); }
+  .arrow { position: absolute; top: 50%; z-index: 2; width: 48px; height: 48px; margin-top: -24px; border-radius: 50%; border: 0; background: #fff; color: var(--green-700); box-shadow: var(--shadow); display: grid; place-items: center; cursor: pointer; transition: background .2s, color .2s; }
+  .arrow:hover { background: var(--green); color: #fff; }
+  .arrow svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+  .arrow.prev { left: 16px; }
+  .arrow.next { right: 16px; }
   .slide-caption { position: absolute; left: 24px; bottom: 24px; display: grid; gap: 2px; background: #fff; border-radius: 14px; padding: 12px 18px; box-shadow: var(--shadow); }
   .slide-caption small { color: var(--green); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
   .slide-caption strong { font-family: var(--font-display); color: var(--ink); font-size: 1.08rem; }
