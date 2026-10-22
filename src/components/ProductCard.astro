@@ -3,7 +3,7 @@ import { productUrl, type Product } from '../lib/data';
 interface Props { product: Product; categoryName?: string }
 const { product: p, categoryName } = Astro.props;
 ---
-<a class="card" href={productUrl(p)} data-category={p.category} data-brand={p.brand} data-specialties={p.specialties.join(' ')}>
+<a class="card reveal" href={productUrl(p)} data-category={p.category} data-brand={p.brand} data-specialties={p.specialties.join(' ')}>
   <div class="card-media stage">
     {p.images[0] ? <img src={p.images[0]} alt={p.name} loading="lazy" /> : <span class="placeholder">{p.brand}</span>}
   </div>

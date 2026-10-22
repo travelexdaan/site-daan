@@ -36,6 +36,7 @@ const brandList = brands.filter((b) => b.featured).map((b) => b.name).join(', ')
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     {image && <meta property="og:image" content={image} />}
+    <script is:inline>document.documentElement.classList.add('js');</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -160,6 +161,13 @@ const brandList = brands.filter((b) => b.featured).map((b) => b.name).join(', ')
       const onScroll = () => header?.classList.toggle('scrolled', window.scrollY > 40);
       onScroll();
       window.addEventListener('scroll', onScroll, { passive: true });
+      // Revela seções ao rolar; se o IntersectionObserver não existir, mostra tudo.
+      // Só anima o que ainda está abaixo da dobra, para não piscar o que já está visível.
+      const items = [...document.querySelectorAll('.reveal')].filter((el) => el.getBoundingClientRect().top > window.innerHeight);
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+        items.forEach((el) => io.observe(el));
+      }
       const toggle = document.querySelector('.menu-toggle');
       const nav = document.getElementById('nav');
       toggle?.addEventListener('click', () => {

@@ -39,6 +39,11 @@ const featuredBrands = brands.filter((b) => b.featured);
           <a class="btn btn-primary" href="/equipamentos/">Conheça as soluções</a>
           <a class="btn btn-outline" href={whatsappLink(site, 'Olá! Vim pelo site e gostaria de falar com a equipe comercial.')} target="_blank" rel="noopener">Falar no WhatsApp</a>
         </div>
+        <ul class="trust">
+          <li>Representante autorizado</li>
+          <li>Atendimento em todo o Paraná</li>
+          <li>Suporte pós-venda</li>
+        </ul>
       </div>
       {slides.length > 0 && (
         <div class="slider" data-slider>
@@ -65,7 +70,7 @@ const featuredBrands = brands.filter((b) => b.featured);
   </section>
 
   <section class="section">
-    <div class="container about">
+    <div class="container about reveal">
       <div class="about-media stage">
         {home.aboutImage ? <img src={home.aboutImage} alt="Equipe Daan Imagem" loading="lazy" /> : slides[1] && <img src={slides[1].images[0]} alt="" loading="lazy" />}
       </div>
@@ -88,25 +93,21 @@ const featuredBrands = brands.filter((b) => b.featured);
 
   <section class="section section-soft">
     <div class="container">
-      <div class="section-head center">
+      <div class="section-head center reveal">
         <span class="eyebrow">Soluções</span>
         <h2>Equipamentos para cada modalidade</h2>
         <p class="lead">Linhas completas Philips, Konica Minolta, Guerbet e Carestream para clínicas e hospitais.</p>
       </div>
-      <div class="grid grid-3">
+      <div class="lines">
         {tree.map((c) => {
           const img = firstWithImage(c.slug)?.images[0];
           const brand = brandOf(c);
           return (
-            <a class="card line-card" href={`/equipamentos/${c.slug}/`}>
-              <div class:list={['card-media', 'stage', { 'no-img': !img }]}>
-                {img ? <img src={img} alt="" loading="lazy" /> : <span class="line-brand">{brand?.name}</span>}
-              </div>
-              <div class="card-body">
-                <span class="tag">{brand?.name}</span>
-                <h3>{c.name}</h3>
-                <span class="link-more">Conheça</span>
-              </div>
+            <a class:list={['line-tile', 'reveal', { 'no-img': !img }]} href={`/equipamentos/${c.slug}/`}>
+              <span class="tag">{brand?.name}</span>
+              <h3>{c.name}</h3>
+              <span class="go" aria-hidden="true">→</span>
+              {img ? <img src={img} alt="" loading="lazy" /> : <span class="line-brand">{brand?.name}</span>}
             </a>
           );
         })}
@@ -132,7 +133,7 @@ const featuredBrands = brands.filter((b) => b.featured);
   )}
 
   <section class="section section-green">
-    <div class="container spec-band">
+    <div class="container spec-band reveal">
       <div>
         <span class="eyebrow light">Especialidades</span>
         <h2>Soluções para a sua especialidade</h2>
@@ -198,20 +199,24 @@ const featuredBrands = brands.filter((b) => b.featured);
 </script>
 
 <style>
-  .hero { background: linear-gradient(100deg, #fff 0%, #fff 38%, var(--green-50) 38%); padding-block: 72px 80px; overflow: hidden; }
-  .hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px; align-items: center; }
+  .hero { position: relative; padding-block: 64px 88px; overflow: hidden; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: center; }
   .hero-copy { min-width: 0; }
-  .hero h1 { margin-bottom: 20px; font-size: clamp(2rem, 3.6vw, 3rem); }
+  .hero h1 { margin-bottom: 20px; font-size: clamp(2.1rem, 3.8vw, 3.2rem); }
   .hero .lead { margin-bottom: 32px; }
-  .slider { position: relative; aspect-ratio: 1 / 0.82; max-width: 100%; }
-  .slide { position: absolute; inset: 0; display: block; background: var(--green-50); opacity: 0; transition: opacity .8s ease; text-decoration: none; }
+  .trust { list-style: none; padding: 0; margin: 36px 0 0; display: flex; flex-wrap: wrap; gap: 10px 24px; color: var(--muted); font-size: .92rem; font-weight: 600; }
+  .trust li { display: flex; align-items: center; gap: 8px; }
+  .trust li::before { content: ''; width: 18px; height: 18px; border-radius: 50%; background: var(--green-100) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' fill='none' stroke='%23006f4a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 11px no-repeat; }
+  .slider { position: relative; aspect-ratio: 1 / 0.86; max-width: 100%; border-radius: 32px; background: var(--green-50); }
+  .slider::before { content: ''; position: absolute; width: 70%; aspect-ratio: 1; border-radius: 50%; right: -12%; top: -18%; background: radial-gradient(circle, rgba(140,198,63,.22), transparent 65%); pointer-events: none; }
+  .slide { position: absolute; inset: 0; display: block; border-radius: 32px; overflow: hidden; background: var(--green-50); opacity: 0; transition: opacity .9s ease; text-decoration: none; }
   .slide.active { opacity: 1; z-index: 1; }
-  .slide img { width: 100%; height: 88%; object-fit: contain; mix-blend-mode: multiply; transform: scale(.97); transition: transform 5s ease; }
-  .slide.active img { transform: scale(1); }
-  .slide-caption { position: absolute; left: 0; bottom: 0; display: grid; gap: 2px; background: #fff; border-left: 4px solid var(--green); border-radius: 0 8px 8px 0; padding: 12px 18px; box-shadow: var(--shadow); }
-  .slide-caption small { color: var(--muted); font-size: .8rem; }
-  .slide-caption strong { font-family: var(--font-display); color: var(--ink); font-size: 1.05rem; }
-  .dots { position: absolute; right: 0; bottom: 18px; display: flex; gap: 8px; z-index: 2; }
+  .slide img { position: absolute; inset: 6% 6% 16%; width: 88%; height: 78%; object-fit: contain; mix-blend-mode: multiply; transform: scale(.96); transition: transform 6s ease; }
+  .slide.active img { transform: scale(1.02); }
+  .slide-caption { position: absolute; left: 24px; bottom: 24px; display: grid; gap: 2px; background: #fff; border-radius: 14px; padding: 12px 18px; box-shadow: var(--shadow); }
+  .slide-caption small { color: var(--green); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+  .slide-caption strong { font-family: var(--font-display); color: var(--ink); font-size: 1.08rem; }
+  .dots { position: absolute; right: 28px; bottom: 38px; display: flex; gap: 8px; z-index: 2; }
   .dots button { width: 10px; height: 10px; border-radius: 999px; border: 0; padding: 0; background: rgba(0,135,90,.25); cursor: pointer; transition: width .3s, background .3s; }
   .dots button[aria-selected='true'] { width: 28px; background: var(--green); }
 
@@ -231,10 +236,17 @@ const featuredBrands = brands.filter((b) => b.featured);
   .service h3 { font-size: 1.02rem; margin-bottom: 2px; }
   .service p { margin: 0; color: var(--muted); font-size: .95rem; }
 
-  .line-card .card-body { gap: 4px; }
-  .line-card h3 { font-size: 1.3rem; }
-  .no-img { background: var(--green-50); }
-  .line-brand { font-family: var(--font-display); font-weight: 600; font-size: 1.6rem; color: var(--green); opacity: .55; }
+  .lines { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .line-tile { position: relative; overflow: hidden; min-height: 300px; border-radius: var(--radius); background: #fff; border: 1px solid var(--line); padding: 28px; text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 4px; transition: box-shadow .3s, transform .3s, border-color .3s; }
+  .line-tile:hover { box-shadow: var(--shadow); transform: translateY(-4px); border-color: transparent; }
+  .line-tile h3 { font-size: 1.45rem; margin: 0; max-width: 70%; position: relative; z-index: 1; }
+  .line-tile .tag { position: relative; z-index: 1; }
+  .line-tile img { position: absolute; right: -4%; bottom: -2%; width: 74%; height: 70%; object-fit: contain; mix-blend-mode: multiply; transition: transform .5s ease; }
+  .line-tile:hover img { transform: scale(1.06) translateX(-2%); }
+  .go { position: absolute; left: 28px; bottom: 28px; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--green-50); color: var(--green); font-weight: 700; transition: background .25s, color .25s; z-index: 1; }
+  .line-tile:hover .go { background: var(--green); color: #fff; }
+  .line-tile.no-img { background: var(--green-50); border-color: var(--green-100); }
+  .line-brand { position: absolute; right: 28px; bottom: 32px; font-family: var(--font-display); font-weight: 600; font-size: 1.5rem; color: var(--green); opacity: .35; }
 
   .spec-band { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: center; }
   .spec-band p { margin: 0; }
@@ -243,7 +255,12 @@ const featuredBrands = brands.filter((b) => b.featured);
   .chip-light:hover { background: #fff; border-color: #fff; color: var(--green-700); }
 
   @media (max-width: 960px) {
-    .hero { background: var(--green-50); padding-block: 48px 56px; }
+    .hero { padding-block: 40px 56px; }
     .hero-grid, .about, .spec-band { grid-template-columns: 1fr; gap: 36px; }
+    .lines { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 620px) {
+    .lines { grid-template-columns: 1fr; }
+    .line-tile { min-height: 240px; }
   }
 </style>
